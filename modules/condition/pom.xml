@@ -8,6 +8,7 @@
     <relativePath>../parent</relativePath>
   </parent>
   <artifactId>condition</artifactId>
+  <name>${artifactId}</name>
   <dependencies>
     <!-- AOT-compilation necessitates a specific Clojure dependency. -->
     <dependency>

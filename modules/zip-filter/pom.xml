@@ -8,4 +8,5 @@
     <relativePath>../parent</relativePath>
   </parent>
   <artifactId>zip-filter</artifactId>
+  <name>${artifactId}</name>
 </project>

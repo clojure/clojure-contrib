@@ -8,6 +8,7 @@
     <relativePath>../parent</relativePath>
   </parent>
   <artifactId>server-socket</artifactId>
+  <name>${artifactId}</name>
   <dependencies>
   </dependencies>
 </project>
