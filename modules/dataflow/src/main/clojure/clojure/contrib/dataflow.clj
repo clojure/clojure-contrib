@@ -498,7 +498,15 @@
                     (fn [key cell o n]
                       (printf "sally changed from %s to %s\n" o n)))
 
+  (add-cell-watcher (get-cell df 'mary)
+                    "mary-watcher"
+                    (fn [key cell o n]
+                      (printf "mary changed from %s to %s\n" o n)))
+  
   (update-values df {'fred 1 'mary 1})
+
+  (remove-cell-watcher (get-cell df 'mary) "mary-watcher")
+  
   (update-values df {'fred 5 'mary 1})
   (update-values df {'fred 0 'mary 0})
 
