@@ -97,6 +97,12 @@ for details."}
   (doseq [c contents] (print c))
   (print ">"))
 
+(defmethod print-xml-tag :stylesheet! [tag attrs contents]
+  (print "<?xml-stylesheet")
+  (doseq [[name value] attrs]
+  (prxml-attribute name value))
+  (print "?>"))
+
 (defmethod print-xml-tag :default [tag attrs contents]
   (let [tag-name (as-str tag)]
     (when *prxml-indent*
