@@ -100,7 +100,7 @@ for details."}
 (defmethod print-xml-tag :stylesheet! [tag attrs contents]
   (print "<?xml-stylesheet")
   (doseq [[name value] attrs]
-  (prxml-attribute name value))
+    (prxml-attribute name value))
   (print "?>"))
 
 (defmethod print-xml-tag :default [tag attrs contents]
@@ -167,11 +167,12 @@ for details."}
 
   PSEUDO-TAGS: some keywords have special meaning:
 
-    :raw!      do not XML-escape contents
-    :comment!  create an XML comment
-    :decl!     create an XML declaration, with attributes
-    :cdata!    create a CDATA section
-    :doctype!  create a DOCTYPE!
+    :raw!        do not XML-escape contents
+    :comment!    create an XML comment
+    :decl!       create an XML declaration, with attributes
+    :cdata!      create a CDATA section
+    :doctype!    create a DOCTYPE!
+    :stylesheet! create a xml-stylesheet 
 
     (prxml [:p [:raw! \"<i>here & gone</i>\"]])
     ; => <p><i>here & gone</i></p>
