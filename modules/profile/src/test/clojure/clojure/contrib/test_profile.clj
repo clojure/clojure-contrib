@@ -14,6 +14,6 @@
 
   (testing "summarizing a slow method"
     (let [long-time (+ Integer/MAX_VALUE 1)]
-     (is (= {:really-quick-operation {:mean long-time, :min long-time, :max long-time, :count 1, :sum long-time}}
+     (is (= {:really-slow-operation {:mean long-time, :min long-time, :max long-time, :count 1, :sum long-time}}
             (summarize {:really-slow-operation (list  long-time)}))))))
 
