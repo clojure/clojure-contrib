@@ -57,7 +57,9 @@
   The above will print messages to the console for :debug or higher if one is
   in the user namespace, and :warn or higher in all other namespaces."}
   clojure.contrib.logging
-  [:use [clojure.pprint :only [code-dispatch pprint with-pprint-dispatch]]])
+  [:use
+   [clojure.string :only [trim-newline]]
+   [clojure.pprint :only [code-dispatch pprint with-pprint-dispatch]]])
 
 (defprotocol Log
   "The protocol through which macros will interact with an underlying logging
@@ -183,7 +185,7 @@
                       (pprint '~expr)
                       (print "=> ")
                       (pprint a#)))]
-           (.substring s# 0 (dec (count s#))))) ; trim off the trailing newline
+           (trim-newline s#)))
        a#)))
 
 (defn log-stream
