@@ -3,7 +3,7 @@
 ;;; commonly found in Scheme implementations.
 
 ;; by Mark Engelberg (mark.engelberg@gmail.com)
-;; January 17, 2009
+;; May 21, 2011
 
 ;; expt - (expt x y) is x to the yth power, returns an exact number
 ;;   if the base is an exact number, and the power is an integer,
@@ -92,6 +92,7 @@ exact-integer-sqrt - Implements a math function from the R6RS Scheme
 (derive ::integer ::exact)
 (derive java.lang.Integer ::integer)
 (derive java.math.BigInteger ::integer)
+(derive clojure.lang.BigInt ::integer)
 (derive java.lang.Long ::integer)
 (derive java.math.BigDecimal ::exact)
 (derive clojure.lang.Ratio ::exact)
@@ -105,17 +106,17 @@ Returns an exact number if the base is an exact number and the power is an integ
 
 (defn- expt-int [base pow]
   (loop [n pow, y (num 1), z base]
-    (let [t (bit-and n 1), n (bit-shift-right n 1)]
+    (let [t (even? n), n (quot n 2)]
       (cond
-       (zero? t) (recur n y (* z z))
-       (zero? n) (* z y)
-       :else (recur n (* z y) (* z z))))))
+       t (recur n y (*' z z))
+       (zero? n) (*' z y)
+       :else (recur n (*' z y) (*' z z))))))
 
 (defmethod expt [::exact ::integer] [base pow]
   (cond
    (pos? pow) (expt-int base pow)
    (zero? pow) 1
-   :else (/ 1 (expt-int base (- pow)))))
+   :else (/ 1 (expt-int base (-' pow)))))
 
 (defmethod expt :default [base pow] (Math/pow base pow))
 
@@ -123,7 +124,7 @@ Returns an exact number if the base is an exact number and the power is an integ
   (cond
    (not (number? n)) (throw (IllegalArgumentException.
 			     "abs requires a number"))
-   (neg? n) (- n)
+   (neg? n) (-' n)
    :else n))
 
 (defmulti ^{:arglists '([n])
@@ -131,10 +132,10 @@ Returns an exact number if the base is an exact number and the power is an integ
 If n is an exact number, floor returns an integer, otherwise a double."}
   floor class)
 (defmethod floor ::integer [n] n)
-(defmethod floor java.math.BigDecimal [n] (.. n (setScale 0 BigDecimal/ROUND_FLOOR) (toBigInteger)))
+(defmethod floor java.math.BigDecimal [n] (bigint (.setScale n 0 BigDecimal/ROUND_FLOOR)))
 (defmethod floor clojure.lang.Ratio [n]
   (if (pos? n) (quot (. n numerator) (. n denominator))
-      (dec (quot (. n numerator) (. n denominator)))))
+      (dec' (quot (. n numerator) (. n denominator)))))
 (defmethod floor :default [n]
   (Math/floor n))
 
@@ -143,9 +144,9 @@ If n is an exact number, floor returns an integer, otherwise a double."}
 If n is an exact number, ceil returns an integer, otherwise a double."}
   ceil class)
 (defmethod ceil ::integer [n] n)
-(defmethod ceil java.math.BigDecimal [n] (.. n (setScale 0 BigDecimal/ROUND_CEILING) (toBigInteger)))
+(defmethod ceil java.math.BigDecimal [n] (bigint (.setScale n 0 BigDecimal/ROUND_CEILING)))
 (defmethod ceil clojure.lang.Ratio [n]
-  (if (pos? n) (inc (quot (. n numerator) (. n denominator)))
+  (if (pos? n) (inc' (quot (. n numerator) (. n denominator)))
       (quot (. n numerator) (. n denominator))))
 (defmethod ceil :default [n]
   (Math/ceil n))
@@ -157,7 +158,8 @@ round always returns an integer.  Rounds up for values exactly in between two in
 (defmethod round ::integer [n] n)
 (defmethod round java.math.BigDecimal [n] (floor (+ n 0.5M)))
 (defmethod round clojure.lang.Ratio [n] (floor (+ n 1/2)))
-(defmethod round :default [n] (Math/round n))
+;; Convert to bigdec in case float/double exceeds range of long
+(defmethod round :default [n] (round (bigdec n)))
 
 (defn gcd "(gcd a b) returns the greatest common divisor of a and b" [a b]
   (if (or (not (integer? a)) (not (integer? b)))
@@ -182,7 +184,9 @@ round always returns an integer.  Rounds up for values exactly in between two in
 (defmethod integer-length java.lang.Long [n]
   (count (Long/toBinaryString n)))
 (defmethod integer-length java.math.BigInteger [n]
-  (count (. n toString 2)))
+  (.bitLength n))
+(defmethod integer-length clojure.lang.BigInt [n]
+  (.bitLength n))
 
 ;; Produces the largest integer less than or equal to the square root of n
 ;; Input n must be a non-negative integer
@@ -191,9 +195,9 @@ round always returns an integer.  Rounds up for values exactly in between two in
    (> n 24)
    (let [n-len (integer-length n)]
      (loop [init-value (if (even? n-len)
-			 (bit-shift-left 1 (bit-shift-right n-len 1))
-			 (bit-shift-left 2 (bit-shift-right n-len 1)))]
-       (let [iterated-value (bit-shift-right (+ init-value (quot n init-value)) 1)]
+			 (expt 2 (quot n-len 2))
+			 (expt 2 (inc (quot n-len 2))))]
+       (let [iterated-value (quot (+' init-value (quot n init-value)) 2)]
 	 (if (>= iterated-value init-value)
 	   init-value
 	   (recur iterated-value)))))
@@ -209,7 +213,7 @@ For example, (exact-integer-sqrt 15) is [3 6] because 15 = 3^2+6."
   (if (or (not (integer? n)) (neg? n))
     (throw (IllegalArgumentException. "exact-integer-sqrt requires a non-negative integer"))
     (let [isqrt (integer-sqrt n),
-	  error (- n (* isqrt isqrt))]
+	  error (-' n (*' isqrt isqrt))]
       [isqrt error])))
 
 (defmulti ^{:arglists '([n])
@@ -218,7 +222,7 @@ For example, (exact-integer-sqrt 15) is [3 6] because 15 = 3^2+6."
 (defmethod sqrt ::integer [n]
   (if (neg? n) Double/NaN
       (let [isqrt (integer-sqrt n),
-	    error (- n (* isqrt isqrt))]
+	    error (-' n (*' isqrt isqrt))]
 	(if (zero? error) isqrt
 	    (Math/sqrt n)))))
 
