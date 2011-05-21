@@ -175,7 +175,7 @@ round always returns an integer.  Rounds up for values exactly in between two in
     (throw (IllegalArgumentException. "lcm requires two integers")))
   (cond (zero? a) 0
         (zero? b) 0
-        :else (abs (* b (quot a (gcd a b))))))
+        :else (abs (*' b (quot a (gcd a b))))))
 
 ; Length of integer in binary, used as helper function for sqrt.
 (defmulti ^{:private true} integer-length class)
@@ -196,7 +196,7 @@ round always returns an integer.  Rounds up for values exactly in between two in
    (let [n-len (integer-length n)]
      (loop [init-value (if (even? n-len)
 			 (expt 2 (quot n-len 2))
-			 (expt 2 (inc (quot n-len 2))))]
+			 (expt 2 (inc' (quot n-len 2))))]
        (let [iterated-value (quot (+' init-value (quot n init-value)) 2)]
 	 (if (>= iterated-value init-value)
 	   init-value
