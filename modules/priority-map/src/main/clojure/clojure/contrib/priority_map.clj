@@ -2,7 +2,7 @@
 ;; offering queue-like peek/pop as well as the map-like ability to
 ;; easily reassign priorities and other conveniences.
 ;; by Mark Engelberg (mark.engelberg@gmail.com)
-;; July 16, 2010
+;; May 20, 2011
 
 (ns 
   ^{:author "Mark Engelberg",
@@ -211,6 +211,7 @@ to Clojure's assortment of built-in maps (hash-map and sorted-map).
   ; their key-value pairs are the same.
   (equiv [this o] (= item->priority o))
   (hashCode [this] (.hashCode item->priority))
+  (equals [this o] (= item->priority o))
 
   ;containsKey implements (contains? pm k) behavior
   (containsKey [this item] (contains? item->priority item))
@@ -227,17 +228,22 @@ to Clojure's assortment of built-in maps (hash-map and sorted-map).
   ;without implements (dissoc pm k) behavior
   (without
     [this item]
-    (let [priority (item->priority item),
-          item-set (priority->set-of-items priority),]
-      (if (= (count item-set) 1)
-        ;If it is the only item with this priority, remove that priority's set completely
-        (PersistentPriorityMap. (dissoc priority->set-of-items priority) (dissoc item->priority item))
-        ;Otherwise, just remove the item from the priority's set.
-        (PersistentPriorityMap.
-          (assoc priority->set-of-items priority (disj item-set item)),
-          (dissoc item->priority item)))))
+    (let [priority (item->priority item :not-found)]
+      (if (= priority :not-found)
+	;; If item is not in map, return the map unchanged.
+	this
+	(let [item-set (priority->set-of-items priority)]
+	  (if (= (count item-set) 1)
+	    ;;If it is the only item with this priority, remove that priority's set completely
+	    (PersistentPriorityMap. (dissoc priority->set-of-items priority)
+				    (dissoc item->priority item))
+	    ;;Otherwise, just remove the item from the priority's set.
+	    (PersistentPriorityMap.
+	     (assoc priority->set-of-items priority (disj item-set item)),
+	     (dissoc item->priority item)))))))
 
   java.io.Serializable  ;Serialization comes for free with the other things implemented
+  clojure.lang.MapEquivalence
   Map ;Makes this compatible with java's map
   (size [this] (count item->priority))
   (isEmpty [this] (zero? (count item->priority)))
@@ -320,6 +326,8 @@ Returns a new priority map with supplied mappings"
         h {:a 2 :b 1 :c 3 :d 5 :e 4 :f 3}]
     (are [x y] (= x y)
       p {:a 2 :b 1 :c 3 :d 5 :e 4 :f 3}
+      h p
+      (priority-map 1 2) (priority-map 1 2)
       (.hashCode p) (.hashCode {:a 2 :b 1 :c 3 :d 5 :e 4 :f 3})
       (assoc p :g 1) (assoc h :g 1)
       (assoc p :g 0) (assoc h :g 0)
@@ -330,6 +338,9 @@ Returns a new priority map with supplied mappings"
       (dissoc p :e) (dissoc h :e)
       (dissoc p :g) (dissoc h :g)
       (dissoc p :c) (dissoc h :c)
+      (dissoc p :x) p
+      (peek (dissoc p :x)) (peek p)
+      (pop (dissoc p :x)) (pop p)
       (conj p [:g 1]) (conj h [:g 1])
       (conj p [:g 0]) (conj h [:g 0])
       (conj p [:c 4]) (conj h [:c 4])
