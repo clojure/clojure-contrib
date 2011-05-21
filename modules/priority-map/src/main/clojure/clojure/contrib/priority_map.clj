@@ -228,8 +228,8 @@ to Clojure's assortment of built-in maps (hash-map and sorted-map).
   ;without implements (dissoc pm k) behavior
   (without
     [this item]
-    (let [priority (item->priority item :not-found)]
-      (if (= priority :not-found)
+    (let [priority (item->priority item ::not-found)]
+      (if (= priority ::not-found)
 	;; If item is not in map, return the map unchanged.
 	this
 	(let [item-set (priority->set-of-items priority)]
