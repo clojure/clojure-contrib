@@ -209,9 +209,9 @@ to Clojure's assortment of built-in maps (hash-map and sorted-map).
 
   ; Like sorted maps, priority maps are equal to other maps provided
   ; their key-value pairs are the same.
-  (equiv [this o] (= item->priority o))
+  (equiv [this o] (.equiv item->priority o))
   (hashCode [this] (.hashCode item->priority))
-  (equals [this o] (.mapEquals item->priority o))
+  (equals [this o] (.equals item->priority o))
 
   ;containsKey implements (contains? pm k) behavior
   (containsKey [this item] (contains? item->priority item))
