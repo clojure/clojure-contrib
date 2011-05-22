@@ -85,7 +85,7 @@ sqrt - Implements the sqrt behavior I'm accustomed to from PLT Scheme,
 exact-integer-sqrt - Implements a math function from the R6RS Scheme
   standard.  (exact-integer-sqrt k) where k is a non-negative integer,
   returns [s r] where k = s^2+r and k < (s+1)^2.  In other words, it
-  returns the floor of the square root and the "remainder".
+  returns the floor of the square root and the \"remainder\".
 "}
   clojure.contrib.math)
 
