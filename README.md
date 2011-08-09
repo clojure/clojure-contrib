@@ -28,7 +28,7 @@ Versions of clojure-contrib are matched to versions of Clojure.
 * If you are using Clojure 1.0, use clojure-contrib 1.0.
 * If you are using Clojure 1.1, use clojure-contrib 1.1.
 * If you are using Clojure 1.2, use clojure-contrib 1.2, or the new [modular Contrib](http://dev.clojure.org/display/design/Contrib+Projects) libraries.
-*  If you are using Clojure 1.3, use the new [modular Contrib]((http://dev.clojure.org/display/design/Contrib+Projects) libraries.
+*  If you are using Clojure 1.3, use the new [modular Contrib](http://dev.clojure.org/display/design/Contrib+Projects) libraries.
 
 ## Building "Old" Clojure-contrib
 
