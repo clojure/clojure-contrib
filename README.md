@@ -7,7 +7,7 @@ projects and maven artifacts.
 This repository is kept online for historical reasons. For new
 development on Clojure-contrib, you should check out the following resources:
 
-* [List of projects](http://dev.clojure.org/display/design/Contrib+Projects)
+* [List of projects](http://dev.clojure.org/display/doc/Clojure+Contrib)
 * [Clojure downloads](http://clojure.org/downloads)
 * [User mailing list](http://groups.google.com/group/clojure)
 * [Dev mailing list](http://groups.google.com/group/clojure-dev)
