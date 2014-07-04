@@ -75,6 +75,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.json</span>
 <p></p>
 <h2>Overview</h2>
@@ -91,6 +110,8 @@ To read JSON, use read-json.</pre>
   <hr />
   <h2 id="clojure.contrib.json/json-str">json-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (json-str x &amp; options)
 </pre>
   <pre id="var-docstr">Converts x to a JSON-formatted string.
@@ -98,14 +119,16 @@ To read JSON, use read-json.</pre>
 Valid options are:
   :escape-unicode false
       to turn of \uXXXX escapes of Unicode characters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/ea62e3ec4c3a3b977b672ed19cc5cba999f1f700/modules/json/src/main/clojure/clojure/contrib/json.clj#L310" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.json/pprint-json">pprint-json</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pprint-json x &amp; options)
 </pre>
   <pre id="var-docstr">Pretty-prints JSON representation of x to *out*.
@@ -113,14 +136,16 @@ Valid options are:
 Valid options are:
   :escape-unicode false
       to turn off \uXXXX escapes of Unicode characters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/ea62e3ec4c3a3b977b672ed19cc5cba999f1f700/modules/json/src/main/clojure/clojure/contrib/json.clj#L357" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.json/print-json">print-json</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (print-json x &amp; options)
 </pre>
   <pre id="var-docstr">Write JSON-formatted output to *out*.
@@ -128,14 +153,16 @@ Valid options are:
 Valid options are:
   :escape-unicode false
       to turn off \uXXXX escapes of Unicode characters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/ea62e3ec4c3a3b977b672ed19cc5cba999f1f700/modules/json/src/main/clojure/clojure/contrib/json.clj#L323" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.json/read-json">read-json</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (read-json input)
        (read-json input keywordize?)
        (read-json input keywordize? eof-error? eof-value)
@@ -144,34 +171,38 @@ Valid options are:
 If keywordize? is true (default), object keys will be converted to
 keywords.  If eof-error? is true (default), empty input will throw
 an EOFException; if false EOF will return eof-value. </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/ea62e3ec4c3a3b977b672ed19cc5cba999f1f700/modules/json/src/main/clojure/clojure/contrib/json.clj#L186" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.json/read-json-from">read-json-from</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (read-json-from input keywordize? eof-error? eof-value)
 </pre>
   <pre id="var-docstr">Reads one JSON value from input String or Reader.
 If keywordize? is true, object keys will be converted to keywords.
 If eof-error? is true, empty input will throw an EOFException; if
 false EOF will return eof-value. </pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.json/write-json">write-json</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (write-json object out escape-unicode?)
 </pre>
   <pre id="var-docstr">Print object to PrintWriter out as JSON</pre>
-  
-  
-  
+
+
+
 </div>
 
 

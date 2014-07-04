@@ -99,6 +99,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra (and others)</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.seq</span>
 <p></p>
 <h2>Overview</h2>
@@ -112,6 +131,8 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.seq/fill-queue">fill-queue</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fill-queue filler-func &amp; optseq)
 </pre>
   <pre id="var-docstr">filler-func will be called in another thread with a single arg
@@ -120,34 +141,38 @@ time which will be pushed onto a queue, blocking if needed until
 this is possible.  fill-queue will return a lazy seq of the values
 filler-func has pushed onto the queue, blocking if needed until each
 next element becomes available.  filler-func's return value is ignored.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L188" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/find-first">find-first</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-first pred coll)
 </pre>
   <pre id="var-docstr">Returns the first item of coll for which (pred item) returns logical true.
 Consumes sequences up to the first match, will consume the entire sequence
 and return nil if no match is found.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L179" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/flatten">flatten</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (flatten x)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
 Takes any nested combination of sequential things (lists, vectors,
 etc.) and returns their contents as a single, flat sequence.
 (flatten nil) returns nil.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L35" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -155,12 +180,14 @@ etc.) and returns their contents as a single, flat sequence.
   <hr />
   <h2 id="clojure.contrib.seq/frequencies">frequencies</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (frequencies coll)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
 Returns a map from distinct items in coll to the number of times
 they appear.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L89" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -168,13 +195,15 @@ they appear.</pre>
   <hr />
   <h2 id="clojure.contrib.seq/group-by">group-by</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (group-by f coll)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
  Returns a sorted map of the elements of coll keyed by the result of
 f on each element. The value at each key will be a vector of the
 corresponding elements, in the order they appeared in coll.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L61" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -182,12 +211,14 @@ corresponding elements, in the order they appeared in coll.</pre>
   <hr />
   <h2 id="clojure.contrib.seq/includes?">includes?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (includes? coll x)
 </pre>
   <pre id="var-docstr">Returns true if coll contains something equal (with =) to x,
 in linear time. Deprecated. Prefer 'contains?' for key testing,
 or 'some' for ad hoc linear searches.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L229" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -195,27 +226,31 @@ or 'some' for ad hoc linear searches.</pre>
   <hr />
   <h2 id="clojure.contrib.seq/indexed">indexed</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (indexed s)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of [index, item] pairs, where items come
 from 's' and indexes count up from zero.
 
 (indexed '(a b c d))  =&gt;  ([0 a] [1 b] [2 c] [3 d])</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L51" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/partition-all">partition-all</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (partition-all n coll)
        (partition-all n step coll)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
 Returns a lazy sequence of lists like clojure.core/partition, but may
 include lists with fewer than n items at the end.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L139" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -223,12 +258,14 @@ include lists with fewer than n items at the end.</pre>
   <hr />
   <h2 id="clojure.contrib.seq/partition-by">partition-by</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (partition-by f coll)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
 Applies f to each value in coll, splitting it each time f returns
 a new value.  Returns a lazy seq of lazy seqs.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L76" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -236,23 +273,27 @@ a new value.  Returns a lazy seq of lazy seqs.</pre>
   <hr />
   <h2 id="clojure.contrib.seq/positions">positions</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (positions pred coll)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence containing the positions at which pred
 is true for items in coll.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L223" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/rand-elt">rand-elt</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rand-elt s)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core/rand-nth.
 Return a random element of this seq</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L160" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -260,37 +301,43 @@ Return a random element of this seq</pre>
   <hr />
   <h2 id="clojure.contrib.seq/rec-cat">rec-cat</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rec-cat binding-name &amp; exprs)
 </pre>
-  <pre id="var-docstr">Similar to lazy-cat but binds the resulting sequence to the supplied 
+  <pre id="var-docstr">Similar to lazy-cat but binds the resulting sequence to the supplied
 binding-name, allowing for recursive expressions.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L108" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/rec-seq">rec-seq</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rec-seq binding-name &amp; body)
 </pre>
-  <pre id="var-docstr">Similar to lazy-seq but binds the resulting seq to the supplied 
+  <pre id="var-docstr">Similar to lazy-seq but binds the resulting seq to the supplied
 binding-name, allowing for recursive expressions.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L101" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/reductions">reductions</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reductions f coll)
        (reductions f init coll)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
 Returns a lazy seq of the intermediate values of the reduction (as
 per reduce) of coll by f, starting with init.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L117" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -298,46 +345,54 @@ per reduce) of coll by f, starting with init.</pre>
   <hr />
   <h2 id="clojure.contrib.seq/rotations">rotations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rotations x)
 </pre>
   <pre id="var-docstr">Returns a lazy seq of all rotations of a seq</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L129" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/separate">separate</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (separate f s)
 </pre>
   <pre id="var-docstr">Returns a vector:
 [ (filter f s), (filter (complement f) s) ]</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L45" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/seq-on">seq-on</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (seq-on s)
 </pre>
   <pre id="var-docstr">Returns a seq on the object s. Works like the built-in seq but as
 a multimethod that can have implementations for new classes and types.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L168" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.seq/shuffle">shuffle</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (shuffle coll)
 </pre>
   <pre id="var-docstr">DEPRECATED. Prefer clojure.core version.
 Return a random permutation of coll</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/seq.clj#L151" id="var-source">Source</a>
 </div>

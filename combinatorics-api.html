@@ -75,11 +75,30 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Mark Engelberg</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.combinatorics</span>
 <p></p>
 <h2>Overview</h2>
 <pre id="namespace-docstr">Efficient, functional algorithms for generating lazy
-sequences for common combinatorial functions. (See the source code 
+sequences for common combinatorial functions. (See the source code
 for a longer description.)</pre>
 
 
@@ -90,66 +109,78 @@ for a longer description.)</pre>
   <hr />
   <h2 id="clojure.contrib.combinatorics/cartesian-product">cartesian-product</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (cartesian-product &amp; seqs)
 </pre>
   <pre id="var-docstr">All the ways to take one item from each sequence</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/combinatorics.clj#L107" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.combinatorics/combinations">combinations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (combinations items n)
 </pre>
   <pre id="var-docstr">All the unique ways of taking n different elements from items</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/combinatorics.clj#L90" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.combinatorics/lex-permutations">lex-permutations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (lex-permutations c)
 </pre>
   <pre id="var-docstr">Fast lexicographic permutation generator for a sequence of numbers</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/combinatorics.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.combinatorics/permutations">permutations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (permutations items)
 </pre>
   <pre id="var-docstr">All the permutations of items, lexicographic by index</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/combinatorics.clj#L160" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.combinatorics/selections">selections</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (selections items n)
 </pre>
   <pre id="var-docstr">All the ways of taking n (possibly the same) elements from the sequence of items</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/combinatorics.clj#L127" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.combinatorics/subsets">subsets</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (subsets items)
 </pre>
   <pre id="var-docstr">All the subsets of items</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/combinatorics.clj#L101" id="var-source">Source</a>
 </div>
 

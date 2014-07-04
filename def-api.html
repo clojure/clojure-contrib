@@ -87,6 +87,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.def</span>
 <p></p>
 <h2>Overview</h2>
@@ -100,55 +119,65 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.def/defalias">defalias</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defalias name orig)
        (defalias name orig doc)
 </pre>
   <pre id="var-docstr">Defines an alias for a var: a new var with the same root binding (if
 any) and similar metadata. The metadata of the alias is its initial
 metadata (as provided by def) merged into the metadata of the original.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L66" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defhinted">defhinted</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defhinted sym init)
 </pre>
   <pre id="var-docstr">Defines a var with a type hint matching the class of the given
 init.  Be careful about using any form of 'def' or 'binding' to a
 value of a different type.  See <a href="http://paste.lisp.org/display/73344">http://paste.lisp.org/display/73344</a></pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L85" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defmacro-">defmacro-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defmacro- name &amp; decls)
 </pre>
   <pre id="var-docstr">Same as defmacro but yields a private definition</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L39" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defn-memo">defn-memo</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defn-memo fn-name &amp; defn-stuff)
 </pre>
   <pre id="var-docstr">Just like defn, but memoizes the function using clojure.core/memoize</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L143" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defnk">defnk</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defnk fn-name &amp; fn-tail)
 </pre>
   <pre id="var-docstr">Define a function accepting keyword arguments. Symbols up to the first
@@ -157,84 +186,98 @@ an alternating sequence of keywords and defaults values is expected. The
 values of the keyword arguments are available in the function body by
 virtue of the symbol corresponding to the keyword (cf. :keys destructuring).
 defnk accepts an optional docstring as well as an optional metadata map.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L122" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defonce-">defonce-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defonce- name expr)
        (defonce- name expr doc)
 </pre>
   <pre id="var-docstr">Same as defonce but yields a private definition</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L59" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defstruct-">defstruct-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defstruct- name &amp; decls)
 </pre>
   <pre id="var-docstr">Same as defstruct but yields a private definition</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L54" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defunbound">defunbound</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defunbound name)
        (defunbound name doc)
 </pre>
   <pre id="var-docstr">Defines an unbound var with optional doc string</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L32" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defunbound-">defunbound-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defunbound- name &amp; decls)
 </pre>
   <pre id="var-docstr">Same as defunbound but yields a private definition</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L49" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defvar">defvar</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defvar name)
        (defvar name init)
        (defvar name init doc)
 </pre>
   <pre id="var-docstr">Defines a var with an optional intializer and doc string</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L23" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/defvar-">defvar-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defvar- name &amp; decls)
 </pre>
   <pre id="var-docstr">Same as defvar but yields a private definition</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L44" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.def/name-with-attributes">name-with-attributes</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (name-with-attributes name macro-args)
 </pre>
   <pre id="var-docstr">To be used in macro definitions.
@@ -246,8 +289,8 @@ added to the name's metadata map and the map is removed from the
 macro argument list. The return value is a vector containing the name
 with its extended metadata map and the list of unprocessed macro
 arguments.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/def.clj#L96" id="var-source">Source</a>
 </div>
 

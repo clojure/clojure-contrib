@@ -71,6 +71,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stephen C. Gilardi</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.except</span>
 <p></p>
 <h2>Overview</h2>
@@ -86,6 +105,8 @@ formatted using clojure.core/format.</pre>
   <hr />
   <h2 id="clojure.contrib.except/throw-arg">throw-arg</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (throw-arg &amp; args)
 </pre>
   <pre id="var-docstr">Throws an IllegalArgumentException. All arguments are optional:
@@ -96,38 +117,44 @@ formatted using clojure.core/format.</pre>
 - format is a format string for clojure.core/format
 - format-args are objects that correspond to format specifiers in
   format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/except/src/main/clojure/clojure/contrib/except.clj#L57" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.except/throw-if">throw-if</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (throw-if test &amp; args)
 </pre>
   <pre id="var-docstr">Throws an Exception or Error if test is true. args are those documented
 for throwf.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/except/src/main/clojure/clojure/contrib/except.clj#L43" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.except/throw-if-not">throw-if-not</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (throw-if-not test &amp; args)
 </pre>
   <pre id="var-docstr">Throws an Exception or Error if test is false. args are those documented
 for throwf.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/except/src/main/clojure/clojure/contrib/except.clj#L50" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.except/throwf">throwf</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (throwf &amp; args)
 </pre>
   <pre id="var-docstr">Throws an Exception or Error with an optional message formatted using
@@ -141,8 +168,8 @@ clojure.core/format. All arguments are optional:
 - format is a format string for clojure.core/format
 - format-args are objects that correspond to format specifiers in
   format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/except/src/main/clojure/clojure/contrib/except.clj#L28" id="var-source">Source</a>
 </div>
 

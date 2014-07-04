@@ -67,6 +67,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Craig McDaniel</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.server-socket</span>
 <p></p>
 <h2>Overview</h2>
@@ -80,19 +99,23 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.server-socket/create-repl-server">create-repl-server</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (create-repl-server port backlog bind-addr)
        (create-repl-server port backlog)
        (create-repl-server port)
 </pre>
   <pre id="var-docstr">create a repl on a socket</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/37dad8c37622669271357cfceec03e391cc10e17/src/clojure/contrib/server_socket.clj#L87" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.server-socket/create-server">create-server</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (create-server port fun backlog bind-addr)
        (create-server port fun backlog)
        (create-server port fun)
@@ -104,8 +127,8 @@ created which calls:
 
 Optional arguments support specifying a listen backlog and binding
 to a specific endpoint.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/37dad8c37622669271357cfceec03e391cc10e17/src/clojure/contrib/server_socket.clj#L53" id="var-source">Source</a>
 </div>
 

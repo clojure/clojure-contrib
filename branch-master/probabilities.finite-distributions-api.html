@@ -85,6 +85,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.probabilities.finite-distributions</span>
 <p></p>
 <h2>Overview</h2>
@@ -100,88 +119,104 @@ distributions.</pre>
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/certainly">certainly</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (certainly v)
 </pre>
   <pre id="var-docstr">Returns a distribution in which the single value v has probability 1.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L146" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/choose">choose</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (choose &amp; choices)
 </pre>
   <pre id="var-docstr">Construct a distribution from an explicit list of probabilities
 and values. They are given in the form of a vector of probability-value
 pairs. In the last pair, the probability can be given by the keyword
 :else, which stands for 1 minus the total of the other probabilities.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L92" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/cond-dist-m">cond-dist-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Variant of the dist monad that can handle undefined values.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/cond-prob">cond-prob</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (cond-prob pred dist)
 </pre>
   <pre id="var-docstr">Returns the conditional probability for the values in dist that satisfy
 the predicate pred.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L160" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/dist-m">dist-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing computations on fuzzy quantities, represented by a finite
 probability distribution for the possible values. A distribution is
 represented by a map from values to probabilities.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/join-with">join-with</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (join-with f dist1 dist2)
 </pre>
   <pre id="var-docstr">Returns the distribution of (f x y) with x from dist1 and y from dist2.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/make-distribution">make-distribution</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-distribution coll f)
 </pre>
   <pre id="var-docstr">Returns the distribution in which each element x of the collection
 has a probability proportional to (f x)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L134" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/normalize">normalize</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (normalize weights)
 </pre>
   <pre id="var-docstr">Convert a weight map (e.g. a map of counter values) to a distribution
@@ -189,45 +224,51 @@ by multiplying with a normalization factor. If the map has a key
 :total, its value is assumed to be the sum over all the other values and
 it is used for normalization. Otherwise, the sum is calculated
 explicitly. The :total key is removed from the resulting distribution.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L70" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/prob">prob</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (prob pred dist)
 </pre>
   <pre id="var-docstr">Return the probability that the predicate pred is satisfied in the
 distribution dist, i.e. the sum of the probabilities of the values
 that satisfy pred.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L197" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/uniform">uniform</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (uniform coll)
 </pre>
   <pre id="var-docstr">Return a distribution in which each of the elements of coll
 has the same probability.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L84" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.finite-distributions/zipf">zipf</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (zipf s n)
 </pre>
   <pre id="var-docstr">Returns the Zipf distribution in which the numbers k=1..n have
 probabilities proportional to 1/k^s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/probabilities/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L140" id="var-source">Source</a>
 </div>
 

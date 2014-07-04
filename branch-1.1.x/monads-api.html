@@ -135,6 +135,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.monads</span>
 <p></p>
 <h2>Overview</h2>
@@ -143,7 +162,7 @@ as macros for defining and using monads and useful monadic
 functions.</pre>
 
 
-<span id="see-also">See also: 
+<span id="see-also">See also:
   <span id="see-also-link">
     <a href="http://onclojure.com/2009/03/05/a-monad-tutorial-for-clojure-programmers-part-1/">Monad tutorial part 1</a>
   </span><span id="see-also-link">
@@ -164,59 +183,69 @@ functions.</pre>
   <hr />
   <h2 id="clojure.contrib.monads/call-cc">call-cc</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (call-cc f)
 </pre>
   <pre id="var-docstr">A computation in the cont monad that calls function f with a single
 argument representing the current continuation. The function f should
 return a continuation (which becomes the return value of call-cc),
 or call the passed-in current continuation to terminate.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L456" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/cont-m">cont-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing computations in continuation-passing style. The monadic
 values are functions that are called with a single argument representing
 the continuation of the computation, to which they pass their result.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L440" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/defmonad">defmonad</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defmonad name doc-string operations)
        (defmonad name operations)
 </pre>
   <pre id="var-docstr">Define a named monad by defining the monad operations. The definitions
 are written like bindings to the monad operations m-bind and
 m-result (required) and m-zero and m-plus (optional).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L51" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/defmonadfn">defmonadfn</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defmonadfn name docstring? attr-map? args expr)
        (defmonadfn name docstring? attr-map? (args expr) ...)
 </pre>
   <pre id="var-docstr">Like defn, but for functions that use monad operations and are used inside
 a with-monad block.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L137" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/domonad">domonad</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (domonad steps expr)
        (domonad name steps expr)
 </pre>
@@ -230,177 +259,207 @@ contain the binding variables from all previous steps.
 A clause of the form :let [binding-form expr ...], where the bindings
 are given as a vector as for the use in let, establishes additional
 bindings that can be used in the following steps.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L114" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/fetch-state">fetch-state</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fetch-state)
 </pre>
   <pre id="var-docstr">Return a state-monad function that returns the current state and does not
 modify it.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L359" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/fetch-val">fetch-val</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fetch-val key)
 </pre>
   <pre id="var-docstr">Return a state-monad function that assumes the state to be a map and
 returns the value corresponding to the given key. The state is not modified.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L365" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/identity-m">identity-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing plain computations. This monad does in fact nothing
 at all. It is useful for testing, for combination with monad
 transformers, and for code that is parameterized with a monad.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L286" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-chain">m-chain</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Chains together monadic computation steps that are each functions
 of one parameter. Each step is called with the result of the previous
 step as its argument. (m-chain (step1 step2)) is equivalent to
 (fn [x] (domonad [r1 (step1 x) r2 (step2 r1)] r2)).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L217" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-fmap">m-fmap</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Bind the monadic value m to the function returning (f x) for argument x</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L195" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-join">m-join</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Converts a monadic value containing a monadic value into a 'simple'
 monadic value.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L189" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-lift">m-lift</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (m-lift n f)
 </pre>
   <pre id="var-docstr">Converts a function f of n arguments into a function of n
 monadic arguments returning a monadic value.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L180" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-map">m-map</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">'Executes' the sequence of monadic values resulting from mapping
 f onto the values xs. f must return a monadic value.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L211" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-reduce">m-reduce</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Return the reduction of (m-lift 2 f) over the list of monadic values mvs
 with initial value (m-result val).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L228" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-seq">m-seq</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">'Executes' the monadic values in ms and returns a sequence of the
 basic values contained in them.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L200" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-until">m-until</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">While (p x) is false, replace x by the value returned by the
 monadic computation (f x). Return (m-result x) for the first
 x for which (p x) is true.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L241" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-when">m-when</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (m-when test m-expr)
 </pre>
   <pre id="var-docstr">If test is logical true, return monadic value m-expr, else return
 (m-result nil).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L253" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/m-when-not">m-when-not</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (m-when-not test m-expr)
 </pre>
   <pre id="var-docstr">If test if logical false, return monadic value m-expr, else return
 (m-result nil).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L259" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/maybe-m">maybe-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing computations with possible failures. Failure is
 represented by nil, any other value is considered valid. As soon as
 a step returns nil, the whole computation will yield nil as well.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L296" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/maybe-t">maybe-t</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (maybe-t m)
        (maybe-t m nothing)
        (maybe-t m nothing which-m-plus)
@@ -412,63 +471,73 @@ from the base monad (use :m-plus-from-base) or adopt maybe-like
 behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
 if the base monad m has a definition for m-plus, and
 :m-plus-from-transformer otherwise.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L496" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/monad">monad</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (monad operations)
 </pre>
   <pre id="var-docstr">Define a monad by defining the monad operations. The definitions
 are written like bindings to the monad operations m-bind and
 m-result (required) and m-zero and m-plus (optional).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L36" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/monad-transformer">monad-transformer</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (monad-transformer base which-m-plus operations)
 </pre>
   <pre id="var-docstr">Define a monad transforer in terms of the monad operations and the base
 monad. The argument which-m-plus chooses if m-zero and m-plus are taken
 from the base monad or from the transformer.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L474" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/run-cont">run-cont</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (run-cont c)
 </pre>
   <pre id="var-docstr">Execute the computation c in the cont monad and return its result.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L451" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/sequence-m">sequence-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing multi-valued computations, i.e. computations
 that can yield multiple values. Any object implementing the seq
 protocol can be used as a monadic value.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L309" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/sequence-t">sequence-t</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sequence-t m)
        (sequence-t m which-m-plus)
 </pre>
@@ -479,144 +548,166 @@ if m-zero and m-plus are inherited from the base monad
 behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
 if the base monad m has a definition for m-plus, and
 :m-plus-from-transformer otherwise.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L528" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/set-m">set-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing multi-valued computations, like sequence-m,
 but returning sets of results instead of sequences of results.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L323" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/set-state">set-state</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-state s)
 </pre>
   <pre id="var-docstr">Return a state-monad function that replaces the current state by s and
 returns the previous state.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L353" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/set-val">set-val</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-val key val)
 </pre>
   <pre id="var-docstr">Return a state-monad function that assumes the state to be a map and
 replaces the value associated with key by val. The old value is returned.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L383" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/state-m">state-m</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Monad describing stateful computations. The monadic values have the
 structure (fn [old-state] [result new-state]).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L336" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/state-m-until">state-m-until</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (state-m-until p f x)
 </pre>
   <pre id="var-docstr">An optimized implementation of m-until for the state monad that
 replaces recursion by a loop.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L401" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/state-t">state-t</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (state-t m)
 </pre>
   <pre id="var-docstr">Monad transformer that transforms a monad m into a monad of stateful
 computations that have the base monad type as their result.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L555" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/update-state">update-state</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (update-state f)
 </pre>
   <pre id="var-docstr">Return a state-monad function that replaces the current state by the
 result of f applied to the current state and that returns the old state.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L347" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/update-val">update-val</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (update-val key f)
 </pre>
   <pre id="var-docstr">Return a state-monad function that assumes the state to be a map and
 replaces the value associated with the given key by the return value
 of f applied to the old value. The old value is returned.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L373" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/with-monad">with-monad</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-monad monad &amp; exprs)
 </pre>
   <pre id="var-docstr">Evaluates an expression after replacing the keywords defining the
 monad operations by the functions associated with these keywords
 in the monad definition given by name.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L102" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/with-state-field">with-state-field</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-state-field key statement)
 </pre>
   <pre id="var-docstr">Returns a state-monad function that expects a map as its state and
 runs statement (another state-monad function) on the state defined by
 the map entry corresponding to key. The map entry is updated with the
 new state returned by statement.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L389" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.monads/writer-m">writer-m</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (writer-m empty-accumulator)
 </pre>
   <pre id="var-docstr">Monad describing computations that accumulate data on the side, e.g. for
 logging. The monadic values have the structure [value log]. Any of the
 accumulators from clojure.contrib.accumulators can be used for storing the
 log data. Its empty value is passed as a parameter.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/34fc5f2bc4dbae6b1b05b77cda98f56cc62e73b7/src/clojure/contrib/monads.clj#L413" id="var-source">Source</a>
 </div>
 

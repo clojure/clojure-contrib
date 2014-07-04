@@ -67,10 +67,29 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.base64</span>
 <p></p>
 <h2>Overview</h2>
-<pre id="namespace-docstr">Base-64 encoding and (maybe later) decoding.  
+<pre id="namespace-docstr">Base-64 encoding and (maybe later) decoding.
 
 This is mainly here as an example.  It is much slower than the
 Apache Commons Codec implementation or sun.misc.BASE64Encoder.</pre>
@@ -83,27 +102,31 @@ Apache Commons Codec implementation or sun.misc.BASE64Encoder.</pre>
   <hr />
   <h2 id="clojure.contrib.base64/encode">encode</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (encode input output alphabet line-length)
 </pre>
   <pre id="var-docstr">Encodes bytes of input, writing Base 64 text on output.  alphabet
 is a 65-character String containing the 64 characters to use in the
 encoding; the 65th character is the pad character.  line-length is
 the maximum number of characters per line, nil for no line breaks.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/7b661cfc55e2293d14bed4fd801c017b3f68d291/src/clojure/contrib/base64.clj#L27" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.base64/encode-str">encode-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (encode-str s)
        (encode-str s encoding line-length)
 </pre>
   <pre id="var-docstr">Encodes String in base 64; returns a String.  If not specified,
 encoding is UTF-8 and line-length is nil.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/7b661cfc55e2293d14bed4fd801c017b3f68d291/src/clojure/contrib/base64.clj#L79" id="var-source">Source</a>
 </div>
 

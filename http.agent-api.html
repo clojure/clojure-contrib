@@ -103,6 +103,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.http.agent</span>
 <p></p>
 <h2>Overview</h2>
@@ -149,8 +168,8 @@ And you could write the response directly to a file like this:
   (require '[clojure.contrib.io :as d])
 
   (http-agent "http..."
-              :handler (fn [agnt] 
-                         (with-open [w (d/writer "/tmp/out")] 
+              :handler (fn [agnt]
+                         (with-open [w (d/writer "/tmp/out")]
                            (d/copy (stream agnt) w))))</pre>
 
 <span class="ns-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
@@ -161,91 +180,107 @@ And you could write the response directly to a file like this:
   <hr />
   <h2 id="clojure.contrib.http.agent/buffer-bytes">buffer-bytes</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (buffer-bytes http-agnt)
 </pre>
   <pre id="var-docstr">The default HTTP agent result handler; it collects the response
 body in a java.io.ByteArrayOutputStream, which can later be
 retrieved with the 'stream', 'string', and 'bytes' functions.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L154" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/bytes">bytes</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (bytes http-agnt)
 </pre>
   <pre id="var-docstr">Returns a Java byte array of the content returned by the server;
 nil if the content is not yet available.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L260" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/client-error?">client-error?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (client-error? http-agnt)
 </pre>
   <pre id="var-docstr">Returns true if the HTTP response code was in the 400-499 range.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L371" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/done?">done?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (done? http-agnt)
 </pre>
   <pre id="var-docstr">Returns true if the HTTP request/response has completed.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L310" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/error?">error?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (error? http-agnt)
 </pre>
   <pre id="var-docstr">Returns true if the HTTP response code was in the 400-499 range OR
 the 500-599 range.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L381" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/headers">headers</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (headers http-agnt)
 </pre>
   <pre id="var-docstr">Returns a map of HTTP response headers.  Header names are converted
 to keywords in all lower-case Header values are strings.  If a
 header appears more than once, only the last value is returned.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L331" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/headers-seq">headers-seq</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (headers-seq http-agnt)
 </pre>
   <pre id="var-docstr">Returns the HTTP response headers in order as a sequence of
 [String,String] pairs.  The first 'header' name may be null for the
 HTTP status line.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L341" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/http-agent">http-agent</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (http-agent uri &amp; options)
 </pre>
   <pre id="var-docstr">Creates (and immediately returns) an Agent representing an HTTP
@@ -259,7 +294,7 @@ The HTTP method name.  Default is "GET".
 
 :headers h
 
-HTTP headers, as a Map or a sequence of pairs like 
+HTTP headers, as a Map or a sequence of pairs like
 ([key1,value1], [key2,value2])  Default is nil.
 
 :body b
@@ -296,37 +331,43 @@ exceptions thrown by this function will be added to the agent's
 error queue (see agent-errors).  The default function collects the
 response stream in a memory buffer.
 </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L175" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/message">message</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (message http-agnt)
 </pre>
   <pre id="var-docstr">Returns the HTTP response message (e.g. 'Not Found'), for this
 request, or nil if the response has not yet been received.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L324" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/method">method</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (method http-agnt)
 </pre>
   <pre id="var-docstr">Returns the HTTP method name used by this HTTP agent, as a String.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L294" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/redirect?">redirect?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (redirect? http-agnt)
 </pre>
   <pre id="var-docstr">Returns true if the HTTP response code was in the 300-399 range.
@@ -334,87 +375,101 @@ request, or nil if the response has not yet been received.</pre>
 Note: if the :follow-redirects option was true (the default),
 redirects will be followed automatically and a the agent will never
 return a 3xx response code.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L362" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/request-body">request-body</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (request-body http-agnt)
 </pre>
-  <pre id="var-docstr">Returns the HTTP request body given to this HTTP agent.  
+  <pre id="var-docstr">Returns the HTTP request body given to this HTTP agent.
 
 Note: if the request body was an InputStream or a Reader, it will no
 longer be usable.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L299" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/request-headers">request-headers</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (request-headers http-agnt)
 </pre>
   <pre id="var-docstr">Returns the request headers specified for this HTTP agent.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L289" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/request-uri">request-uri</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (request-uri http-agnt)
 </pre>
   <pre id="var-docstr">Returns the URI/URL requested by this HTTP agent, as a String.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L284" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/result">result</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (result http-agnt)
 </pre>
   <pre id="var-docstr">Returns the value returned by the :handler function of the HTTP
 agent; blocks until the HTTP request is completed.  The default
 handler function returns a ByteArrayOutputStream.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L238" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/server-error?">server-error?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (server-error? http-agnt)
 </pre>
   <pre id="var-docstr">Returns true if the HTTP response code was in the 500-599 range.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L376" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/status">status</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (status http-agnt)
 </pre>
   <pre id="var-docstr">Returns the HTTP response status code (e.g. 200, 404) for this
 request, as an Integer, or nil if the status has not yet been
 received.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L316" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/stream">stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (stream http-agnt)
 </pre>
   <pre id="var-docstr">Returns an InputStream of the HTTP response body.  When called by
@@ -423,14 +478,16 @@ HttpURLConnection stream.
 
 If the default handler function was used, this function returns a
 ByteArrayInputStream on the buffered response body.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L246" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/string">string</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (string http-agnt)
        (string http-agnt encoding)
 </pre>
@@ -440,19 +497,21 @@ encoding.
 If no encoding is given, uses the encoding specified in the server
 headers, or clojure.contrib.io/*default-encoding* if it is
 not specified.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L266" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.http.agent/success?">success?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (success? http-agnt)
 </pre>
   <pre id="var-docstr">Returns true if the HTTP response code was in the 200-299 range.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0a3e6804f9822a85e255650e2be35c757d4c1e3d/src/main/clojure/clojure/contrib/http/agent.clj#L357" id="var-source">Source</a>
 </div>
 

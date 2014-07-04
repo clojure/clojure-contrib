@@ -99,6 +99,26 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
+
 <br />Full namespace name: <span id="long-name">clojure.contrib.accumulators</span>
 <p></p>
 <h2>Overview</h2>
@@ -113,195 +133,231 @@ accumulators.</pre>
   <hr />
   <h2 id="clojure.contrib.accumulators/add">add</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add acc item)
 </pre>
   <pre id="var-docstr">Add item to the accumulator acc. The exact meaning of adding an
 an item depends on the type of the accumulator.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L31" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/add-items">add-items</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-items acc items)
 </pre>
   <pre id="var-docstr">Add all elements of a collection coll to the accumulator acc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L37" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/combine">combine</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (combine &amp; accs)
 </pre>
   <pre id="var-docstr">Combine the values of the accumulators acc1 and acc2 into a
 single accumulator of the same type.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L42" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-counter">empty-counter</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty counter accumulator. Its value is a map that stores for
 every item the number of times it was added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L271" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-counter-with-total">empty-counter-with-total</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty counter-with-total accumulator. It works like the counter
 accumulator, except that the total number of items added is stored as the
 value of the key :total.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L292" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-list">empty-list</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty list accumulator. Adding an item appends it at the beginning.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-map">empty-map</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty map accumulator. Items to be added must be [key value] pairs.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L145" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-maximum">empty-maximum</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty maximum accumulator. Only numbers can be added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L185" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-mean-variance">empty-mean-variance</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty mean-variance accumulator, combining sample mean and
 sample variance. Only numbers can be added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L232" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-min-max">empty-min-max</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty min-max accumulator, combining minimum and maximum.
 Only numbers can be added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-minimum">empty-minimum</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty minimum accumulator. Only numbers can be added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L191" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-product">empty-product</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty sum accumulator. Only numbers can be added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L177" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-queue">empty-queue</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty queue accumulator. Adding an item appends it at the end.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L102" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-set">empty-set</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty set accumulator.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L116" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-string">empty-string</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty string accumulator. Adding an item (string or character)
 appends it at the end.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L130" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-sum">empty-sum</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty sum accumulator. Only numbers can be added.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L174" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-tuple">empty-tuple</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (empty-tuple empty-accumulators)
 </pre>
   <pre id="var-docstr">Returns an accumulator tuple with the supplied empty-accumulators
 as its value. Accumulator tuples consist of several accumulators that
 work in parallel. Added items must be sequences whose number of elements
 matches the number of sub-accumulators.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L310" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.accumulators/empty-vector">empty-vector</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An empty vector accumulator. Adding an item appends it at the end.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/accumulators.clj#L74" id="var-source">Source</a>
 </div>
 

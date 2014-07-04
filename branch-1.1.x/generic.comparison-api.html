@@ -75,6 +75,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.generic.comparison</span>
 <p></p>
 <h2>Overview</h2>
@@ -91,6 +110,8 @@ greater/less-than relations, types must minimally implement &gt;.</pre>
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&lt;">&lt;</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&lt; x)
        (&lt; x y)
        (&lt; x y &amp; more)
@@ -99,14 +120,16 @@ greater/less-than relations, types must minimally implement &gt;.</pre>
 The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type]. A default implementation
 is provided in terms of &gt;.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/637ce542010b34381948f914e0b6829b41602e34/src/clojure/contrib/generic/comparison.clj#L77" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&lt;=">&lt;=</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&lt;= x)
        (&lt;= x y)
        (&lt;= x y &amp; more)
@@ -115,28 +138,32 @@ is provided in terms of &gt;.</pre>
 ones. The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type]. A default implementation
 is provided in terms of &gt;.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/637ce542010b34381948f914e0b6829b41602e34/src/clojure/contrib/generic/comparison.clj#L129" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/=">=</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (= x)
        (= x y)
        (= x y &amp; more)
 </pre>
   <pre id="var-docstr">Return true if all arguments are equal. The minimal implementation for type
 ::my-type is the binary form with dispatch value [::my-type ::my-type].</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/637ce542010b34381948f914e0b6829b41602e34/src/clojure/contrib/generic/comparison.clj#L36" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&gt;">&gt;</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&gt; x)
        (&gt; x y)
        (&gt; x y &amp; more)
@@ -144,14 +171,16 @@ is provided in terms of &gt;.</pre>
   <pre id="var-docstr">Return true if each argument is larger than the following ones.
 The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type].</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/637ce542010b34381948f914e0b6829b41602e34/src/clojure/contrib/generic/comparison.clj#L56" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&gt;=">&gt;=</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&gt;= x)
        (&gt;= x y)
        (&gt;= x y &amp; more)
@@ -160,19 +189,21 @@ with dispatch value [::my-type ::my-type].</pre>
 ones. The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type]. A default implementation
 is provided in terms of &lt;.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/637ce542010b34381948f914e0b6829b41602e34/src/clojure/contrib/generic/comparison.clj#L103" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/zero?">zero?</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (zero? x)
 </pre>
   <pre id="var-docstr">Return true of x is zero.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/637ce542010b34381948f914e0b6829b41602e34/src/clojure/contrib/generic/comparison.clj#L28" id="var-source">Source</a>
 </div>
 

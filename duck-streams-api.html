@@ -103,6 +103,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.duck-streams</span>
 <p></p>
 <h2>Overview</h2>
@@ -125,138 +144,162 @@ or "just-give-me-a-stream", but ducks are funnier.</pre>
   <hr />
   <h2 id="clojure.contrib.duck-streams/*append-to-writer*">*append-to-writer*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">If true, writer and spit will open files in append mode.
 Defaults to false.  Use append-writer or append-spit.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L146" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/*buffer-size*">*buffer-size*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Size, in bytes or characters, of the buffer used when
 copying streams.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L78" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/*byte-array-type*">*byte-array-type*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Type object for a Java primitive byte array.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L83" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/*default-encoding*">*default-encoding*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Name of the default encoding to use when reading &amp; writing.
 Default is UTF-8.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L72" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/append-spit">append-spit</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (append-spit f content)
 </pre>
   <pre id="var-docstr">Like spit but appends to file.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L265" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/append-writer">append-writer</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (append-writer x)
 </pre>
   <pre id="var-docstr">Like writer but opens file for appending.  Does not work on streams
 that are already open.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L217" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/copy">copy</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (copy input output)
 </pre>
   <pre id="var-docstr">Copies input to output.  Returns nil.
 Input may be an InputStream, Reader, File, byte[], or String.
 Output may be an OutputStream, Writer, or File.
 
-Does not close any streams except those it opens itself 
+Does not close any streams except those it opens itself
 (on a File).
 
 Writing a File fails if the parent directory does not exist.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L301" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/file-str">file-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (file-str &amp; args)
 </pre>
   <pre id="var-docstr">Concatenates args as strings and returns a java.io.File.  Replaces
 all / and \ with File/separatorChar.  Replaces ~ at the start of
 the path with the user.home system property.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/make-parents">make-parents</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-parents file)
 </pre>
   <pre id="var-docstr">Creates all parent directories of file.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L388" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/pwd">pwd</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pwd)
 </pre>
   <pre id="var-docstr">Returns current working directory as a String.  (Like UNIX 'pwd'.)
 Note: In Java, you cannot change the current working directory.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L271" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/read-lines">read-lines</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (read-lines f)
 </pre>
   <pre id="var-docstr">Like clojure.core/line-seq but opens f with reader.  Automatically
 closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L236" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/reader">reader</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reader x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open
@@ -269,96 +312,112 @@ local file names.  Uses *default-encoding* as the text encoding.
 
 Should be used inside with-open to ensure the Reader is properly
 closed.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L102" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/slurp*">slurp*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (slurp* f)
 </pre>
   <pre id="var-docstr">Like clojure.core/slurp but opens f with reader.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L247" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/spit">spit</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (spit f content)
 </pre>
   <pre id="var-docstr">Opposite of slurp.  Opens f with writer, writes content, then
 closes f.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L258" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/to-byte-array">to-byte-array</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (to-byte-array arg)
 </pre>
   <pre id="var-docstr">Converts argument into a Java byte array.  Argument may be
 a String, File, InputStream, or Reader.  If the argument is already
 a byte array, returns it.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L393" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/with-in-reader">with-in-reader</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-in-reader f &amp; body)
 </pre>
   <pre id="var-docstr">Opens a PushbackReader on f, binds it to *in*, and evaluates body.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L294" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/with-out-append-writer">with-out-append-writer</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-out-append-writer f &amp; body)
 </pre>
   <pre id="var-docstr">Like with-out-writer but appends to file.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L287" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/with-out-writer">with-out-writer</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-out-writer f &amp; body)
 </pre>
   <pre id="var-docstr">Opens a writer on f, binds it to *out*, and evalutes body.
 Anything printed within body will be written to f.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L279" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/write-lines">write-lines</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (write-lines f lines)
 </pre>
   <pre id="var-docstr">Writes lines (a seq) to f, separated by newlines.  f is opened with
 writer, and automatically closed at the end of the sequence.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L225" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/writer">writer</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (writer x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open java.io.PrintWriter
@@ -372,8 +431,8 @@ local file names.
 
 Should be used inside with-open to ensure the Writer is properly
 closed.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/aa3f018f65006c78b08703e7adef04b7f39e1542/src/main/clojure/clojure/contrib/duck_streams.clj#L153" id="var-source">Source</a>
 </div>
 

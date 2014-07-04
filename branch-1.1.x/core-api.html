@@ -73,10 +73,29 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Laurent Petit (and others)</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.core</span>
 <p></p>
 <h2>Overview</h2>
-<pre id="namespace-docstr">Functions/macros variants of the ones that can be found in clojure.core 
+<pre id="namespace-docstr">Functions/macros variants of the ones that can be found in clojure.core
 (note to other contrib members: feel free to add to this lib)</pre>
 
 
@@ -87,6 +106,8 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.core/-?&gt;">-?&gt;</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (-?&gt; x form)
        (-?&gt; x form &amp; forms)
 </pre>
@@ -95,14 +116,16 @@ Examples :
 (-?&gt; "foo" .toUpperCase (.substring 1)) returns "OO"
 (-?&gt; nil .toUpperCase (.substring 1)) returns nil
 </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/bc07de7c3b1058f4263bd7b1c424f771fb010005/src/clojure/contrib/core.clj#L30" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.core/.?.">.?.</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (.?. x form)
        (.?. x form &amp; forms)
 </pre>
@@ -111,43 +134,49 @@ Examples :
 (.?. "foo" .toUpperCase (.substring 1)) returns "OO"
 (.?. nil .toUpperCase (.substring 1)) returns nil
 </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/bc07de7c3b1058f4263bd7b1c424f771fb010005/src/clojure/contrib/core.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.core/dissoc-in">dissoc-in</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (dissoc-in m [k &amp; ks :as keys])
 </pre>
   <pre id="var-docstr">Dissociates an entry from a nested associative structure returning a new
 nested structure. keys is a sequence of keys. Any empty maps that result
 will not be present in the new structure.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/bc07de7c3b1058f4263bd7b1c424f771fb010005/src/clojure/contrib/core.clj#L49" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.core/new-by-name">new-by-name</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (new-by-name class-name &amp; args)
 </pre>
   <pre id="var-docstr">Constructs a Java object whose class is specified by a String.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/bc07de7c3b1058f4263bd7b1c424f771fb010005/src/clojure/contrib/core.clj#L63" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.core/seqable?">seqable?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (seqable? x)
 </pre>
   <pre id="var-docstr">Returns true if (seq x) will succeed, false otherwise.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/bc07de7c3b1058f4263bd7b1c424f771fb010005/src/clojure/contrib/core.clj#L70" id="var-source">Source</a>
 </div>
 

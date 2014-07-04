@@ -81,6 +81,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Mark Engelberg</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.math</span>
 <p></p>
 <h2>Overview</h2>
@@ -134,104 +153,122 @@ exact-integer-sqrt - Implements a math function from the R6RS Scheme
   <hr />
   <h2 id="clojure.contrib.math/abs">abs</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (abs n)
 </pre>
   <pre id="var-docstr">(abs n) is the absolute value of n</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L122" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/ceil">ceil</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (ceil n)
 </pre>
   <pre id="var-docstr">(ceil n) returns the least integer greater than or equal to n.
 If n is an exact number, ceil returns an integer, otherwise a double.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L141" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/exact-integer-sqrt">exact-integer-sqrt</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (exact-integer-sqrt n)
 </pre>
   <pre id="var-docstr">(exact-integer-sqrt n) expects a non-negative integer n, and returns [s r] where n = s^2+r and n &lt; (s+1)^2.  In other words, it returns the floor of the square root and the 'remainder'.
 For example, (exact-integer-sqrt 15) is [3 6] because 15 = 3^2+6.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L206" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/expt">expt</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (expt base pow)
 </pre>
   <pre id="var-docstr">(expt base pow) is base to the pow power.
 Returns an exact number if the base is an exact number and the power is an integer, otherwise returns a double.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L101" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/floor">floor</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (floor n)
 </pre>
   <pre id="var-docstr">(floor n) returns the greatest integer less than or equal to n.
 If n is an exact number, floor returns an integer, otherwise a double.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L129" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/gcd">gcd</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (gcd a b)
 </pre>
   <pre id="var-docstr">(gcd a b) returns the greatest common divisor of a and b</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L162" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/lcm">lcm</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (lcm a b)
 </pre>
   <pre id="var-docstr">(lcm a b) returns the least common multiple of a and b</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L169" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/round">round</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (round n)
 </pre>
   <pre id="var-docstr">(round n) rounds to the nearest integer.
 round always returns an integer.  Rounds up for values exactly in between two integers.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L153" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.math/sqrt">sqrt</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sqrt n)
 </pre>
   <pre id="var-docstr">Square root, but returns exact number if possible.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/86e90011e274910c618a5592d21ba3ce290a6855/src/clojure/contrib/math.clj#L215" id="var-source">Source</a>
 </div>
 

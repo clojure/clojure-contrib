@@ -1,4 +1,23 @@
 
+.error {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 10px;
+background-repeat: no-repeat;
+background-position: 10px center;
+width: 480px;
+}
+
+.error {
+color: #D8000C;
+background-color: #FFBABA;
+}
+
+.deprecation-warning {
+  font-weight: bold;
+  color: #D8000C;
+}
+
 body {margin: 0;padding: 0;background-color: #e3e3e3;border-top: 4px solid #b3ccfe;color: #272727}
 body, .wiki, #Content, .wikipage {font-family: "Lucida Grande","Trebuchet MS","Bitstream Vera Sans",Verdana,Helvetica,sans-serif;font-size: 12px;line-height: 18px;}
 #leftcolumn .wiki_link, #toc, #toc a, .toc-header {font-size: 11px;line-height: 18px;text-decoration: none}

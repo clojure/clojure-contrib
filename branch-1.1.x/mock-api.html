@@ -107,6 +107,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.mock</span>
 <p></p>
 <h2>Overview</h2>
@@ -120,6 +139,8 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.mock/calls">calls</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (calls val)
        (calls val expectation-hash)
 </pre>
@@ -129,14 +150,16 @@ this function will be returned returned by the expected function. If both this
 and returns are specified, the return value of "calls" will have precedence.
 Usage:
 (calls some-fn expectation-hash?)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L216" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/expect">expect</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (expect expect-bindings &amp; body)
 </pre>
   <pre id="var-docstr">Use expect to redirect calls to dependent functions that are made within the
@@ -146,14 +169,16 @@ Return values can also be specified as needed.
 Usage:
 (expect [dep-fn (has-args [arg-pred1] (times n (returns x)))]
   (function-under-test a b c))</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L265" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/has-args">has-args</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (has-args arg-pred-forms)
        (has-args arg-pred-forms expect-hash-form)
 </pre>
@@ -165,27 +190,31 @@ Only specify as many predicates as you are interested in verifying. The rest
 of the values are safely ignored.
 Usage:
 (has-args [arg-pred-1 arg-pred-2 ... arg-pred-n] expectation-hash?)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L228" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/has-matching-signature?">has-matching-signature?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (has-matching-signature? fn-name args)
 </pre>
   <pre id="var-docstr">Calls no-matching-function-signature if no match is found for the given
 function. If no argslist meta data is available for the function, it is
 not called.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L105" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/make-arg-checker">make-arg-checker</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-arg-checker arg-preds arg-pred-forms)
 </pre>
   <pre id="var-docstr">Creates the argument verifying function for a replaced dependency within
@@ -193,27 +222,31 @@ the expectation bound scope. These functions take the additional argument
 of the name of the replaced function, then the rest of their args. It is
 designed to be called from the mock function generated in the first argument
 of the mock info object created by make-mock.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L116" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/make-count-checker">make-count-checker</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-count-checker pred pred-form)
 </pre>
   <pre id="var-docstr">creates the count checker that is invoked at the end of an expectation, after
 the code under test has all been executed. The function returned takes the
 name of the associated dependency and the invocation count as arguments.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L131" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/make-mock">make-mock</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-mock fn-name expectation-hash)
 </pre>
   <pre id="var-docstr">creates a vector containing the following information for the named function:
@@ -222,14 +255,16 @@ increases count, returns return value.
 2. an atom containing the invocation count
 3. the invocation count checker function
 4. a symbol of the name of the function being replaced.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L150" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/returns">returns</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (returns val)
        (returns val expectation-hash)
 </pre>
@@ -238,14 +273,16 @@ a value to be returned by the expectation after a successful invocation
 matching its expected arguments (if applicable).
 Usage:
 (returns ret-value expectation-hash?)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L205" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/times">times</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (times times-fn)
        (times times-fn expectation-hash)
 </pre>
@@ -260,20 +297,22 @@ Usage:
 (times n)
 (times #(&gt; n %))
 (times n expectation-hash)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L246" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.mock/validate-counts">validate-counts</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (validate-counts mock-data)
 </pre>
   <pre id="var-docstr">given the sequence of all mock data for the expectation, simply calls the
 count checker for each dependency.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L175" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">mock.test-adapter</h2>
@@ -285,6 +324,8 @@ count checker for each dependency.</pre>
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/calls">calls</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (calls val)
        (calls val expectation-hash)
 </pre>
@@ -294,13 +335,15 @@ this function will be returned returned by the expected function. If both this
 and returns are specified, the return value of "calls" will have precedence.
 Usage:
 (calls some-fn expectation-hash?)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L216" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/has-args">has-args</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (has-args arg-pred-forms)
        (has-args arg-pred-forms expect-hash-form)
 </pre>
@@ -312,25 +355,29 @@ Only specify as many predicates as you are interested in verifying. The rest
 of the values are safely ignored.
 Usage:
 (has-args [arg-pred-1 arg-pred-2 ... arg-pred-n] expectation-hash?)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L228" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/has-matching-signature?">has-matching-signature?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (has-matching-signature? fn-name args)
 </pre>
   <pre id="var-docstr">Calls no-matching-function-signature if no match is found for the given
 function. If no argslist meta data is available for the function, it is
 not called.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L105" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/make-arg-checker">make-arg-checker</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-arg-checker arg-preds arg-pred-forms)
 </pre>
   <pre id="var-docstr">Creates the argument verifying function for a replaced dependency within
@@ -338,25 +385,29 @@ the expectation bound scope. These functions take the additional argument
 of the name of the replaced function, then the rest of their args. It is
 designed to be called from the mock function generated in the first argument
 of the mock info object created by make-mock.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L116" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/make-count-checker">make-count-checker</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-count-checker pred pred-form)
 </pre>
   <pre id="var-docstr">creates the count checker that is invoked at the end of an expectation, after
 the code under test has all been executed. The function returned takes the
 name of the associated dependency and the invocation count as arguments.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L131" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/make-mock">make-mock</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-mock fn-name expectation-hash)
 </pre>
   <pre id="var-docstr">creates a vector containing the following information for the named function:
@@ -365,25 +416,29 @@ increases count, returns return value.
 2. an atom containing the invocation count
 3. the invocation count checker function
 4. a symbol of the name of the function being replaced.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L150" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/report-problem">report-problem</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (report-problem fn-name expected actual msg)
 </pre>
   <pre id="var-docstr">This function is designed to be used in a binding macro to override
 the report-problem function in clojure.contrib.mock. Instead of printing
 the error to the console, the error is logged via clojure.test.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock/test_adapter.clj#L19" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/returns">returns</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (returns val)
        (returns val expectation-hash)
 </pre>
@@ -392,13 +447,15 @@ a value to be returned by the expectation after a successful invocation
 matching its expected arguments (if applicable).
 Usage:
 (returns ret-value expectation-hash?)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L205" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/times">times</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (times times-fn)
        (times times-fn expectation-hash)
 </pre>
@@ -413,19 +470,21 @@ Usage:
 (times n)
 (times #(&gt; n %))
 (times n expectation-hash)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L246" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.mock.test-adapter/validate-counts">validate-counts</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (validate-counts mock-data)
 </pre>
   <pre id="var-docstr">given the sequence of all mock data for the expectation, simply calls the
 count checker for each dependency.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a4a4a534d7dddc1d58fc93a216192bf4bb7b20ff/src/clojure/contrib/mock.clj#L175" id="var-source">Source</a>
 </div>
 

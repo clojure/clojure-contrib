@@ -73,6 +73,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.fcase</span>
 <p></p>
 <h2>Overview</h2>
@@ -93,20 +112,24 @@ inclusion of "condp" in clojure.core as of Clojure SVN rev. 1180.</pre>
   <hr />
   <h2 id="clojure.contrib.fcase/case">case</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (case test-value &amp; clauses)
 </pre>
   <pre id="var-docstr">Like cond, but test-value is compared against the value of each
 test expression with =.  If they are equal, executes the "body"
 expression.  Optional last expression is executed if none of the
 test expressions match.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/d9c42218f493e7eb261677047008cedb67364ee8/src/clojure/contrib/fcase.clj#L79" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.fcase/fcase">fcase</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fcase compare-fn case-value &amp; test-expr-clauses)
 </pre>
   <pre id="var-docstr">Generic switch/case macro.  'fcase' is short for 'function case'.
@@ -133,45 +156,51 @@ See specific forms of this macro in 'case' and 're-case'.
 The test expressions in 'fcase' are always evaluated linearly, in
 order.  For a large number of case expressions it may be more
 efficient to use a hash lookup.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/d9c42218f493e7eb261677047008cedb67364ee8/src/clojure/contrib/fcase.clj#L40" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.fcase/in-case">in-case</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (in-case test-value &amp; clauses)
 </pre>
   <pre id="var-docstr">Like case, but test expressions are sequences.  The test expression
 is true if any item in the sequence is equal (tested with '=') to
 the test value.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/d9c42218f493e7eb261677047008cedb67364ee8/src/clojure/contrib/fcase.clj#L103" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.fcase/instance-case">instance-case</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (instance-case test-value &amp; clauses)
 </pre>
   <pre id="var-docstr">Like case, but the test expressions are Java class names, tested with
 'instance?'.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/d9c42218f493e7eb261677047008cedb67364ee8/src/clojure/contrib/fcase.clj#L93" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.fcase/re-case">re-case</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (re-case test-value &amp; clauses)
 </pre>
   <pre id="var-docstr">Like case, but the test expressions are regular expressions, tested
 with re-find.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/d9c42218f493e7eb261677047008cedb67364ee8/src/clojure/contrib/fcase.clj#L87" id="var-source">Source</a>
 </div>
 

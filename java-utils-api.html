@@ -93,6 +93,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard, Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.java-utils</span>
 <p></p>
 <h2>Overview</h2>
@@ -103,17 +122,17 @@ Design goals:
 (1) Ease-of-use. These APIs should be convenient. Performance is secondary.
 
 (2) Duck typing. I hate having to think about the difference between
-    a string that names a file, and a File. Ditto for a ton of other 
+    a string that names a file, and a File. Ditto for a ton of other
     wrapper classes in the Java world (URL, InternetAddress). With these
     APIs you should be able to think about domain equivalence, not type
     equivalence.
 
 (3) No bossiness. I am not marking any of these functions as private
-    the docstrings will tell you the intended usage but do what works for you. 					
+    the docstrings will tell you the intended usage but do what works for you.
 
 Feedback welcome!
 
-If something in this module violates the principle of least surprise, please 
+If something in this module violates the principle of least surprise, please
 let me (Stu) and the Clojure community know via the mailing list.
 Contributors:
 
@@ -131,11 +150,13 @@ Stuart Sierra</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/as-file">as-file</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">No usage documentation available</pre>
   <pre id="var-docstr">Interpret a String or a java.io.File as a File. Building block
 for clojure.contrib.java-utils/file, which you should prefer
 in most cases.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L63" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -143,18 +164,22 @@ in most cases.</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/as-properties">as-properties</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (as-properties m)
 </pre>
   <pre id="var-docstr">Convert any seq of pairs to a java.utils.Properties instance.
 Uses as-str to convert both keys and values into strings.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L143" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.java-utils/as-str">as-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (as-str)
        (as-str x)
        (as-str x &amp; ys)
@@ -164,7 +189,7 @@ its name will be used instead of its literal representation.
 
 Example:
    (str :foo :bar)     ;;=&gt; ":foo:bar"
-   (as-str :foo :bar)  ;;=&gt; "foobar" 
+   (as-str :foo :bar)  ;;=&gt; "foobar"
 
 Note that this does not apply to keywords or symbols nested within
 data structures; they will be rendered as with str.
@@ -172,7 +197,7 @@ data structures; they will be rendered as with str.
 Example:
    (str {:foo :bar})     ;;=&gt; "{:foo :bar}"
    (as-str {:foo :bar})  ;;=&gt; "{:foo :bar}" </pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L82" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -180,10 +205,12 @@ Example:
   <hr />
   <h2 id="clojure.contrib.java-utils/as-url">as-url</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (as-url arg)
 </pre>
   <pre id="var-docstr">Coerces argument (URL, URI, or String) to a java.net.URL.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L188" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -191,10 +218,12 @@ Example:
   <hr />
   <h2 id="clojure.contrib.java-utils/delete-file">delete-file</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (delete-file f &amp; [silently])
 </pre>
   <pre id="var-docstr">Delete file f. Raise an exception if it fails unless silently is true.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L169" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -202,11 +231,13 @@ Example:
   <hr />
   <h2 id="clojure.contrib.java-utils/delete-file-recursively">delete-file-recursively</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (delete-file-recursively f &amp; [silently])
 </pre>
   <pre id="var-docstr">Delete file f. If it's a directory, recursively delete all its contents.
 Raise an exception if any deletion fails unless silently is true.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L177" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -214,12 +245,14 @@ Raise an exception if any deletion fails unless silently is true.</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/file">file</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (file arg)
        (file parent child)
        (file parent child &amp; more)
 </pre>
   <pre id="var-docstr">Returns a java.io.File from string or file args.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L72" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -227,33 +260,39 @@ Raise an exception if any deletion fails unless silently is true.</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/get-system-property">get-system-property</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-system-property stringable)
        (get-system-property stringable default)
 </pre>
   <pre id="var-docstr">Get a system property.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L108" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.java-utils/read-properties">read-properties</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (read-properties file-able)
 </pre>
   <pre id="var-docstr">Read properties from file-able.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L153" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.java-utils/relative-path-string">relative-path-string</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">No usage documentation available</pre>
-  <pre id="var-docstr">Interpret a String or java.io.File as a relative path string. 
+  <pre id="var-docstr">Interpret a String or java.io.File as a relative path string.
 Building block for clojure.contrib.java-utils/file.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L49" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -261,21 +300,25 @@ Building block for clojure.contrib.java-utils/file.</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/set-system-properties">set-system-properties</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-system-properties settings)
 </pre>
   <pre id="var-docstr">Set some system properties. Nil clears a property.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L115" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.java-utils/wall-hack-field">wall-hack-field</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (wall-hack-field class-name field-name obj)
 </pre>
   <pre id="var-docstr">Access to private or protected field.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L213" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -283,13 +326,15 @@ Building block for clojure.contrib.java-utils/file.</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/wall-hack-method">wall-hack-method</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (wall-hack-method class-name method-name params obj &amp; args)
 </pre>
   <pre id="var-docstr">Calls a private or protected method.
 params is a vector of class which correspond to the arguments to the method
 obj is nil for static methods, the instance object otherwise
 the method name is given as a symbol or a keyword (something Named)</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L202" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -297,6 +342,8 @@ the method name is given as a symbol or a keyword (something Named)</pre>
   <hr />
   <h2 id="clojure.contrib.java-utils/with-system-properties">with-system-properties</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-system-properties settings &amp; body)
 </pre>
   <pre id="var-docstr">setting =&gt; property-name value
@@ -304,20 +351,22 @@ the method name is given as a symbol or a keyword (something Named)</pre>
 Sets the system properties to the supplied values, executes the body, and
 sets the properties back to their original values. Values of nil are
 translated to a clearing of the property.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L123" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.java-utils/write-properties">write-properties</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (write-properties m file-able)
        (write-properties m file-able comments)
 </pre>
   <pre id="var-docstr">Write properties to file-able.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b7c64bb25d0c1e5cd28a8001c14986f34b95a1cf/src/main/clojure/clojure/contrib/java_utils.clj#L160" id="var-source">Source</a>
 </div>
 

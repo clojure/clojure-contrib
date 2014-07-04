@@ -203,6 +203,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Jeffrey Straszheim</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.datalog</span>
 <p></p>
 <h2>Overview</h2>
@@ -210,7 +229,7 @@ namespace.
 
 
 <br />
-<span id="external-doc">Related documentation: 
+<span id="external-doc">Related documentation:
   <span id="external-doc-link">
     <br /><a href="doc/datalog.html">An Overview of Datalog</a>
   <br /></span><br />
@@ -220,24 +239,28 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.datalog/build-work-plan">build-work-plan</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (build-work-plan rules query)
 </pre>
   <pre id="var-docstr">Given a list of rules and a query, build a work plan that can be
 used to execute the query.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.datalog/run-work-plan">run-work-plan</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (run-work-plan work-plan database query-bindings)
 </pre>
   <pre id="var-docstr">Given a work plan, a database, and some query bindings, run the
 work plan and return the results.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog.clj#L56" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.database</h2>
@@ -249,26 +272,32 @@ work plan and return the results.</pre>
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-index">add-index</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-index db name key)
 </pre>
   <pre id="var-docstr">Adds an index to an empty relation named name</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L86" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-relation">add-relation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-relation db name keys)
 </pre>
   <pre id="var-docstr">Adds a relation to the database</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L81" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-tuple">add-tuple</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-tuple db rel-name tuple)
        (add-tuple rel tuple)
 </pre>
@@ -278,96 +307,114 @@ work plan and return the results.</pre>
 the new database.
 
 [rel tuple] adds to the relation object.  Returns the new relation.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L172" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-tuples">add-tuples</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-tuples db &amp; tupls)
 </pre>
   <pre id="var-docstr">Adds a collection of tuples to the db, as
 (add-tuples db
    [:rel-name :key-1 1 :key-2 2]
    [:rel-name :key-1 2 :key-2 3])</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/any-match?">any-match?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (any-match? db rn pt)
 </pre>
   <pre id="var-docstr">Finds if there are any matching records for the partial tuple</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L253" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/database-counts">database-counts</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (database-counts db)
 </pre>
   <pre id="var-docstr">Returns a map with the count of elements in each relation.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L144" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/database-merge">database-merge</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (database-merge dbs)
 </pre>
   <pre id="var-docstr">Merges databases together</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L277" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/database-merge-parallel">database-merge-parallel</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (database-merge-parallel dbs)
 </pre>
   <pre id="var-docstr">Merges databases together in parallel</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L282" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/datalog-relation">datalog-relation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (datalog-relation schema data indexes)
 </pre>
   <pre id="var-docstr">Creates a relation</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L76" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/ensure-relation">ensure-relation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (ensure-relation db name keys indexes)
 </pre>
   <pre id="var-docstr">If the database lacks the named relation, add it</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L96" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/get-relation">get-relation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-relation db rel-name)
 </pre>
   <pre id="var-docstr">Get a relation object by name</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L130" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/make-database">make-database</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-database &amp; commands)
 </pre>
   <pre id="var-docstr">Makes a database, like this
@@ -377,23 +424,27 @@ the new database.
   (relation :sally [:jen :becky])
   (index :sally :jen)
   (index :sally :becky))</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L109" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/merge-relations">merge-relations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (merge-relations r1 r2)
 </pre>
   <pre id="var-docstr">Merges two relations</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L267" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/remove-tuple">remove-tuple</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (remove-tuple db rel-name tuple)
        (remove-tuple rel tuple)
 </pre>
@@ -404,28 +455,32 @@ returns a new database.
 
 [rel tuple] removes the tuple from the relation.  Returns the new
 relation.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/replace-relation">replace-relation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-relation db rel-name rel)
 </pre>
   <pre id="var-docstr">Add or replace a fully constructed relation object to the database.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L135" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/select">select</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (select db rn pt)
 </pre>
   <pre id="var-docstr">finds all matching tuples to the partial tuple (pt) in the relation named (rn)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/database.clj#L248" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.literals</h2>
@@ -437,115 +492,137 @@ relation.</pre>
   <hr />
   <h2 id="clojure.contrib.datalog.literals/build-atom">build-atom</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (build-atom f type)
 </pre>
   <pre id="var-docstr">Returns an unevaluated expression (to be used in a macro) of an
 atom.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L131" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/build-seed-bindings">build-seed-bindings</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (build-seed-bindings s)
 </pre>
   <pre id="var-docstr">Given a seed literal, already adorned and in magic form, convert
 its bound constants to new variables.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L301" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/delta-literal">delta-literal</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (delta-literal l)
 </pre>
   <pre id="var-docstr">Given a literal l, return a delta version</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L318" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/get-adorned-bindings">get-adorned-bindings</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-adorned-bindings pred)
 </pre>
   <pre id="var-docstr">Get the bindings from this adorned literal.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L269" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/get-base-predicate">get-base-predicate</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-base-predicate pred)
 </pre>
   <pre id="var-docstr">Get the base predicate from this predicate.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L274" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/literal-magic?">literal-magic?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (literal-magic? lit)
 </pre>
   <pre id="var-docstr">Is this literal magic?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L294" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/magic-literal">magic-literal</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (magic-literal l)
 </pre>
   <pre id="var-docstr">Create a magic version of this adorned predicate.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L284" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/negated-literal">negated-literal</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (negated-literal l)
 </pre>
   <pre id="var-docstr">Given a literal l, return a negated version</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L312" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/negated?">negated?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (negated? l)
 </pre>
   <pre id="var-docstr">Is this literal a negated literal?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L110" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/positive?">positive?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (positive? l)
 </pre>
   <pre id="var-docstr">Is this a positive literal?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L115" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.literals/project-literal">project-literal</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (project-literal db lit bs)
        (project-literal db lit bs var?)
 </pre>
   <pre id="var-docstr">Project a stream of bindings onto a literal/relation. Returns a new
 db.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/literals.clj#L391" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.magic</h2>
@@ -557,77 +634,91 @@ db.</pre>
   <hr />
   <h2 id="clojure.contrib.datalog.magic/adorn-query">adorn-query</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (adorn-query q)
 </pre>
   <pre id="var-docstr">Adorn a query</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L26" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.magic/adorn-rules-set">adorn-rules-set</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (adorn-rules-set rs q)
 </pre>
   <pre id="var-docstr">Adorns the given rules-set for the given query.  (rs) is a
 rules-set, (q) is an adorned query.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L31" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.magic/build-partial-tuple">build-partial-tuple</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (build-partial-tuple q bindings)
 </pre>
   <pre id="var-docstr">Given a query and a set of bindings, build a partial tuple needed
 to extract the relation from the database.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L78" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.magic/magic-transform">magic-transform</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (magic-transform rs)
        (magic-transform rs i-preds)
 </pre>
   <pre id="var-docstr">Return a magic transformation of an adorned rules-set (rs).  The
 (i-preds) are the predicates of the intension database.  These
 default to the predicates within the rules-set.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L98" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.magic/seed-predicate-for-insertion">seed-predicate-for-insertion</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (seed-predicate-for-insertion q)
 </pre>
   <pre id="var-docstr">Given a query, return the predicate to use for database insertion.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L90" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.magic/seed-relation">seed-relation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (seed-relation q)
 </pre>
   <pre id="var-docstr">Given a magic form of a query, give back the literal form of its seed
 relation</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L63" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.magic/seed-rule">seed-rule</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (seed-rule q)
 </pre>
   <pre id="var-docstr">Given an adorned query, give back its seed rule</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/magic.clj#L71" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.rules</h2>
@@ -639,139 +730,165 @@ relation</pre>
   <hr />
   <h2 id="clojure.contrib.datalog.rules/&lt;-">&lt;-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&lt;- hd &amp; body)
 </pre>
   <pre id="var-docstr">Build a datalog rule.  Like this:
 
 (&lt;- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if &gt; ?y ?z))</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L66" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/?-">?-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (?- &amp; q)
 </pre>
   <pre id="var-docstr">Define a datalog query</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L84" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/all-predicates">all-predicates</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (all-predicates rs)
 </pre>
   <pre id="var-docstr">Given a rules-set, return all defined predicates</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L161" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/apply-rule">apply-rule</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (apply-rule db rule)
        (apply-rule db-1 db-2 rule)
 </pre>
   <pre id="var-docstr">Apply the rule against db-1, adding the results to the appropriate
 relation in db-2.  The relation will be created if needed.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L182" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/compute-sip">compute-sip</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (compute-sip bindings i-preds rule)
 </pre>
   <pre id="var-docstr">Given a set of bound column names, return an adorned sip for this
 rule.  A set of intensional predicates should be provided to
 determine what should be adorned.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L98" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/display-query">display-query</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (display-query query)
 </pre>
   <pre id="var-docstr">Return a query in a readable format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L37" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/display-rule">display-rule</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (display-rule rule)
 </pre>
   <pre id="var-docstr">Return the rule in a readable format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L30" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/is-safe?">is-safe?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (is-safe? rule)
 </pre>
   <pre id="var-docstr">Is the rule safe according to the datalog protocol?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L45" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/make-rules-set">make-rules-set</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-rules-set rs)
 </pre>
   <pre id="var-docstr">Given an existing set of rules, make it a 'rules-set' for
 printing.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L127" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/non-base-rules">non-base-rules</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (non-base-rules rs)
 </pre>
   <pre id="var-docstr">Return a collection of rules that depend, somehow, on other rules</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L166" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/predicate-map">predicate-map</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (predicate-map rs)
 </pre>
   <pre id="var-docstr">Given a rules-set, return a map of rules keyed by their predicates.
 Each value will be a set of rules.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/return-rule-data">return-rule-data</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (return-rule-data rule)
 </pre>
   <pre id="var-docstr">Returns an untypted rule that will be fully printed</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L79" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/rules-set">rules-set</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rules-set &amp; rules)
 </pre>
   <pre id="var-docstr">Given a collection of rules return a rules set</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/0f94c13af8becfa9eab18652572bab62fcb4c002/modules/datalog/src/main/clojure/clojure/contrib/datalog/rules.clj#L135" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.softstrat</h2>
@@ -783,21 +900,25 @@ Each value will be a set of rules.</pre>
   <hr />
   <h2 id="clojure.contrib.datalog.softstrat/build-soft-strat-work-plan">build-soft-strat-work-plan</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (build-soft-strat-work-plan rs q)
 </pre>
   <pre id="var-docstr">Return a work plan for the given rules-set and query</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/softstrat.clj#L115" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.softstrat/get-all-relations">get-all-relations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-all-relations ws)
 </pre>
   <pre id="var-docstr">Return a set of all relation names defined in this workplan</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/softstrat.clj#L121" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.util</h2>
@@ -809,46 +930,56 @@ Each value will be a set of rules.</pre>
   <hr />
   <h2 id="clojure.contrib.datalog.util/is-query-var?">is-query-var?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (is-query-var? sym)
 </pre>
   <pre id="var-docstr">Is this a query variable: e.g. a symbol prefixed with ??</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L33" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.util/is-var?">is-var?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (is-var? sym)
 </pre>
   <pre id="var-docstr">Is this a logic variable: e.g. a symbol prefixed with a ?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L25" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.util/keys-to-vals">keys-to-vals</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (keys-to-vals m ks)
 </pre>
   <pre id="var-docstr">Given a map and a collection of keys, return the collection of vals</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L49" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.util/map-values">map-values</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (map-values f hash)
 </pre>
   <pre id="var-docstr">Like map, but works over the values of a hash map</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L41" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.util/preduce">preduce</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (preduce f data)
 </pre>
   <pre id="var-docstr">Similar to merge-with, but the contents of each key are merged in
@@ -856,28 +987,32 @@ parallel using f.
 
 f - a function of 2 arguments.
 data - a collection of hashes.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L62" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.util/reverse-map">reverse-map</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reverse-map m)
 </pre>
   <pre id="var-docstr">Reverse the keys/values of a map</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L54" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.util/trace-datalog">trace-datalog</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (trace-datalog &amp; body)
 </pre>
   <pre id="var-docstr">If *test-datalog* is set to true, run the enclosed commands</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/datalog/src/main/clojure/clojure/contrib/datalog/util.clj#L82" id="var-source">Source</a>
 </div>
 

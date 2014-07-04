@@ -125,6 +125,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.str-utils2</span>
 <p></p>
 <h2>Overview</h2>
@@ -133,7 +152,7 @@ is intented as a replacement for clojure.contrib.str-utils.
 
 You cannot (use 'clojure.contrib.str-utils2) because it defines
 functions with the same names as functions in clojure.core.
-Instead, do (require '[clojure.contrib.str-utils2 :as s]) 
+Instead, do (require '[clojure.contrib.str-utils2 :as s])
 or something similar.
 
 Goals:
@@ -152,17 +171,21 @@ Some ideas are borrowed from
   <hr />
   <h2 id="clojure.contrib.str-utils2/blank?">blank?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (blank? s)
 </pre>
   <pre id="var-docstr">True if s is nil, empty, or contains only whitespace.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L102" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/butlast">butlast</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (butlast s n)
 </pre>
   <pre id="var-docstr">Returns s without the last n characters.  Returns an empty string
@@ -170,73 +193,85 @@ if n is greater than the length of s.
 
 Note the argument order is the opposite of clojure.core/butlast;
 this is to keep the string as the first argument for use with -&gt;</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L128" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/capitalize">capitalize</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (capitalize s)
 </pre>
   <pre id="var-docstr">Converts first character of the string to upper-case, all other
 characters to lower-case.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L285" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/chomp">chomp</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (chomp s)
 </pre>
   <pre id="var-docstr">Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L258" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/chop">chop</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (chop s)
 </pre>
   <pre id="var-docstr">Removes the last character of string, does nothing on a zero-length
 string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L249" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/codepoints">codepoints</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (codepoints s)
 </pre>
   <pre id="var-docstr">Returns a sequence of integer Unicode code points in s.  Handles
 Unicode supplementary characters (above U+FFFF) correctly.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L77" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/contains?">contains?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (contains? s substring)
 </pre>
   <pre id="var-docstr">True if s contains the substring.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L364" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/dochars">dochars</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (dochars bindings &amp; body)
 </pre>
   <pre id="var-docstr">bindings =&gt; [name string]
@@ -244,14 +279,16 @@ Unicode supplementary characters (above U+FFFF) correctly.</pre>
 Repeatedly executes body, with name bound to each character in
 string.  Does NOT handle Unicode supplementary characters (above
 U+FFFF).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L37" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/docodepoints">docodepoints</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (docodepoints bindings &amp; body)
 </pre>
   <pre id="var-docstr">bindings =&gt; [name string]
@@ -259,14 +296,16 @@ U+FFFF).</pre>
 Repeatedly executes body, with name bound to the integer code point
 of each Unicode character in the string.  Handles Unicode
 supplementary characters (above U+FFFF) correctly.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L53" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/drop">drop</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (drop s n)
 </pre>
   <pre id="var-docstr">Drops first n characters from s.  Returns an empty string if n is
@@ -274,96 +313,112 @@ greater than the length of s.
 
 Note the argument order is the opposite of clojure.core/drop; this
 is to keep the string as the first argument for use with -&gt;</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L117" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/escape">escape</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (escape s cmap)
 </pre>
   <pre id="var-docstr">Returns a new String by applying cmap (a function or a map) to each
 character in s.  If cmap returns nil, the original character is
 added to the output unchanged.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L90" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/get">get</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get s i)
 </pre>
   <pre id="var-docstr">Gets the i'th character in string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L369" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/grep">grep</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (grep re coll)
 </pre>
   <pre id="var-docstr">Filters elements of coll by a regular expression.  The String
 representation (with str) of each element is tested with re-find.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L317" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/join">join</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (join separator coll)
 </pre>
   <pre id="var-docstr">Returns a string of all elements in coll, separated by
 separator.  Like Perl's join.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L243" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/lower-case">lower-case</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (lower-case s)
 </pre>
   <pre id="var-docstr">Converts string to all lower-case.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L348" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/ltrim">ltrim</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (ltrim s)
 </pre>
   <pre id="var-docstr">Removes whitespace from the left side of string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L294" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/map-str">map-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (map-str f coll)
 </pre>
   <pre id="var-docstr">Apply f to each element of coll, concatenate all results into a
 String.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L310" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/partial">partial</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (partial f &amp; args)
 </pre>
   <pre id="var-docstr">Like clojure.core/partial for functions that take their primary
@@ -375,14 +430,16 @@ first argument to f.
 
 Example: (str-utils2/partial str-utils2/take 2)
          ;;=&gt; (fn [s] (str-utils2/take s 2))</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L323" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/partition">partition</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (partition s re)
 </pre>
   <pre id="var-docstr">Splits the string into a lazy sequence of substrings, alternating
@@ -393,28 +450,32 @@ string matches.
 
 For example: (partition "abc123def" #"[a-z]+")
 returns: ("" "abc" "123" "def")</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L222" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/repeat">repeat</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (repeat s n)
 </pre>
   <pre id="var-docstr">Returns a new String containing s repeated n times.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L146" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/replace">replace</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace string pattern replacement)
 </pre>
-  <pre id="var-docstr">Replaces all instances of pattern in string with replacement.  
+  <pre id="var-docstr">Replaces all instances of pattern in string with replacement.
 
 Allowed argument types for pattern and replacement are:
  1. String and String
@@ -422,16 +483,18 @@ Allowed argument types for pattern and replacement are:
  3. regex Pattern and String
     (Uses java.util.regex.Matcher.replaceAll)
  4. regex Pattern and function
-    (Calls function with re-groups of each match, uses return 
+    (Calls function with re-groups of each match, uses return
      value as replacement.)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L156" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/replace-first">replace-first</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-first s pattern replacement)
 </pre>
   <pre id="var-docstr">Replaces the first instance of pattern in s with replacement.
@@ -441,115 +504,133 @@ Allowed argument types for pattern and replacement are:
  2. regex Pattern and String
     (Uses java.util.regex.Matcher.replaceAll)
  3. regex Pattern and function</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L192" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/reverse">reverse</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reverse s)
 </pre>
   <pre id="var-docstr">Returns s with its characters reversed.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/rtrim">rtrim</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rtrim s)
 </pre>
   <pre id="var-docstr">Removes whitespace from the right side of string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L299" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/split">split</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (split s re)
        (split s re limit)
 </pre>
   <pre id="var-docstr">Splits string on a regular expression.  Optional argument limit is
 the maximum number of splits.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L353" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/split-lines">split-lines</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (split-lines s)
 </pre>
   <pre id="var-docstr">Splits s on \n or \r\n.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L304" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/swap-case">swap-case</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (swap-case s)
 </pre>
   <pre id="var-docstr">Changes upper case characters to lower case and vice-versa.
 Handles Unicode supplementary characters correctly.  Uses the
 locale-sensitive String.toUpperCase() and String.toLowerCase()
 methods.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L267" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/tail">tail</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (tail s n)
 </pre>
   <pre id="var-docstr">Returns the last n characters of s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L139" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/take">take</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (take s n)
 </pre>
   <pre id="var-docstr">Take first n characters from s, up to the length of s.
 
 Note the argument order is the opposite of clojure.core/take; this
 is to keep the string as the first argument for use with -&gt;</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L107" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/trim">trim</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (trim s)
 </pre>
   <pre id="var-docstr">Removes whitespace from both ends of string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L359" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils2/upper-case">upper-case</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (upper-case s)
 </pre>
   <pre id="var-docstr">Converts string to all upper-case.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/4b4f6ab5bcab58c4219eb50395bd366daea3ecc3/src/clojure/contrib/str_utils2.clj#L343" id="var-source">Source</a>
 </div>
 

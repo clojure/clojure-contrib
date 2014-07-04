@@ -81,6 +81,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Chris Houser</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.error-kit</span>
 <p></p>
 <h2>Overview</h2>
@@ -97,57 +116,67 @@ or API adjustments.</pre>
   <hr />
   <h2 id="clojure.contrib.error-kit/bind-continue">bind-continue</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (bind-continue continue-name [args*] &amp; body)
 </pre>
   <pre id="var-docstr">Special form to be used inside a 'with-handler'.
 Control can be passed to this 'continue' form from a 'raise' enclosed
 in this with-handler's dynamic scope, when this 'continue-name' is
 given to a 'continue' form.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L150" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/deferror">deferror</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (deferror name [parent-error?] doc-string? [args*] &amp; body)
        (deferror name [parent-error?] doc-string? args-destruct-map &amp; body)
 </pre>
   <pre id="var-docstr">Define a new error type</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L59" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/do-not-handle">do-not-handle</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-not-handle)
 </pre>
   <pre id="var-docstr">Use in a tail position of a 'handle' form to indicate 'raise' should
 not consider the error handled, but should continue searching for an
 appropriate 'handle' form.  Allows finer-grain control over catching
 than just the error type.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L117" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/error">error</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (error details)
 </pre>
   <pre id="var-docstr">Base type for all error-kit errors</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/handle">handle</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (handle error-name? [args*] &amp; body)
        (handle error-name? args-destruct-map-args &amp; body)
 </pre>
@@ -159,57 +188,65 @@ be executed for regardless of the type of error raised.  The body
 may return a value, in which case that will be the return value of
 the entire 'with-handler' form, or it may use any of the special
 return forms, 'do-not-handle', 'continue-with', or 'continue'.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L138" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/raise">raise</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (raise err-name &amp; args)
 </pre>
   <pre id="var-docstr">Raise an error of the type err-name, constructed with the given args</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L110" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/raise*">raise*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (raise* err)
 </pre>
   <pre id="var-docstr">Raise the given error object, best if created by an error
 constructor defined with deferror.  See also 'raise' macro.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L86" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/throw-msg">throw-msg</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (throw-msg class-name)
 </pre>
   <pre id="var-docstr">Returns a function that throws a Java Exception with the given
 name.  Useful to associate a new error-kit error type with a
 particular Java Exception class, via the :unhandled error key.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L39" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.error-kit/with-handler">with-handler</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-handler &amp; forms)
 </pre>
   <pre id="var-docstr">This is error-kit's dynamic scope form.  The body will be executed
 in a dynamic context that includes all of the following 'handle' and
 'bind-continue' forms.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e5b7819ef66410a87b8072417dc2f09ac4ddb03f/src/clojure/contrib/error_kit.clj#L163" id="var-source">Source</a>
 </div>
 

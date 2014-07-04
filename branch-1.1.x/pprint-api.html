@@ -139,22 +139,41 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Tom Faulhaber</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.pprint</span>
 <p></p>
 <h2>Overview</h2>
 <pre id="namespace-docstr">This module comprises two elements:
-1) A pretty printer for Clojure data structures, implemented in the 
+1) A pretty printer for Clojure data structures, implemented in the
    function "pprint"
-2) A Common Lisp compatible format function, implemented as 
-   "cl-format" because Clojure is using the name "format" 
+2) A Common Lisp compatible format function, implemented as
+   "cl-format" because Clojure is using the name "format"
    for its Java-based format function.
 
-See documentation for those functions for more information or complete 
+See documentation for those functions for more information or complete
 documentation on the the clojure-contrib web site on github.</pre>
 
 
 <br />
-<span id="external-doc">Related documentation: 
+<span id="external-doc">Related documentation:
   <span id="external-doc-link">
     <br /><a href="doc/pprint/CommonLispFormat.html">A Common Lisp-compatible Format Function</a>
   <br /></span><span id="external-doc-link">
@@ -166,201 +185,233 @@ documentation on the the clojure-contrib web site on github.</pre>
   <hr />
   <h2 id="clojure.contrib.pprint/*code-dispatch*">*code-dispatch*</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (*code-dispatch* object)
 </pre>
   <pre id="var-docstr">The pretty print dispatch function for pretty printing Clojure code.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/eb73c54687a9ed63dc939bbe886170f4a47455ed/src/clojure/contrib/pprint/dispatch.clj#L354" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-base*">*print-base*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The base to use for printing integers and rationals.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L78" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-circle*">*print-circle*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Mark circular structures (N.B. This is not yet used)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L56" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-lines*">*print-lines*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L51" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-miser-width*">*print-miser-width*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
-  <pre id="var-docstr">The column at which to enter miser style. Depending on the dispatch table, 
-miser style add newlines in more places to try to keep lines short allowing for further 
+  <pre id="var-docstr">The column at which to enter miser style. Depending on the dispatch table,
+miser style add newlines in more places to try to keep lines short allowing for further
 levels of nesting.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L44" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-pprint-dispatch*">*print-pprint-dispatch*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The pretty print dispatch function. Use with-pprint-dispatch or set-pprint-dispatch
 to modify.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L33" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-pretty*">*print-pretty*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Bind to true if you want write to use pretty printing</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L29" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-radix*">*print-radix*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
-  <pre id="var-docstr">Print a radix specifier in front of integers and rationals. If *print-base* is 2, 8, 
-or 16, then the radix specifier used is #b, #o, or #x, respectively. Otherwise the 
+  <pre id="var-docstr">Print a radix specifier in front of integers and rationals. If *print-base* is 2, 8,
+or 16, then the radix specifier used is #b, #o, or #x, respectively. Otherwise the
 radix specifier is in the form #XXr where XX is the decimal value of *print-base* </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L72" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-right-margin*">*print-right-margin*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Pretty printing will try to avoid anything going beyond this column.
-Set it to nil to have pprint let the line be arbitrarily long. This will ignore all 
+Set it to nil to have pprint let the line be arbitrarily long. This will ignore all
 non-mandatory newlines.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-shared*">*print-shared*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Mark repeated structures rather than repeat them (N.B. This is not yet used)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L61" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*print-suppress-namespaces*">*print-suppress-namespaces*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
-  <pre id="var-docstr">Don't print namespaces with symbols. This is particularly useful when 
+  <pre id="var-docstr">Don't print namespaces with symbols. This is particularly useful when
 pretty printing the results of macro expansions</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L65" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/*simple-dispatch*">*simple-dispatch*</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (*simple-dispatch* object)
 </pre>
   <pre id="var-docstr">The pretty print dispatch function for simple data structure format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/eb73c54687a9ed63dc939bbe886170f4a47455ed/src/clojure/contrib/pprint/dispatch.clj#L125" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/cl-format">cl-format</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (cl-format writer format-in &amp; args)
 </pre>
   <pre id="var-docstr">An implementation of a Common Lisp compatible format function. cl-format formats its
-arguments to an output stream or string based on the format control string given. It 
+arguments to an output stream or string based on the format control string given. It
 supports sophisticated formatting of structured data.
 
-Writer is an instance of java.io.Writer, true to output to *out* or nil to output 
-to a string, format-in is the format control string and the remaining arguments 
+Writer is an instance of java.io.Writer, true to output to *out* or nil to output
+to a string, format-in is the format control string and the remaining arguments
 are the data to be formatted.
 
-The format control string is a string to be output with embedded 'format directives' 
+The format control string is a string to be output with embedded 'format directives'
 describing how to format the various arguments passed in.
 
-If writer is nil, cl-format returns the formatted result string. Otherwise, cl-format 
+If writer is nil, cl-format returns the formatted result string. Otherwise, cl-format
 returns nil.
 
 For example:
  (let [results [46 38 22]]
-        (cl-format true "There ~[are~;is~:;are~]~:* ~d result~:p: ~{~d~^, ~}~%" 
+        (cl-format true "There ~[are~;is~:;are~]~:* ~d result~:p: ~{~d~^, ~}~%"
                    (count results) results))
 
 Prints to *out*:
  There are 3 results: 46, 38, 22
 
-Detailed documentation on format control strings is available in the "Common Lisp the 
+Detailed documentation on format control strings is available in the "Common Lisp the
 Language, 2nd edition", Chapter 22 (available online at:
-<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000">http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000</a>) 
-and in the Common Lisp HyperSpec at 
+<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000">http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000</a>)
+and in the Common Lisp HyperSpec at
 <a href="http://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm">http://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm</a></pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/cl_format.clj#L26" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/compile-format">compile-format</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (compile-format format-str)
 </pre>
   <pre id="var-docstr">Compiles format-str into a compiled format which can be used as an argument
-to cl-format just like a plain format string. Use this function for improved 
+to cl-format just like a plain format string. Use this function for improved
 performance when you're using the same format string repeatedly</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/cl_format.clj#L1748" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/formatter">formatter</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (formatter format-in)
 </pre>
   <pre id="var-docstr">Makes a function which can directly run format-in. The function is
-fn [stream &amp; args] ... and returns nil unless the stream is nil (meaning 
+fn [stream &amp; args] ... and returns nil unless the stream is nil (meaning
 output to a string) in which case it returns the resulting string.
 
 format-in can be either a control string or a previously compiled format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/cl_format.clj#L1816" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/formatter-out">formatter-out</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (formatter-out format-in)
 </pre>
   <pre id="var-docstr">Makes a function which can directly run format-in. The function is
@@ -369,101 +420,115 @@ designed to be used with *out* set to an appropriate Writer. In particular,
 this is meant to be used as part of a pretty printer dispatch method.
 
 format-in can be either a control string or a previously compiled format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/cl_format.clj#L1830" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/fresh-line">fresh-line</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fresh-line)
 </pre>
   <pre id="var-docstr">Make a newline if the Writer is not already at the beginning of the line.
 N.B. Only works on ColumnWriters right now.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/cl_format.clj#L1152" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/pp">pp</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pp)
 </pre>
   <pre id="var-docstr">A convenience macro that pretty prints the last thing output. This is
 exactly equivalent to (pprint *1).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L241" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/pprint">pprint</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pprint object)
        (pprint object writer)
 </pre>
-  <pre id="var-docstr">Pretty print object to the optional output writer. If the writer is not provided, 
+  <pre id="var-docstr">Pretty print object to the optional output writer. If the writer is not provided,
 print the object to the currently bound value of *out*.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L229" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/pprint-indent">pprint-indent</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pprint-indent relative-to n)
 </pre>
-  <pre id="var-docstr">Create an indent at this point in the pretty printing stream. This defines how 
-following lines are indented. relative-to can be either :block or :current depending 
+  <pre id="var-docstr">Create an indent at this point in the pretty printing stream. This defines how
+following lines are indented. relative-to can be either :block or :current depending
 whether the indent should be computed relative to the start of the logical block or
-the current column position. n is an offset. 
+the current column position. n is an offset.
 
 Output is sent to *out* which must be a pretty printing writer.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L315" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/pprint-logical-block">pprint-logical-block</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pprint-logical-block options* body)
 </pre>
-  <pre id="var-docstr">Execute the body as a pretty printing logical block with output to *out* which 
-must be a pretty printing writer. When used from pprint or cl-format, this can be 
-assumed. 
+  <pre id="var-docstr">Execute the body as a pretty printing logical block with output to *out* which
+must be a pretty printing writer. When used from pprint or cl-format, this can be
+assumed.
 
-Before the body, the caller can optionally specify options: :prefix, :per-line-prefix, 
+Before the body, the caller can optionally specify options: :prefix, :per-line-prefix,
 and :suffix.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L286" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/pprint-newline">pprint-newline</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pprint-newline kind)
 </pre>
-  <pre id="var-docstr">Print a conditional newline to a pretty printing stream. kind specifies if the 
-newline is :linear, :miser, :fill, or :mandatory. 
+  <pre id="var-docstr">Print a conditional newline to a pretty printing stream. kind specifies if the
+newline is :linear, :miser, :fill, or :mandatory.
 
 Output is sent to *out* which must be a pretty printing writer.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L306" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/pprint-tab">pprint-tab</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pprint-tab kind colnum colinc)
 </pre>
   <pre id="var-docstr">Tab at this point in the pretty printing stream. kind specifies whether the tab
-is :line, :section, :line-relative, or :section-relative. 
+is :line, :section, :line-relative, or :section-relative.
 
 Colnum and colinc specify the target column and the increment to move the target
 forward if the output is already past the original target.
@@ -471,56 +536,64 @@ forward if the output is already past the original target.
 Output is sent to *out* which must be a pretty printing writer.
 
 THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L327" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/set-pprint-dispatch">set-pprint-dispatch</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-pprint-dispatch function)
 </pre>
   <pre id="var-docstr">Set the pretty print dispatch function to a function matching (fn [obj] ...)
 where obj is the object to pretty print. That function will be called with *out* set
 to a pretty printing writer to which it should do its printing.
 
-For example functions, see *simple-dispatch* and *code-dispatch* in 
+For example functions, see *simple-dispatch* and *code-dispatch* in
 clojure.contrib.pprint.dispatch.clj.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L246" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/use-method">use-method</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (use-method multifn dispatch-val func)
 </pre>
   <pre id="var-docstr">Installs a function as a new method of multimethod associated with dispatch-value. </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/eb73c54687a9ed63dc939bbe886170f4a47455ed/src/clojure/contrib/pprint/dispatch.clj#L19" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/with-pprint-dispatch">with-pprint-dispatch</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-pprint-dispatch function &amp; body)
 </pre>
   <pre id="var-docstr">Execute body with the pretty print dispatch function bound to function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L259" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/write">write</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (write object &amp; kw-args)
 </pre>
   <pre id="var-docstr">Write an object subject to the current bindings of the printer control variables.
-Use the kw-args argument to override individual variables for this call (and any 
+Use the kw-args argument to override individual variables for this call (and any
 recursive calls). Returns the string result if :stream is nil or nil otherwise.
 
 The following keyword arguments can be passed with values:
@@ -540,28 +613,30 @@ The following keyword arguments can be passed with values:
   :suppress-namespaces If true, no namespaces in symbols    Current value of *print-suppress-namespaces*
 
   * = not yet supported</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L186" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.pprint/write-out">write-out</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (write-out object)
 </pre>
-  <pre id="var-docstr">Write an object to *out* subject to the current bindings of the printer control 
-variables. Use the kw-args argument to override individual variables for this call (and 
+  <pre id="var-docstr">Write an object to *out* subject to the current bindings of the printer control
+variables. Use the kw-args argument to override individual variables for this call (and
 any recursive calls).
 
 *out* must be a PrettyWriter if pretty printing is enabled. This is the responsibility
 of the caller.
 
-This method is primarily intended for use by pretty print dispatch functions that 
+This method is primarily intended for use by pretty print dispatch functions that
 already know that the pretty printer will have set up their environment appropriately.
 Normal library clients should use the standard "write" interface. </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/74c5bf10a5e92c2f2ee83d09eb15938914f95fbe/src/clojure/contrib/pprint/pprint_base.clj#L161" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">pprint.examples.json</h2>
@@ -570,7 +645,7 @@ Normal library clients should use the standard "write" interface. </pre>
 This is an example of using a pretty printer dispatch function to generate JSON output</pre>
 
 
-<span id="see-also">See also: 
+<span id="see-also">See also:
   <span id="see-also-link">
     <a href="http://json.org/">JSON Home Page</a>
   </span><br />
@@ -579,26 +654,32 @@ This is an example of using a pretty printer dispatch function to generate JSON 
   <hr />
   <h2 id="clojure.contrib.pprint.examples.json/dispatch-json">dispatch-json</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (dispatch-json x)
 </pre>
   <pre id="var-docstr">The dispatch function for printing objects as JSON</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e20e8effe977640592b1f285d6c666492d74df00/src/clojure/contrib/pprint/examples/json.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.pprint.examples.json/json-str">json-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (json-str x)
 </pre>
   <pre id="var-docstr">Converts x to a JSON-formatted string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e20e8effe977640592b1f285d6c666492d74df00/src/clojure/contrib/pprint/examples/json.clj#L96" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.pprint.examples.json/print-json">print-json</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (print-json x)
 </pre>
   <pre id="var-docstr">Prints x as JSON.  Nil becomes JSON null.  Keywords become
@@ -606,8 +687,8 @@ strings, without the leading colon.  Maps become JSON objects, all
 other collection types become JSON arrays.  Java arrays become JSON
 arrays.  Unicode characters in strings are escaped as \uXXXX.
 Numbers print as with pr.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/e20e8effe977640592b1f285d6c666492d74df00/src/clojure/contrib/pprint/examples/json.clj#L87" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">pprint.examples.xml</h2>
@@ -619,24 +700,30 @@ Numbers print as with pr.</pre>
   <hr />
   <h2 id="clojure.contrib.pprint.examples.xml/*html-compatible*">*html-compatible*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">If true, empty tags will have a space before the closing /&gt;</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/2f7ddf7205bbd47ace5d2240c66a4686de18d7e7/src/clojure/contrib/pprint/examples/xml.clj#L27" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.pprint.examples.xml/*prxml-indent*">*prxml-indent*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The number of spaces to indent sub-tags.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/2f7ddf7205bbd47ace5d2240c66a4686de18d7e7/src/clojure/contrib/pprint/examples/xml.clj#L31" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.pprint.examples.xml/prxml">prxml</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (prxml &amp; args)
 </pre>
   <pre id="var-docstr">Print XML to *out*.  Vectors become XML tags: the first item is the
@@ -661,8 +748,8 @@ PSEUDO-TAGS: some keywords have special meaning:
 
   (prxml [:decl! {:version "1.1"}])
   ; =&gt; &lt;?xml version="1.1" encoding="UTF-8"?&gt;</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/2f7ddf7205bbd47ace5d2240c66a4686de18d7e7/src/clojure/contrib/pprint/examples/xml.clj#L92" id="var-source">Source</a>
 </div>
 

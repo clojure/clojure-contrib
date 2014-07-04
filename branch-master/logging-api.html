@@ -138,6 +138,25 @@ namespace.
   </h1>
 <span id="author-line">by <span id="author-name">Alex Taggart, with contributions and suggestions by Chris Dean, Phil
   Hagelberg, Richard Newman, and Timothy Pratley</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.logging</span>
 <p></p>
 <h2>Overview</h2>
@@ -191,271 +210,317 @@ in the user namespace, and :warn or higher in all other namespaces.</pre>
   <hr />
   <h2 id="clojure.contrib.logging/*force*">*force*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Overrides the default rules for choosing between logging directly or via an
 agent. Defaults to nil. See log* for details.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L94" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/*log-factory*">*log-factory*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An instance satisfying the LogFactory protocol. Used internally when needing
 to obtain an instance satisfying the Log protocol. Defaults to the value
 returned from find-factory. Can be rebound to provide alternate logging
 implementations</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L488" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/*logging-agent*">*logging-agent*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The default agent used for performing logging when direct logging is
 disabled. See log* for details.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L84" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/*tx-agent-levels*">*tx-agent-levels*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The set of levels that will require using an agent when logging from within a
 running transaction. Defaults to #{:info :warn}. See log* for details.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L89" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/Log">Log</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The protocol through which macros will interact with an underlying logging
 implementation.  Implementations should at least support the six specified
 logging levels if they wish to benefit from the level-specific macros.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L62" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/LogFactory">LogFactory</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The protocol through which macros will obtain an instance satisfying Log as
 well as providing information about the particular implementation being used.
 Implementations should be bound to *log-factory* in order to be picked up by
 this library.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L73" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/commons-logging">commons-logging</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (commons-logging)
 </pre>
   <pre id="var-docstr">Returns a commons-logging-based implementation of the LogFactory protocol, or
 nil if not available. End-users should not need to call this.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L334" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/debug">debug</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (debug message &amp; more)
        (debug throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Debug level logging using print-style args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L265" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/debugf">debugf</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (debugf fmt &amp; fmt-args)
        (debugf throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Debug level logging using format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L301" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/enabled?">enabled?</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (enabled? level)
        (enabled? level log-ns)
 </pre>
   <pre id="var-docstr">Returns true if the specific logging level is enabled.  Use of this function
 should only be necessary if one needs to execute alternate code paths beyond
 whether the log should be written to.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L164" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/error">error</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (error message &amp; more)
        (error throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Error level logging using print-style args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L283" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/errorf">errorf</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (errorf fmt &amp; fmt-args)
        (errorf throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Error level logging using format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L319" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/fatal">fatal</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fatal message &amp; more)
        (fatal throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Fatal level logging using print-style args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L289" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/fatalf">fatalf</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fatalf fmt &amp; fmt-args)
        (fatalf throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Fatal level logging using format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L325" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/find-factory">find-factory</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-factory)
 </pre>
   <pre id="var-docstr">Returns the first LogFactory found that is available from commons-logging,
 slf4j-logging, log4j-logging, or java-util-logging. End-users should not need
 to call this.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L475" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-enabled?">impl-enabled?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (impl-enabled? log level)
 </pre>
   <pre id="var-docstr">Implementation-specific check if a particular level is enabled. End-users
 should not need to call this.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-get-log">impl-get-log</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (impl-get-log factory log-ns)
 </pre>
   <pre id="var-docstr">Returns an implementation-specific Log by namespace. End-users should not
 need to call this.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-name">impl-name</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (impl-name factory)
 </pre>
   <pre id="var-docstr">Returns some text identifying the underlying implementation.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-write!">impl-write!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (impl-write! log level throwable message)
 </pre>
   <pre id="var-docstr">Implementation-specific write of a log message. End-users should not need
 to call this.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/info">info</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (info message &amp; more)
        (info throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Info level logging using print-style args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L271" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/infof">infof</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (infof fmt &amp; fmt-args)
        (infof throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Info level logging using format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L307" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/java-util-logging">java-util-logging</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (java-util-logging)
 </pre>
   <pre id="var-docstr">Returns a java.util.logging-based implementation of the LogFactory protocol,
 or nil if not available. End-users should not need to call this.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L439" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log">log</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log level message)
        (log level throwable message)
        (log log-ns level throwable message)
@@ -463,14 +528,16 @@ or nil if not available. End-users should not need to call this.</pre>
 </pre>
   <pre id="var-docstr">Evaluates and logs a message only if the specified level is enabled. See log*
 for more details.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L124" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log*">log*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log* log level throwable message)
 </pre>
   <pre id="var-docstr">Attempts to log a message, either directly or via an agent; does not check if
@@ -485,14 +552,16 @@ failed transactions though at the cost of repeat messages during retries.
 
 One can override the above by setting *force* to :direct or :agent; all
 subsequent writes will be direct or via an agent, respectively.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L99" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log-capture!">log-capture!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log-capture! log-ns)
        (log-capture! log-ns out-level err-level)
 </pre>
@@ -505,147 +574,171 @@ Note: use with-logs to redirect output of *out* or *err*.
 Warning: if the logging implementation is configured to output to System.out
 (as is the default with java.util.logging) then using this function will
 result in StackOverflowException when writing to the log.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log-stream">log-stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log-stream level log-ns)
 </pre>
   <pre id="var-docstr">Creates a PrintStream that will output to the log at the specified level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L189" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log-uncapture!">log-uncapture!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log-uncapture!)
 </pre>
   <pre id="var-docstr">Restores System.out and System.err to their original values.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L227" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log4j-logging">log4j-logging</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log4j-logging)
 </pre>
   <pre id="var-docstr">Returns a log4j-based implementation of the LogFactory protocol, or nil if
 not available. End-users should not need to call this.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L405" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/logf">logf</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (logf level fmt &amp; fmt-args)
        (logf level throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Logs a message using a format string and args. Can optionally take a
 throwable as its second arg. See level-specific macros, e.g., debugf.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/logp">logp</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (logp level message &amp; more)
        (logp level throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Logs a message using print style args. Can optionally take a throwable as its
 second arg. See level-specific macros, e.g., debug.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L138" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/slf4j-logging">slf4j-logging</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (slf4j-logging)
 </pre>
   <pre id="var-docstr">Returns a SLF4J-based implementation of the LogFactory protocol, or nil if
 not available. End-users should not need to call this.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L369" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/spy">spy</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (spy expr)
        (spy level expr)
 </pre>
   <pre id="var-docstr">Evaluates expr and writes the form and its result to the log. Returns the
 result of expr. Defaults to debug log level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L173" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/trace">trace</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (trace message &amp; more)
        (trace throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Trace level logging using print-style args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L259" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/tracef">tracef</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (tracef fmt &amp; fmt-args)
        (tracef throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Trace level logging using format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L295" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/warn">warn</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (warn message &amp; more)
        (warn throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Warn level logging using print-style args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L277" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/warnf">warnf</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (warnf fmt &amp; fmt-args)
        (warnf throwable fmt &amp; fmt-args)
 </pre>
   <pre id="var-docstr">Warn level logging using format.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L313" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/with-logs">with-logs</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-logs log-ns &amp; body)
        (with-logs [log-ns out-level err-level] &amp; body)
 </pre>
@@ -653,8 +746,8 @@ result of expr. Defaults to debug log level.</pre>
 specified log-ns value will be used to namespace all log entries.
 
 By default *out* and *err* write to :info and :error, respectively.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L236" id="var-source">Source</a>
 </div>
 

@@ -89,6 +89,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.probabilities.monte-carlo</span>
 <p></p>
 <h2>Overview</h2>
@@ -118,160 +137,186 @@ composed using operations defined in clojure.contrib.monads.</pre>
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/discrete">discrete</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (discrete dist)
 </pre>
   <pre id="var-docstr">A discrete distribution, defined by a map dist mapping values
 to probabilities. The sum of probabilities must be one.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L87" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/exponential">exponential</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (exponential lambda)
 </pre>
   <pre id="var-docstr">Transform a sequence of uniform random numbers in the interval [0, 1)
 into a sequence of exponential random numbers with parameter lambda.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L146" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/lognormal">lognormal</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (lognormal mu sigma)
 </pre>
   <pre id="var-docstr">Transform a sequence of uniform random numbesr in the interval [0, 1)
 into a sequence of lognormal random numbers with mean mu and standard
 deviation sigma.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L137" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/n-sphere">n-sphere</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (n-sphere n r)
 </pre>
   <pre id="var-docstr">Return a uniform distribution of n-dimensional vectors inside an
 n-sphere of radius r.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L228" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/normal">normal</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (normal mu sigma)
 </pre>
   <pre id="var-docstr">Transform a sequence urs of uniform random number in the interval [0, 1)
 into a sequence of normal random numbers with mean mu and standard
 deviation sigma.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L116" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/normal-box-muller">normal-box-muller</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (normal-box-muller mu sigma)
 </pre>
   <pre id="var-docstr">Transform a sequence of uniform random numbers in the interval [0, 1)
 into a sequence of normal random numbers with mean mu and standard
 deviation sigma.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L163" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/random-stream">random-stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (random-stream distribution random-stream-state)
 </pre>
   <pre id="var-docstr">Define a random stream by a distribution and the state of a
 random number stream with uniform distribution in [0, 1).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L62" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/reject">reject</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reject p dist)
 </pre>
   <pre id="var-docstr">Return the distribution that results from rejecting the values from
 dist that do not satisfy predicate p.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L74" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/sample">sample</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sample n dist)
 </pre>
   <pre id="var-docstr">Return the distribution of samples of length n from the
 distribution dist</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L182" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/sample-mean">sample-mean</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sample-mean n dist)
 </pre>
   <pre id="var-docstr">Return the distribution of the mean over n samples from the
 distribution dist</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L182" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/sample-mean-variance">sample-mean-variance</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sample-mean-variance n dist)
 </pre>
   <pre id="var-docstr">Return the distribution of the mean-and-variance (a vector containing
 the mean and the variance) over n samples from the distribution dist</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L182" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/sample-reduce">sample-reduce</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sample-reduce f n dist)
        (sample-reduce f val n dist)
 </pre>
   <pre id="var-docstr">Returns the distribution of the reduction of f over n samples from the
 distribution dist.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L182" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.probabilities.monte-carlo/sample-sum">sample-sum</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sample-sum n dist)
 </pre>
   <pre id="var-docstr">Return the distribution of the sum over n samples from the
 distribution dist.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/probabilities/monte_carlo.clj#L182" id="var-source">Source</a>
 </div>
 

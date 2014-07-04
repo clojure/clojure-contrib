@@ -77,6 +77,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stephen C. Gilardi</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.repl-ln</span>
 <p></p>
 <h2>Overview</h2>
@@ -91,17 +110,21 @@ input stream.</pre>
   <hr />
   <h2 id="clojure.contrib.repl-ln/print-repl-info">print-repl-info</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (print-repl-info)
 </pre>
   <pre id="var-docstr">Prints info about the current repl</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L208" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-ln/repl">repl</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (repl &amp; options)
 </pre>
   <pre id="var-docstr">A repl that supports line numbers. For definitions and evaluations made
@@ -118,36 +141,42 @@ for clojure.main/repl with the following change and additions:
 
      - :prompt-fmt, Prompt format string
        default: the prompt-fmt of the parent repl, or "%S:%L %N=&gt; "</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L217" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-ln/repl-info">repl-info</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (repl-info)
 </pre>
   <pre id="var-docstr">Returns a map of info about the current repl</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L202" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-ln/repl-prompt">repl-prompt</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (repl-prompt)
 </pre>
   <pre id="var-docstr">Returns the current repl prompt based on this repl's prompt-fmt</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L148" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-ln/set-repl-name">set-repl-name</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-repl-name)
        (set-repl-name name-fmt)
 </pre>
@@ -159,14 +188,16 @@ codes in the name to make the corresponding dynamic values part of it:
   %D - nesting depth in this thread
 
 With no arguments, resets the repl name to its default: "repl-%S"</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L157" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-ln/set-repl-prompt">set-repl-prompt</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-repl-prompt)
        (set-repl-prompt prompt-fmt)
 </pre>
@@ -180,14 +211,16 @@ the corresponding dynamic values part of it:
   %N - namespace name
 
 With no arguments, resets the repl pompt to its default: "%S:%L %N=&gt; "</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L180" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-ln/stream-repl">stream-repl</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (stream-repl &amp; options)
 </pre>
   <pre id="var-docstr">Repl entry point that provides convenient overriding of input, output,
@@ -195,8 +228,8 @@ and err streams via sequential keyword-value pairs. Default values
 for :in, :out, and :err are streams associated with System/in,
 System/out, and System/err using UTF-8 encoding. Also supports all the
 options provided by clojure.contrib.repl-ln/repl.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/3ec66e7b4e47c95d4cc27b0c405447117b2d5503/src/clojure/contrib/repl_ln.clj#L119" id="var-source">Source</a>
 </div>
 

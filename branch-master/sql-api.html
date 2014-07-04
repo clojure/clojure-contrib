@@ -123,13 +123,32 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stephen C. Gilardi</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.sql</span>
 <p></p>
 <h2>Overview</h2>
 <pre id="namespace-docstr">A Clojure interface to sql databases via jdbc.</pre>
 
 
-<span id="see-also">See also: 
+<span id="see-also">See also:
   <span id="see-also-link">
     <a href="http://github.com/clojure/clojure-contrib/blob/master/modules/sql/src/test/clojure/clojure/contrib/test_sql.clj">Example code</a>
   </span><br />
@@ -140,17 +159,21 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.sql/connection">connection</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (connection)
 </pre>
   <pre id="var-docstr">Returns the current database connection (or throws if there is none)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/create-table">create-table</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (create-table name &amp; specs)
 </pre>
   <pre id="var-docstr">Creates a table on the open database connection given a table name and
@@ -158,98 +181,114 @@ specs. Each spec is either a column spec: a vector containing a column
 name and optionally a type and other constraints, or a table-level
 constraint: a vector containing words that express the constraint. All
 words used to describe the table may be supplied as strings or keywords.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L107" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/delete-rows">delete-rows</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (delete-rows table where-params)
 </pre>
   <pre id="var-docstr">Deletes rows from a table. where-params is a vector containing a string
 providing the (optionally parameterized) selection criteria followed by
 values for any parameters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L161" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/do-commands">do-commands</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-commands &amp; commands)
 </pre>
   <pre id="var-docstr">Executes SQL commands on the open database connection.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L79" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/do-prepared">do-prepared</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-prepared sql &amp; param-groups)
 </pre>
   <pre id="var-docstr">Executes an (optionally parameterized) SQL prepared statement on the
 open database connection. Each param-group is a seq of values for all of
 the parameters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/drop-table">drop-table</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (drop-table name)
 </pre>
   <pre id="var-docstr">Drops a table on the open database connection given its name, a string
 or keyword</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L123" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/find-connection">find-connection</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-connection)
 </pre>
   <pre id="var-docstr">Returns the current database connection (or nil if there is none)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L27" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/insert-records">insert-records</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (insert-records table &amp; records)
 </pre>
   <pre id="var-docstr">Inserts records into a table. records are maps from strings or
 keywords (identifying columns) to values.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L154" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/insert-rows">insert-rows</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (insert-rows table &amp; rows)
 </pre>
   <pre id="var-docstr">Inserts complete rows into a table. Each row is a vector of values for
 each of the table's columns in order.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L148" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/insert-values">insert-values</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (insert-values table column-names &amp; value-groups)
 </pre>
   <pre id="var-docstr">Inserts rows into a table with values for specified columns only.
@@ -257,38 +296,44 @@ column-names is a vector of strings or keywords identifying columns. Each
 value-group is a vector containing a values for each column in
 order. When inserting complete rows (all columns), consider using
 insert-rows instead.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L130" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/is-rollback-only">is-rollback-only</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (is-rollback-only)
 </pre>
   <pre id="var-docstr">Returns true if the outermost transaction will rollback rather than
 commit when complete</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L73" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/set-rollback-only">set-rollback-only</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-rollback-only)
 </pre>
   <pre id="var-docstr">Marks the outermost transaction such that it will rollback rather than
 commit when complete</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L67" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/transaction">transaction</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (transaction &amp; body)
 </pre>
   <pre id="var-docstr">Evaluates body as a transaction on the open database connection. Any
@@ -298,14 +343,16 @@ evaluating the outermost body, or rolled back on any uncaught
 exception. If set-rollback-only is called within scope of the outermost
 transaction, the entire transaction will be rolled back rather than
 committed when complete.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L56" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/update-or-insert-values">update-or-insert-values</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (update-or-insert-values table where-params record)
 </pre>
   <pre id="var-docstr">Updates values on selected rows in a table, or inserts a new row when no
@@ -313,28 +360,32 @@ existing row matches the selection criteria. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
 strings or keywords (identifying columns) to updated values.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L186" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/update-values">update-values</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (update-values table where-params record)
 </pre>
   <pre id="var-docstr">Updates values on selected rows in a table. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
 strings or keywords (identifying columns) to updated values.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L172" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/with-connection">with-connection</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-connection db-spec &amp; body)
 </pre>
   <pre id="var-docstr">Evaluates body in the context of a new connection to a database then
@@ -359,22 +410,24 @@ DataSource:
 JNDI:
   :name        (required) a String or javax.naming.Name
   :environment (optional) a java.util.Map</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L30" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.sql/with-query-results">with-query-results</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-query-results results sql-params &amp; body)
 </pre>
   <pre id="var-docstr">Executes a query, then evaluates body with results bound to a seq of the
 results. sql-params is a vector containing a string providing
 the (optionally parameterized) SQL query followed by values for any
 parameters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bb336e9160e58cf411ce249cb6acd9a34106287/modules/sql/src/main/clojure/clojure/contrib/sql.clj#L199" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">sql.internal</h2>
@@ -386,26 +439,32 @@ parameters.</pre>
   <hr />
   <h2 id="clojure.contrib.sql.internal/connection*">connection*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (connection*)
 </pre>
   <pre id="var-docstr">Returns the current database connection (or throws if there is none)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L37" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/find-connection*">find-connection*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-connection*)
 </pre>
   <pre id="var-docstr">Returns the current database connection (or nil if there is none)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L32" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/get-connection">get-connection</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-connection {:keys [factory classname subprotocol subname datasource username password name environment], :as db-spec})
 </pre>
   <pre id="var-docstr">Creates a connection to a database. db-spec is a map containing values
@@ -429,64 +488,76 @@ DataSource:
 JNDI:
   :name        (required) a String or javax.naming.Name
   :environment (optional) a java.util.Map</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L66" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/print-sql-exception">print-sql-exception</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (print-sql-exception stream exception)
 </pre>
   <pre id="var-docstr">Prints the contents of an SQLException to stream</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L122" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/print-sql-exception-chain">print-sql-exception-chain</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (print-sql-exception-chain stream exception)
 </pre>
   <pre id="var-docstr">Prints a chain of SQLExceptions to stream</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L136" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/print-update-counts">print-update-counts</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (print-update-counts stream exception)
 </pre>
   <pre id="var-docstr">Prints the update counts from a BatchUpdateException to stream</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L144" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/rollback">rollback</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rollback)
        (rollback val)
 </pre>
   <pre id="var-docstr">Accessor for the rollback flag on the current connection</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L43" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/throw-rollback">throw-rollback</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (throw-rollback e)
 </pre>
   <pre id="var-docstr">Sets rollback and throws a wrapped exception</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L153" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/transaction*">transaction*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (transaction* func)
 </pre>
   <pre id="var-docstr">Evaluates func as a transaction on the open database connection. Any
@@ -496,31 +567,35 @@ evaluating the outermost body, or rolled back on any uncaught
 exception. If rollback is set within scope of the outermost transaction,
 the entire transaction will be rolled back rather than committed when
 complete.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L159" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/with-connection*">with-connection*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-connection* db-spec func)
 </pre>
   <pre id="var-docstr">Evaluates func in the context of a new connection to a database then
 closes the connection.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L113" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.sql.internal/with-query-results*">with-query-results*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-query-results* [sql &amp; params :as sql-params] func)
 </pre>
   <pre id="var-docstr">Executes a query, then evaluates func passing in a seq of the results as
 an argument. The first argument is a vector containing the (optionally
 parameterized) sql query string followed by values for any parameters.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/1be54b2f9bd3c9f35385a015b14fc93337bffcac/modules/sql/src/main/clojure/clojure/contrib/sql/internal.clj#L193" id="var-source">Source</a>
 </div>
 

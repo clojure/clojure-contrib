@@ -65,6 +65,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Chris Houser</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.shell-out</span>
 <p></p>
 <h2>Overview</h2>
@@ -79,19 +98,21 @@ collecting its stdout</pre>
   <hr />
   <h2 id="clojure.contrib.shell-out/sh">sh</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sh &amp; args)
 </pre>
   <pre id="var-docstr">Passes the given strings to Runtime.exec() to launch a sub-process.
 
 Options are
 
-:in    may be given followed by a String specifying text to be fed to the 
-       sub-process's stdin.  
-:out   option may be given followed by :bytes or a String. If a String 
-       is given, it will be used as a character encoding name (for 
-       example "UTF-8" or "ISO-8859-1") to convert the 
+:in    may be given followed by a String specifying text to be fed to the
+       sub-process's stdin.
+:out   option may be given followed by :bytes or a String. If a String
+       is given, it will be used as a character encoding name (for
+       example "UTF-8" or "ISO-8859-1") to convert the
        sub-process's stdout to a String which is returned.
-       If :bytes is given, the sub-process's stdout will be stored in 
+       If :bytes is given, the sub-process's stdout will be stored in
        a byte array and returned.  Defaults to UTF-8.
 :return-map
        when followed by boolean true, sh returns a map of
@@ -107,8 +128,8 @@ Options are
 
 You can bind :env or :dir for multiple operations using with-sh-env
 and with-sh-dir.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/6e721ff777dd52801cafe693868d8118a62076de/src/main/clojure/clojure/contrib/shell_out.clj#L86" id="var-source">Source</a>
 </div>
 

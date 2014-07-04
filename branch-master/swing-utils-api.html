@@ -81,6 +81,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.swing-utils</span>
 <p></p>
 <h2>Overview</h2>
@@ -94,79 +113,93 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.swing-utils/action-translation-table">action-translation-table</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Translation table for the make-action constructor.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L70" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/add-action-listener">add-action-listener</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-action-listener component f &amp; args)
 </pre>
   <pre id="var-docstr">Adds an ActionLister to component. When the action fires, f will be
 invoked with the event as its first argument followed by args.
 Returns the listener.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L23" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/add-key-typed-listener">add-key-typed-listener</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-key-typed-listener component f &amp; args)
 </pre>
   <pre id="var-docstr">Adds a KeyListener to component that only responds to KeyTyped events.
 When a key is typed, f is invoked with the KeyEvent as its first argument
 followed by args. Returns the listener.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L33" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/do-swing">do-swing</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-swing &amp; body)
 </pre>
   <pre id="var-docstr">Executes body in the Swing event thread asynchronously. Returns
 immediately after scheduling the execution.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L58" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/do-swing*">do-swing*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-swing* schedule thunk)
 </pre>
   <pre id="var-docstr">Runs thunk in the Swing event thread according to schedule:
 - :later =&gt; schedule the execution and return immediately
 - :now   =&gt; wait until the execution completes.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/do-swing-and-wait">do-swing-and-wait</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-swing-and-wait &amp; body)
 </pre>
   <pre id="var-docstr">Executes body in the Swing event thread synchronously. Returns
 after the execution is complete.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L64" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/make-action">make-action</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-action spec)
 </pre>
   <pre id="var-docstr">Create an Action proxy from the given action spec. The standard keys
@@ -174,31 +207,35 @@ recognised are: :name, :accelerator, :command-key, :long-desc,
 :short-desc, :mnemonic and :icon - corresponding to the similar named
 Action properties.  The :handler value is used in the actionPerformed
 method of the proxy to pass on the event.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L80" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/make-menubar">make-menubar</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-menubar menubar-items)
 </pre>
   <pre id="var-docstr">Create a menubar containing the given sequence of menu items. The menu
 items are described by a map as is detailed in the docstring of the
 add-menu-item function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L142" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.swing-utils/menu-constructor-dispatch">menu-constructor-dispatch</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">An atom containing the dispatch set for the add-menu-item method.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/swing-utils/src/main/clojure/clojure/contrib/swing_utils.clj#L97" id="var-source">Source</a>
 </div>
 

@@ -95,6 +95,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Chris Houser, Christophe Grand, Stephen Gilardi, Michel Salim</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.repl-utils</span>
 <p></p>
 <h2>Overview</h2>
@@ -108,71 +127,83 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.repl-utils/*local-javadocs*">*local-javadocs*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Ref to a list of local paths for Javadoc-generated HTML
 files.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/repl_utils/javadoc.clj#L18" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/*remote-javadocs*">*remote-javadocs*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Ref to a map from package name prefixes to URLs for remote
 Javadocs.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/repl_utils/javadoc.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/add-break-thread!">add-break-thread!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-break-thread!)
        (add-break-thread! t)
 </pre>
   <pre id="var-docstr">Add the given thread to break-threads so that it will be stopped
 any time the user presses Ctrl-C.  Calls start-handling-break for
 you.  Adds the current thread if none is given.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L168" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/add-local-javadoc">add-local-javadoc</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-local-javadoc path)
 </pre>
   <pre id="var-docstr">Adds to the list of local Javadoc paths.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/repl_utils/javadoc.clj#L43" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/add-remote-javadoc">add-remote-javadoc</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-remote-javadoc package-prefix url)
 </pre>
   <pre id="var-docstr">Adds to the list of remote Javadoc URLs.  package-prefix is the
 beginning of the package name that has docs at this URL.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/repl_utils/javadoc.clj#L48" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/apropos">apropos</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (apropos str-or-pattern)
 </pre>
-  <pre id="var-docstr">Given a regular expression or stringable thing, return a seq of 
+  <pre id="var-docstr">Given a regular expression or stringable thing, return a seq of
 all definitions in all currently-loaded namespaces that match the
 str-or-pattern.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L133" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -180,16 +211,20 @@ str-or-pattern.</pre>
   <hr />
   <h2 id="clojure.contrib.repl-utils/break-threads">break-threads</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L149" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/expression-info">expression-info</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (expression-info expr)
 </pre>
   <pre id="var-docstr">Uses the Clojure compiler to analyze the given s-expr.  Returns
@@ -199,26 +234,30 @@ not type info can be determined at compile-time.
 
 Example: (expression-info '(+ (int 5) (float 10)))
 Returns: {:class float, :primitive? true}</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L181" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/find-javadoc-url">find-javadoc-url</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-javadoc-url classname)
 </pre>
   <pre id="var-docstr">Searches for a URL for the given class name.  Tries
 *local-javadocs* first, then *remote-javadocs*.  Returns a string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/repl_utils/javadoc.clj#L54" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/get-source">get-source</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-source x)
 </pre>
   <pre id="var-docstr">Returns a string of the source code for the given symbol, if it can
@@ -228,7 +267,7 @@ it can't find the source.  For most REPL usage, 'source' is more
 convenient.
 
 Example: (get-source 'filter)</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L100" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -236,42 +275,50 @@ Example: (get-source 'filter)</pre>
   <hr />
   <h2 id="clojure.contrib.repl-utils/javadoc">javadoc</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (javadoc class-or-object)
 </pre>
   <pre id="var-docstr">Opens a browser window displaying the javadoc for the argument.
 Tries *local-javadocs* first, then *remote-javadocs*.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/repl_utils/javadoc.clj#L74" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/run">run</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (run ns-name &amp; args)
 </pre>
   <pre id="var-docstr">Loads the specified namespace and invokes its "main" function with
 optional args. ns-name is not evaluated.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L206" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/run*">run*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (run* ns-sym &amp; args)
 </pre>
   <pre id="var-docstr">Loads the specified namespace and invokes its "main" function with
 optional args.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L199" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/show">show</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (show x)
        (show x selector)
 </pre>
@@ -291,14 +338,16 @@ predicate will be passed a single argument, a map that includes the
 all the properies of the member object as translated by 'bean'.
 
 Examples: (show Integer)  (show [])  (show String 23)  (show String "case")</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L62" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.repl-utils/source">source</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (source n)
 </pre>
   <pre id="var-docstr">Prints the source code for the given symbol, if it can find it.
@@ -306,7 +355,7 @@ This requires that the symbol resolve to a Var defined in a
 namespace for which the .clj is in the classpath.
 
 Example: (source filter)</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L123" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -314,12 +363,14 @@ Example: (source filter)</pre>
   <hr />
   <h2 id="clojure.contrib.repl-utils/start-handling-break">start-handling-break</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (start-handling-break)
 </pre>
   <pre id="var-docstr">Register INT signal handler.  After calling this, Ctrl-C will cause
 all break-threads to be stopped.  See 'add-break-thread!'</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fdda2d2c1cb046203470eaed264810ddaf895bcf/src/main/clojure/clojure/contrib/repl_utils.clj#L153" id="var-source">Source</a>
 </div>
 

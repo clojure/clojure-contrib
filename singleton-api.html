@@ -67,6 +67,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.singleton</span>
 <p></p>
 <h2>Overview</h2>
@@ -80,6 +99,8 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.singleton/global-singleton">global-singleton</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (global-singleton f)
 </pre>
   <pre id="var-docstr">Returns a global singleton function.  f is a function of no
@@ -89,14 +110,16 @@ cache the value for all subsequent calls.
 
 Warning: global singletons are often unsafe in multi-threaded code.
 Consider per-thread-singleton instead.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/singleton.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.singleton/per-thread-singleton">per-thread-singleton</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (per-thread-singleton f)
 </pre>
   <pre id="var-docstr">Returns a per-thread singleton function.  f is a function of no
@@ -109,8 +132,8 @@ Warning: due to a bug in JDK 5, it may not be safe to use a
 per-thread-singleton in the initialization function for another
 per-thread-singleton.  See
 <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5025230">http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5025230</a></pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/singleton.clj#L41" id="var-source">Source</a>
 </div>
 

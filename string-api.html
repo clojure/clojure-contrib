@@ -135,6 +135,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.string</span>
 <p></p>
 <h2>Overview</h2>
@@ -148,6 +167,8 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.string/as-str">as-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (as-str)
        (as-str x)
        (as-str x &amp; ys)
@@ -157,7 +178,7 @@ its name will be used instead of its literal representation.
 
 Example:
    (str :foo :bar)     ;;=&gt; ":foo:bar"
-   (as-str :foo :bar)  ;;=&gt; "foobar" 
+   (as-str :foo :bar)  ;;=&gt; "foobar"
 
 Note that this does not apply to keywords or symbols nested within
 data structures; they will be rendered as with str.
@@ -165,18 +186,20 @@ data structures; they will be rendered as with str.
 Example:
    (str {:foo :bar})     ;;=&gt; "{:foo :bar}"
    (as-str {:foo :bar})  ;;=&gt; "{:foo :bar}" </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L315" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/blank?">blank?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (blank? s)
 </pre>
   <pre id="var-docstr">True if s is nil, empty, or contains only whitespace.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L104" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -184,23 +207,27 @@ Example:
   <hr />
   <h2 id="clojure.contrib.string/butlast">butlast</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (butlast n s)
 </pre>
   <pre id="var-docstr">Returns s without the last n characters.  Returns an empty string
 if n is greater than the length of s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L125" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/capitalize">capitalize</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (capitalize s)
 </pre>
   <pre id="var-docstr">Converts first character of the string to upper-case, all other
 characters to lower-case.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L271" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -208,12 +235,14 @@ characters to lower-case.</pre>
   <hr />
   <h2 id="clojure.contrib.string/chomp">chomp</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (chomp s)
 </pre>
   <pre id="var-docstr">Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.
 Deprecated in 1.2. Use clojure.string/trim-newline</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L245" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -221,30 +250,36 @@ Deprecated in 1.2. Use clojure.string/trim-newline</pre>
   <hr />
   <h2 id="clojure.contrib.string/chop">chop</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (chop s)
 </pre>
   <pre id="var-docstr">Removes the last character of string, does nothing on a zero-length
 string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L236" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/codepoints">codepoints</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (codepoints s)
 </pre>
   <pre id="var-docstr">Returns a sequence of integer Unicode code points in s.  Handles
 Unicode supplementary characters (above U+FFFF) correctly.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L78" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/dochars">dochars</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (dochars bindings &amp; body)
 </pre>
   <pre id="var-docstr">bindings =&gt; [name string]
@@ -252,14 +287,16 @@ Unicode supplementary characters (above U+FFFF) correctly.</pre>
 Repeatedly executes body, with name bound to each character in
 string.  Does NOT handle Unicode supplementary characters (above
 U+FFFF).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/docodepoints">docodepoints</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (docodepoints bindings &amp; body)
 </pre>
   <pre id="var-docstr">bindings =&gt; [name string]
@@ -267,32 +304,36 @@ U+FFFF).</pre>
 Repeatedly executes body, with name bound to the integer code point
 of each Unicode character in the string.  Handles Unicode
 supplementary characters (above U+FFFF) correctly.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L54" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/drop">drop</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (drop n s)
 </pre>
   <pre id="var-docstr">Drops first n characters from s.  Returns an empty string if n is
 greater than the length of s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L117" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/escape">escape</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (escape cmap s)
 </pre>
   <pre id="var-docstr">Returns a new String by applying cmap (a function or a map) to each
 character in s.  If cmap returns nil, the original character is
 added to the output unchanged.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L91" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -300,10 +341,12 @@ added to the output unchanged.</pre>
   <hr />
   <h2 id="clojure.contrib.string/get">get</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get s i)
 </pre>
   <pre id="var-docstr">Gets the i'th character in string.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L377" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -311,23 +354,27 @@ added to the output unchanged.</pre>
   <hr />
   <h2 id="clojure.contrib.string/grep">grep</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (grep re coll)
 </pre>
   <pre id="var-docstr">Filters elements of coll by a regular expression.  The String
 representation (with str) of each element is tested with re-find.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L309" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/join">join</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (join separator coll)
 </pre>
   <pre id="var-docstr">Returns a string of all elements in coll, separated by
 separator.  Like Perl's join.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L229" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -335,10 +382,12 @@ separator.  Like Perl's join.</pre>
   <hr />
   <h2 id="clojure.contrib.string/lower-case">lower-case</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (lower-case s)
 </pre>
   <pre id="var-docstr">Converts string to all lower-case.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L353" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -346,11 +395,13 @@ separator.  Like Perl's join.</pre>
   <hr />
   <h2 id="clojure.contrib.string/ltrim">ltrim</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (ltrim s)
 </pre>
   <pre id="var-docstr">Removes whitespace from the left side of string.
 Deprecated in 1.2. Use clojure.string/triml.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L281" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -358,18 +409,22 @@ Deprecated in 1.2. Use clojure.string/triml.</pre>
   <hr />
   <h2 id="clojure.contrib.string/map-str">map-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (map-str f coll)
 </pre>
   <pre id="var-docstr">Apply f to each element of coll, concatenate all results into a
 String.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L302" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/partition">partition</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (partition re s)
 </pre>
   <pre id="var-docstr">Splits the string into a lazy sequence of substrings, alternating
@@ -380,30 +435,34 @@ string matches.
 
 For example: (partition #"[a-z]+" "abc123def")
 returns: ("" "abc" "123" "def")</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L208" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/repeat">repeat</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (repeat n s)
 </pre>
   <pre id="var-docstr">Returns a new String containing s repeated n times.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L140" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/replace-by">replace-by</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-by re f s)
 </pre>
-  <pre id="var-docstr">Replaces all matches of re in s with the result of 
+  <pre id="var-docstr">Replaces all matches of re in s with the result of
 (f (re-groups the-match)).</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L169" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -411,10 +470,12 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/replace-char">replace-char</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-char a b s)
 </pre>
   <pre id="var-docstr">Replaces all instances of character a with character b in s.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L157" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -422,11 +483,13 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/replace-first-by">replace-first-by</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-first-by re f s)
 </pre>
   <pre id="var-docstr">Replace first match of re in s with the result of
 (f (re-groups the-match)).</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L195" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -434,10 +497,12 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/replace-first-re">replace-first-re</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-first-re re replacement s)
 </pre>
   <pre id="var-docstr">Replace first match of re in s.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L189" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -445,10 +510,12 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/replace-first-str">replace-first-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-first-str a b s)
 </pre>
   <pre id="var-docstr">Replace first occurance of substring a with b in s.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L183" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -456,10 +523,12 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/replace-re">replace-re</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-re re replacement s)
 </pre>
   <pre id="var-docstr">Replaces all matches of re with replacement in s.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L163" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -467,10 +536,12 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/replace-str">replace-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (replace-str a b s)
 </pre>
   <pre id="var-docstr">Replaces all instances of substring a with b in s.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -478,10 +549,12 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/reverse">reverse</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reverse s)
 </pre>
   <pre id="var-docstr">Returns s with its characters reversed.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L145" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -489,11 +562,13 @@ returns: ("" "abc" "123" "def")</pre>
   <hr />
   <h2 id="clojure.contrib.string/rtrim">rtrim</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rtrim s)
 </pre>
   <pre id="var-docstr">Removes whitespace from the right side of string.
 Deprecated in 1.2. Use clojure.string/trimr.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L288" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -501,12 +576,14 @@ Deprecated in 1.2. Use clojure.string/trimr.</pre>
   <hr />
   <h2 id="clojure.contrib.string/split">split</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (split re s)
        (split re limit s)
 </pre>
   <pre id="var-docstr">Splits string on a regular expression.  Optional argument limit is
 the maximum number of splits.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L359" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -514,10 +591,12 @@ the maximum number of splits.</pre>
   <hr />
   <h2 id="clojure.contrib.string/split-lines">split-lines</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (split-lines s)
 </pre>
   <pre id="var-docstr">Splits s on \n or \r\n.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L295" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -525,57 +604,67 @@ the maximum number of splits.</pre>
   <hr />
   <h2 id="clojure.contrib.string/substring?">substring?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (substring? substring s)
 </pre>
   <pre id="var-docstr">True if s contains the substring.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L372" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/swap-case">swap-case</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (swap-case s)
 </pre>
   <pre id="var-docstr">Changes upper case characters to lower case and vice-versa.
 Handles Unicode supplementary characters correctly.  Uses the
 locale-sensitive String.toUpperCase() and String.toLowerCase()
 methods.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L253" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/tail">tail</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (tail n s)
 </pre>
   <pre id="var-docstr">Returns the last n characters of s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L133" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/take">take</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (take n s)
 </pre>
   <pre id="var-docstr">Take first n characters from s, up to the length of s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L110" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.string/trim">trim</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (trim s)
 </pre>
   <pre id="var-docstr">Removes whitespace from both ends of string.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L366" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -583,10 +672,12 @@ methods.</pre>
   <hr />
   <h2 id="clojure.contrib.string/upper-case">upper-case</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (upper-case s)
 </pre>
   <pre id="var-docstr">Converts string to all upper-case.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/string.clj#L347" id="var-source">Source</a>
 </div>

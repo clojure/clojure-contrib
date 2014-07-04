@@ -91,6 +91,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Jeffrey Straszheim</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.graph</span>
 <p></p>
 <h2>Overview</h2>
@@ -104,17 +123,21 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.graph/add-loops">add-loops</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-loops g)
 </pre>
   <pre id="var-docstr">For each node n, add the edge n-&gt;n if not already present.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L49" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/component-graph">component-graph</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (component-graph g)
        (component-graph g sccs)
 </pre>
@@ -122,14 +145,16 @@ namespace.
 Each node in the new graph will be a set of nodes from the old.
 These sets are the strongly connected components.  Each edge will
 be the union of the corresponding edges of the prior graph.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L133" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/dependency-list">dependency-list</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (dependency-list g)
 </pre>
   <pre id="var-docstr">Similar to a topological sort, this returns a vector of sets. The
@@ -137,121 +162,141 @@ set of nodes at index 0 are independent.  The set at index 1 depend
 on index 0; those at 2 depend on 0 and 1, and so on.  Those withing
 a set have no mutual dependencies.  Assume the input graph (which
 much be acyclic) has an edge a-&gt;b when a depends on b.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/fixed-point">fixed-point</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fixed-point data fun max equal)
 </pre>
   <pre id="var-docstr">Repeatedly apply fun to data until (equal old-data new-data)
 returns true.  If max iterations occur, it will throw an
 exception.  Set max to nil for unlimited iterations.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L167" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/get-neighbors">get-neighbors</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-neighbors g n)
 </pre>
   <pre id="var-docstr">Get the neighbors of a node.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L29" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/lazy-walk">lazy-walk</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (lazy-walk g n)
        (lazy-walk g ns v)
 </pre>
   <pre id="var-docstr">Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
 provide a set of visited notes (v) and a collection of nodes to
 visit (ns).</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L68" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/post-ordered-nodes">post-ordered-nodes</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (post-ordered-nodes g)
 </pre>
   <pre id="var-docstr">Return a sequence of indexes of a post-ordered walk of the graph.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L110" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/recursive-component?">recursive-component?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (recursive-component? g ns)
 </pre>
   <pre id="var-docstr">Is the component (recieved from scc) self recursive?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/remove-loops">remove-loops</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (remove-loops g)
 </pre>
   <pre id="var-docstr">For each node n, remove any edges n-&gt;n.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L57" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/reverse-graph">reverse-graph</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reverse-graph g)
 </pre>
   <pre id="var-docstr">Given a directed graph, return another directed graph with the
 order of the edges reversed.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L37" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/scc">scc</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (scc g)
 </pre>
   <pre id="var-docstr">Returns, as a sequence of sets, the strongly connected components
 of g.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L117" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/self-recursive-sets">self-recursive-sets</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (self-recursive-sets g)
 </pre>
   <pre id="var-docstr">Returns, as a sequence of sets, the components of a graph that are
 self-recursive.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L158" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/stratification-list">stratification-list</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (stratification-list g1 g2)
 </pre>
   <pre id="var-docstr">Similar to dependency-list (see doc), except two graphs are
@@ -259,14 +304,16 @@ provided.  The first is as dependency-list.  The second (which may
 have cycles) provides a partial-dependency relation.  If node a
 depends on node b (meaning an edge a-&gt;b exists) in the second
 graph, node a must be equal or later in the sequence.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.graph/transitive-closure">transitive-closure</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (transitive-closure g)
 </pre>
   <pre id="var-docstr">Returns the transitive closure of a graph.  The neighbors are lazily computed.
@@ -276,8 +323,8 @@ regardless of whether such loops exist in the original graph.  This
 version does not.  Loops will be included only if produced by
 cycles in the graph.  If you have code that depends on such
 behavior, call (-&gt; g transitive-closure add-loops)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/graph/src/main/clojure/clojure/contrib/graph.clj#L81" id="var-source">Source</a>
 </div>
 

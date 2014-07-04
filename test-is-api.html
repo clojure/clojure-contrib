@@ -137,6 +137,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.test-is</span>
 <p></p>
 <h2>Overview</h2>
@@ -153,7 +172,7 @@ namespace clojure.contrib.test-is.
 
 This includes support for the old syntax of the 'are' macro.
 
-This was suggested by Howard Lewis Ship in ticket #26, 
+This was suggested by Howard Lewis Ship in ticket #26,
 <a href="http://www.assembla.com/spaces/clojure-contrib/tickets/26">http://www.assembla.com/spaces/clojure-contrib/tickets/26</a></pre>
 
 <span class="ns-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
@@ -164,76 +183,88 @@ This was suggested by Howard Lewis Ship in ticket #26,
   <hr />
   <h2 id="clojure.contrib.test-is/*load-tests*">*load-tests*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">True by default.  If set to false, no test functions will
 be created by deftest, set-test, or with-test.  Use this to omit
 tests when compiling or loading production code.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/*stack-trace-depth*">*stack-trace-depth*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The maximum depth of stack traces to print when an Exception
-is thrown during a test.  Defaults to nil, which means print the 
+is thrown during a test.  Defaults to nil, which means print the
 complete stack trace.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/apply-template">apply-template</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (apply-template expr values)
 </pre>
   <pre id="var-docstr">Replaces _1, _2, _3, etc. in expr with corresponding elements of
 values.  Returns the modified expression.  For use in macros.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L77" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/are">are</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (are expr &amp; args)
 </pre>
   <pre id="var-docstr">Checks multiple assertions with a template expression.
 See clojure.contrib.template/do-template for an explanation of
 templates.
 
-Example: (are (= _1 _2)  
+Example: (are (= _1 _2)
               2 (+ 1 1)
               4 (* 2 2))
-Expands to: 
+Expands to:
          (do (is (= 2 (+ 1 1)))
              (is (= 4 (* 2 2))))
 
 Note: This breaks some reporting features, such as line numbers.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L105" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/assert-any">assert-any</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (assert-any msg form)
 </pre>
   <pre id="var-docstr">Returns generic assertion code for any test, including macros, Java
 method calls, or isolated symbols.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/assert-predicate">assert-predicate</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (assert-predicate msg form)
 </pre>
   <pre id="var-docstr">Returns generic assertion code for any functional predicate.  The
@@ -242,25 +273,29 @@ method calls, or isolated symbols.</pre>
 evaluated.  If the predicate returns false, the 'actual' form will
 be wrapped in (not...).</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/compose-fixtures">compose-fixtures</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (compose-fixtures f1 f2)
 </pre>
   <pre id="var-docstr">Composes two fixture functions, creating a new fixture function
 that combines their behavior.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/deftest">deftest</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (deftest name &amp; body)
 </pre>
   <pre id="var-docstr">Defines a test function with no arguments.  Test functions may call
@@ -274,51 +309,59 @@ itself.
 
 When *load-tests* is false, deftest is ignored.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/deftest-">deftest-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (deftest- name &amp; body)
 </pre>
   <pre id="var-docstr">Like deftest but creates a private var.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/do-report">do-report</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-report m)
 </pre>
   <pre id="var-docstr">Add file and line information to a test result and call report.
 If you are writing a custom assert-expr method, call this function
 to pass test results to report.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.2</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/do-template">do-template</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-template expr &amp; args)
 </pre>
   <pre id="var-docstr">Repeatedly evaluates template expr (in a do block) using values in
 args.  args are grouped by the number of holes in the template.
 Example: (do-template (check _1 _2) :a :b :c :d)
 expands to (do (check :a :b) (check :c :d))</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/file-position">file-position</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (file-position n)
 </pre>
   <pre id="var-docstr">Returns a vector [filename line-number] for the nth call up the
@@ -328,92 +371,108 @@ Deprecated in 1.2: The information needed for test reporting is
 now on :file and :line keys in the result map.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
-  
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/find-holes">find-holes</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-holes form)
 </pre>
   <pre id="var-docstr">Recursively finds all symbols starting with _ in form.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L52" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/find-pure-exprs">find-pure-exprs</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-pure-exprs form)
 </pre>
   <pre id="var-docstr">Recursively finds all sub-expressions in form that do not contain
 any symbols starting with _</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L58" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/find-symbols">find-symbols</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (find-symbols form)
 </pre>
   <pre id="var-docstr">Recursively finds all symbols in form.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L47" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/flatten-map">flatten-map</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (flatten-map m)
 </pre>
   <pre id="var-docstr">Transforms a map into a vector like [key value key value].</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L66" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/function?">function?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (function? x)
 </pre>
   <pre id="var-docstr">Returns true if argument is a function or a symbol that resolves to
 a function (not a macro).</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/get-possibly-unbound-var">get-possibly-unbound-var</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-possibly-unbound-var v)
 </pre>
   <pre id="var-docstr">Like var-get but returns nil if the var is unbound.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/inc-report-counter">inc-report-counter</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (inc-report-counter name)
 </pre>
   <pre id="var-docstr">Increments the named counter in *report-counters*, a ref to a map.
 Does nothing if *report-counters* is nil.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/is">is</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (is form)
        (is form msg)
 </pre>
@@ -431,25 +490,29 @@ body, fails if not; then returns the thing thrown.
 thrown AND that the message on the exception matches (with
 re-find) the regular expression re.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/join-fixtures">join-fixtures</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (join-fixtures fixtures)
 </pre>
   <pre id="var-docstr">Composes a collection of fixtures, in order.  Always returns a valid
 fixture function, even if the collection is empty.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/report">report</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">No usage documentation available</pre>
   <pre id="var-docstr">Generic reporting function, may be overridden to plug in
 different report formats (e.g., TAP, JUnit).  Assertions such as
@@ -458,13 +521,15 @@ different report formats (e.g., TAP, JUnit).  Assertions such as
 the top of test_is.clj for more information on the types of
 arguments for 'report'.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/run-all-tests">run-all-tests</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (run-all-tests)
        (run-all-tests re)
 </pre>
@@ -473,13 +538,15 @@ Optional argument is a regular expression; only namespaces with
 names matching the regular expression (with re-matches) will be
 tested.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/run-tests">run-tests</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (run-tests)
        (run-tests &amp; namespaces)
 </pre>
@@ -487,13 +554,15 @@ tested.</pre>
 Defaults to current namespace if none given.  Returns a map
 summarizing test results.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/set-test">set-test</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (set-test name &amp; body)
 </pre>
   <pre id="var-docstr">Experimental.
@@ -502,47 +571,55 @@ The var must already exist.  Does not modify the value of the var.
 
 When *load-tests* is false, set-test is ignored.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/successful?">successful?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (successful? summary)
 </pre>
   <pre id="var-docstr">Returns true if the given test summary indicates all tests
 were successful, false otherwise.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/template?">template?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (template? form)
 </pre>
   <pre id="var-docstr">Returns true if form is a valid template expression.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/25d3316706bfbaa75498b4d0bca8f696a328fb3d/src/main/clojure/clojure/contrib/test_is.clj#L72" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/test-all-vars">test-all-vars</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (test-all-vars ns)
 </pre>
   <pre id="var-docstr">Calls test-var on every var interned in the namespace, with fixtures.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/test-ns">test-ns</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (test-ns ns)
 </pre>
   <pre id="var-docstr">If the namespace defines a function named test-ns-hook, calls that.
@@ -553,86 +630,100 @@ Internally binds *report-counters* to a ref initialized to
 *inital-report-counters*.  Returns the final, dereferenced state of
 *report-counters*.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/test-var">test-var</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (test-var v)
 </pre>
   <pre id="var-docstr">If v has a function in its :test metadata, calls that function,
 with *testing-vars* bound to (conj *testing-vars* v).</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/testing">testing</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (testing string &amp; body)
 </pre>
   <pre id="var-docstr">Adds a new string to the list of testing contexts.  May be nested,
 but must occur inside a test function (deftest).</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/testing-contexts-str">testing-contexts-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (testing-contexts-str)
 </pre>
   <pre id="var-docstr">Returns a string representation of the current test context. Joins
 strings in *testing-contexts* with spaces.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/testing-vars-str">testing-vars-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (testing-vars-str m)
 </pre>
   <pre id="var-docstr">Returns a string representation of the current test.  Renders names
 in *testing-vars* as a list, then the source file and line of
 current assertion.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/try-expr">try-expr</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (try-expr msg form)
 </pre>
   <pre id="var-docstr">Used by the 'is' macro to catch unexpected exceptions.
 You don't call this.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/use-fixtures">use-fixtures</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">No usage documentation available</pre>
   <pre id="var-docstr">Wrap test runs in a fixture function to perform setup and
 teardown. Using a fixture-type of :each wraps every test
 individually, while:once wraps the whole run in a single function.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/with-test">with-test</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-test definition &amp; body)
 </pre>
   <pre id="var-docstr">Takes any definition form (that returns a Var) as the first argument.
@@ -641,19 +732,21 @@ Remaining body goes in the :test metadata function for that Var.
 When *load-tests* is false, only evaluates the definition, ignoring
 the tests.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.test-is/with-test-out">with-test-out</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-test-out &amp; body)
 </pre>
   <pre id="var-docstr">Runs body with *out* bound to the value of *test-out*.</pre>
   <span class="var-added"><span id="content">Added in clojure-contrib version 1.1</span><br /></span>
-  
-  
+
+
 </div>
 
 

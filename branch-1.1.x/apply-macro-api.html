@@ -65,6 +65,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.apply-macro</span>
 <p></p>
 <h2>Overview</h2>
@@ -78,6 +97,8 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.apply-macro/apply-macro">apply-macro</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (apply-macro macro &amp; args)
 </pre>
   <pre id="var-docstr">This is evil.  Don't ever use it.  It makes a macro behave like a
@@ -89,8 +110,8 @@ apply.
 (def things [true true false])
 (apply-macro and things)
 ;; Expands to:  (and true true false)</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/04a22729691863a5b7e7b1b3c6c1157a02aff3b2/src/clojure/contrib/apply_macro.clj#L32" id="var-source">Source</a>
 </div>
 

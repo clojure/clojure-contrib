@@ -109,6 +109,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stephen C. Gilardi</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.miglayout</span>
 <p></p>
 <h2>Overview</h2>
@@ -128,18 +147,22 @@ Example:
   <hr />
   <h2 id="clojure.contrib.miglayout/components">components</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (components container)
 </pre>
   <pre id="var-docstr">Returns a map from id (a keyword) to component for all components with
 an id constraint set</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/62976a684da2984bec184324dfb3269b7de916e5/src/clojure/contrib/miglayout.clj#L75" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.miglayout/miglayout">miglayout</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (miglayout container &amp; args)
 </pre>
   <pre id="var-docstr">Adds java.awt.Components to a javax.swing.JComponent with constraints
@@ -173,8 +196,8 @@ Constraint: string, keyword, vector, map, or set
 Any items marked with an "id" constraint will be included in a map from
 id to component attached to the container. The map can be retrieved using
 clojure.contrib.miglayout/components.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/62976a684da2984bec184324dfb3269b7de916e5/src/clojure/contrib/miglayout.clj#L37" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">miglayout.example</h2>
@@ -186,32 +209,38 @@ clojure.contrib.miglayout/components.</pre>
   <hr />
   <h2 id="clojure.contrib.miglayout.example/converter-ui">converter-ui</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (converter-ui)
 </pre>
   <pre id="var-docstr">Lays out and shows a Temperature Converter UI</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/df27c0a710440e2fef44f799dc5933f29ced44e1/src/clojure/contrib/miglayout/example.clj#L40" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.example/fahrenheit">fahrenheit</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fahrenheit celsius)
 </pre>
   <pre id="var-docstr">Converts a Celsius temperature to Fahrenheit. Input and output are
 strings. Returns "input?" if the input can't be parsed as a Double.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/df27c0a710440e2fef44f799dc5933f29ced44e1/src/clojure/contrib/miglayout/example.clj#L24" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.example/main">main</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (main)
 </pre>
   <pre id="var-docstr">Invokes converter-ui in the AWT Event thread</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/df27c0a710440e2fef44f799dc5933f29ced44e1/src/clojure/contrib/miglayout/example.clj#L57" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">miglayout.internal</h2>
@@ -223,98 +252,116 @@ strings. Returns "input?" if the input can't be parsed as a Double.</pre>
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/add-components">add-components</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (add-components container components)
 </pre>
   <pre id="var-docstr">Adds components with constraints to a container</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L94" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/component?">component?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (component? x)
 </pre>
   <pre id="var-docstr">Returns true if x is a java.awt.Component</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L59" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/constraint?">constraint?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (constraint? x)
 </pre>
   <pre id="var-docstr">Returns true if x is not a keyword-item or component</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L64" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/do-layout">do-layout</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (do-layout container layout column row components)
 </pre>
   <pre id="var-docstr">Attaches a MigLayout layout manager to container and adds components
 with constraints</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L114" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/format-constraint">format-constraint</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (format-constraint c)
 </pre>
   <pre id="var-docstr">Returns a vector of vectors representing one or more constraints
 separated by commas. Constraints may be specified in Clojure using
 strings, keywords, vectors, maps, and/or sets.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L32" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/format-constraints">format-constraints</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (format-constraints &amp; constraints)
 </pre>
   <pre id="var-docstr">Returns a string representing all the constraints for one keyword-item
 or component formatted for miglayout.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L47" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/get-components">get-components</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (get-components container)
 </pre>
   <pre id="var-docstr">Returns a map from id to component for all components with an id</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L109" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/parse-component-constraint">parse-component-constraint</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (parse-component-constraint constraint)
 </pre>
   <pre id="var-docstr">Parses a component constraint string returning a CC object</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.internal/parse-item-constraints">parse-item-constraints</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (parse-item-constraints &amp; args)
 </pre>
   <pre id="var-docstr">Iterates over args and builds a map containing values associated with
 :keywords and :components. The value for :keywords is a map from keyword
 items to constraints strings. The value for :components is a vector of
 vectors each associating a component with its constraints string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/internal.clj#L71" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">miglayout.test</h2>
@@ -326,32 +373,38 @@ vectors each associating a component with its constraints string.</pre>
   <hr />
   <h2 id="clojure.contrib.miglayout.test/label">label</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (label text)
 </pre>
   <pre id="var-docstr">Returns a swing label</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/test.clj#L32" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.test/sep">sep</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (sep)
 </pre>
   <pre id="var-docstr">Returns a swing separator</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/test.clj#L43" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.miglayout.test/text-field">text-field</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (text-field)
        (text-field width)
 </pre>
   <pre id="var-docstr">Returns a swing text field</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/8bce6fb2d0a9b66aa1fd145f3dfd62833d8ad330/src/clojure/contrib/miglayout/test.clj#L37" id="var-source">Source</a>
 </div>
 

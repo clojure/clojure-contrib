@@ -121,6 +121,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.io</span>
 <p></p>
 <h2>Overview</h2>
@@ -140,65 +159,77 @@ types: URLs or filenames as strings, java.io.File's, Sockets, etc.</pre>
   <hr />
   <h2 id="clojure.contrib.io/*append*">*append*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">If true, writer, output-stream and spit will open files in append mode.
 Defaults to false.  Instead of binding this var directly, use append-writer,
 append-output-stream or append-spit.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L107" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/*buffer-size*">*buffer-size*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Size, in bytes or characters, of the buffer used when
 copying streams.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L79" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/*byte-array-type*">*byte-array-type*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Type object for a Java primitive byte array.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L84" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/*char-array-type*">*char-array-type*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Type object for a Java primitive char array.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/*default-encoding*">*default-encoding*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Name of the default encoding to use when reading &amp; writing.
 Default is UTF-8.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L73" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/append-output-stream">append-output-stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (append-output-stream x)
 </pre>
   <pre id="var-docstr">Like output-stream but opens file for appending.  Does not work on streams
 that are already open.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L280" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -206,10 +237,12 @@ that are already open.</pre>
   <hr />
   <h2 id="clojure.contrib.io/append-spit">append-spit</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (append-spit f content)
 </pre>
   <pre id="var-docstr">Like spit but appends to file.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L338" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -217,11 +250,13 @@ that are already open.</pre>
   <hr />
   <h2 id="clojure.contrib.io/append-writer">append-writer</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (append-writer x)
 </pre>
   <pre id="var-docstr">Like writer but opens file for appending.  Does not work on streams
 that are already open.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L288" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -229,10 +264,12 @@ that are already open.</pre>
   <hr />
   <h2 id="clojure.contrib.io/as-url">as-url</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (as-url arg)
 </pre>
   <pre id="var-docstr">Coerces argument (URL, URI, or String) to a java.net.URL.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L552" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -240,17 +277,19 @@ that are already open.</pre>
   <hr />
   <h2 id="clojure.contrib.io/copy">copy</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (copy input output)
 </pre>
   <pre id="var-docstr">Copies input to output.  Returns nil.
 Input may be an InputStream, Reader, File, byte[], or String.
 Output may be an OutputStream, Writer, or File.
 
-Does not close any streams except those it opens itself 
+Does not close any streams except those it opens itself
 (on a File).
 
 Writing a File fails if the parent directory does not exist.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L375" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -258,35 +297,41 @@ Writing a File fails if the parent directory does not exist.</pre>
   <hr />
   <h2 id="clojure.contrib.io/delete-file">delete-file</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (delete-file f &amp; [silently])
 </pre>
   <pre id="var-docstr">Delete file f. Raise an exception if it fails unless silently is true.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L535" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/delete-file-recursively">delete-file-recursively</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (delete-file-recursively f &amp; [silently])
 </pre>
   <pre id="var-docstr">Delete file f. If it's a directory, recursively delete all its contents.
 Raise an exception if any deletion fails unless silently is true.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L542" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/file">file</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (file arg)
        (file parent child)
        (file parent child &amp; more)
 </pre>
   <pre id="var-docstr">Returns a java.io.File from string or file args.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L525" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -294,19 +339,23 @@ Raise an exception if any deletion fails unless silently is true.</pre>
   <hr />
   <h2 id="clojure.contrib.io/file-str">file-str</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (file-str &amp; args)
 </pre>
   <pre id="var-docstr">Concatenates args as strings and returns a java.io.File.  Replaces
 all / and \ with File/separatorChar.  Replaces ~ at the start of
 the path with the user.home system property.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L93" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/input-stream">input-stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (input-stream x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open java.io.InputStream.
@@ -322,25 +371,29 @@ local file names.
 
 Should be used inside with-open to ensure the InputStream is properly
 closed.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/make-parents">make-parents</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (make-parents file)
 </pre>
   <pre id="var-docstr">Creates all parent directories of file.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L471" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/output-stream">output-stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (output-stream x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open java.io.OutputStream.
@@ -356,19 +409,21 @@ local file names.
 
 Should be used inside with-open to ensure the OutputStream is
 properly closed.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/pwd">pwd</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pwd)
 </pre>
   <pre id="var-docstr">Returns current working directory as a String.  (Like UNIX 'pwd'.)
 Note: In Java, you cannot change the current working directory.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L345" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -376,18 +431,22 @@ Note: In Java, you cannot change the current working directory.</pre>
   <hr />
   <h2 id="clojure.contrib.io/read-lines">read-lines</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (read-lines f)
 </pre>
   <pre id="var-docstr">Like clojure.core/line-seq but opens f with reader.  Automatically
 closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L307" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/reader">reader</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (reader x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open java.io.Reader.
@@ -407,18 +466,20 @@ Uses *default-encoding* as the text encoding.
 
 Should be used inside with-open to ensure the Reader is properly
 closed.</pre>
-  
-  
-  
+
+
+
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/relative-path-string">relative-path-string</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">No usage documentation available</pre>
-  <pre id="var-docstr">Interpret a String or java.io.File as a relative path string. 
+  <pre id="var-docstr">Interpret a String or java.io.File as a relative path string.
 Building block for clojure.contrib.java/file.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L502" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -426,10 +487,12 @@ Building block for clojure.contrib.java/file.</pre>
   <hr />
   <h2 id="clojure.contrib.io/slurp*">slurp*</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (slurp* f)
 </pre>
   <pre id="var-docstr">Like clojure.core/slurp but opens f with reader.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L318" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -437,11 +500,13 @@ Building block for clojure.contrib.java/file.</pre>
   <hr />
   <h2 id="clojure.contrib.io/spit">spit</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (spit f content)
 </pre>
   <pre id="var-docstr">Opposite of slurp.  Opens f with writer, writes content, then
 closes f.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L330" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -449,34 +514,40 @@ closes f.</pre>
   <hr />
   <h2 id="clojure.contrib.io/to-byte-array">to-byte-array</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (to-byte-array arg)
 </pre>
   <pre id="var-docstr">Converts argument into a Java byte array.  Argument may be
 a String, File, InputStream, or Reader.  If the argument is already
 a byte array, returns it.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L476" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/with-in-reader">with-in-reader</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-in-reader f &amp; body)
 </pre>
   <pre id="var-docstr">Opens a PushbackReader on f, binds it to *in*, and evaluates body.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L368" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/with-out-append-writer">with-out-append-writer</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-out-append-writer f &amp; body)
 </pre>
   <pre id="var-docstr">Like with-out-writer but appends to file.</pre>
-  
+
   <span class="var-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L360" id="var-source">Source</a>
 </div><div id="var-entry">
@@ -484,30 +555,36 @@ a byte array, returns it.</pre>
   <hr />
   <h2 id="clojure.contrib.io/with-out-writer">with-out-writer</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-out-writer f &amp; body)
 </pre>
   <pre id="var-docstr">Opens a writer on f, binds it to *out*, and evalutes body.
 Anything printed within body will be written to f.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L352" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/write-lines">write-lines</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (write-lines f lines)
 </pre>
   <pre id="var-docstr">Writes lines (a seq) to f, separated by newlines.  f is opened with
 writer, and automatically closed at the end of the sequence.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b6c6f0fa165975c416c7d135d1a844353527493b/src/main/clojure/clojure/contrib/io.clj#L296" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.io/writer">writer</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (writer x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open java.io.Writer.
@@ -523,9 +600,9 @@ local file names.
 
 Should be used inside with-open to ensure the Writer is properly
 closed.</pre>
-  
-  
-  
+
+
+
 </div>
 
 

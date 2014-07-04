@@ -83,6 +83,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.generic.comparison</span>
 <p></p>
 <h2>Overview</h2>
@@ -99,6 +118,8 @@ greater/less-than relations, types must minimally implement &gt;.</pre>
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&lt;">&lt;</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&lt; x)
        (&lt; x y)
        (&lt; x y &amp; more)
@@ -107,14 +128,16 @@ greater/less-than relations, types must minimally implement &gt;.</pre>
 The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type]. A default implementation
 is provided in terms of &gt;.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L87" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&lt;=">&lt;=</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&lt;= x)
        (&lt;= x y)
        (&lt;= x y &amp; more)
@@ -123,28 +146,32 @@ is provided in terms of &gt;.</pre>
 ones. The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type]. A default implementation
 is provided in terms of &gt;.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L139" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/=">=</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (= x)
        (= x y)
        (= x y &amp; more)
 </pre>
   <pre id="var-docstr">Return true if all arguments are equal. The minimal implementation for type
 ::my-type is the binary form with dispatch value [::my-type ::my-type].</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&gt;">&gt;</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&gt; x)
        (&gt; x y)
        (&gt; x y &amp; more)
@@ -152,14 +179,16 @@ is provided in terms of &gt;.</pre>
   <pre id="var-docstr">Return true if each argument is larger than the following ones.
 The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type].</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L66" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/&gt;=">&gt;=</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (&gt;= x)
        (&gt;= x y)
        (&gt;= x y &amp; more)
@@ -168,69 +197,79 @@ with dispatch value [::my-type ::my-type].</pre>
 ones. The minimal implementation for type ::my-type is the binary form
 with dispatch value [::my-type ::my-type]. A default implementation
 is provided in terms of &lt;.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L113" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/max">max</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (max x)
        (max x y)
        (max x y &amp; more)
 </pre>
   <pre id="var-docstr">Returns the greatest of its arguments. Like clojure.core/max except that
 is uses generic comparison functions implementable for any data type.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L200" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/min">min</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (min x)
        (min x y)
        (min x y &amp; more)
 </pre>
   <pre id="var-docstr">Returns the least of its arguments. Like clojure.core/min except that
 is uses generic comparison functions implementable for any data type.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L208" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/neg?">neg?</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (neg? x)
 </pre>
   <pre id="var-docstr">Return true of x is negative.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/pos?">pos?</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (pos? x)
 </pre>
   <pre id="var-docstr">Return true of x is positive.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L33" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.generic.comparison/zero?">zero?</h2>
   <span id="var-type">multimethod</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (zero? x)
 </pre>
   <pre id="var-docstr">Return true of x is zero.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/generic/comparison.clj#L28" id="var-source">Source</a>
 </div>
 

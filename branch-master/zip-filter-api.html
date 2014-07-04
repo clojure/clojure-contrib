@@ -99,6 +99,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Chris Houser</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.zip-filter</span>
 <p></p>
 <h2>Overview</h2>
@@ -113,93 +132,109 @@ general, and xml trees in particular.</pre>
   <hr />
   <h2 id="clojure.contrib.zip-filter/ancestors">ancestors</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (ancestors loc)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of all ancestors of location loc, starting
 with loc and proceeding to loc's parent node and on through to the
 root of the tree.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L65" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/children">children</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (children loc)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of all immediate children of location loc,
 left-to-right.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L45" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/children-auto">children-auto</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (children-auto loc)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of all immediate children of location loc,
 left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L52" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/descendants">descendants</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (descendants loc)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of all descendants of location loc, in
 depth-first order, left-to-right, starting with loc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L60" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/left-locs">left-locs</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (left-locs loc)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of locations to the left of loc, starting with loc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L33" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/leftmost?">leftmost?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (leftmost? loc)
 </pre>
   <pre id="var-docstr">Returns true if there are no more nodes to the left of location loc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L37" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/right-locs">right-locs</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (right-locs loc)
 </pre>
   <pre id="var-docstr">Returns a lazy sequence of locations to the right of loc, starting with loc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L29" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.zip-filter/rightmost?">rightmost?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (rightmost? loc)
 </pre>
   <pre id="var-docstr">Returns true if there are no more nodes to the right of location loc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter.clj#L41" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">zip-filter.xml</h2>
@@ -211,72 +246,86 @@ depth-first order, left-to-right, starting with loc.</pre>
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/attr">attr</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (attr attrname)
        (attr loc attrname)
 </pre>
   <pre id="var-docstr">Returns the xml attribute named attrname, of the xml node at location loc.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L18" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/attr=">attr=</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (attr= attrname attrval)
 </pre>
   <pre id="var-docstr">Returns a query predicate that matches a node when it has an
 attribute named attrname whose value is attrval.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L23" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/seq-test">seq-test</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (seq-test preds)
 </pre>
   <pre id="var-docstr">Returns a query predicate that matches a node when its xml content
 matches the query expresions given.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L51" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/tag=">tag=</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (tag= tagname)
 </pre>
   <pre id="var-docstr">Returns a query predicate that matches a node when its is a tag
 named tagname.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/text">text</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (text loc)
 </pre>
   <pre id="var-docstr">Returns the textual contents of the given location, similar to
 xpaths's value-of</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/text=">text=</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (text= s)
 </pre>
   <pre id="var-docstr">Returns a query predicate that matches a node when its textual
 content equals s.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/xml-&gt;">xml-&gt;</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (xml-&gt; loc &amp; preds)
 </pre>
   <pre id="var-docstr">The loc is passed to the first predicate.  If the predicate returns
@@ -295,19 +344,21 @@ strings to text=, and vectors to sub-queries that return true if
 they match.
 
 See the footer of zip-query.clj for examples.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L57" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.zip-filter.xml/xml1-&gt;">xml1-&gt;</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (xml1-&gt; loc &amp; preds)
 </pre>
   <pre id="var-docstr">Returns the first item from loc based on the query predicates
 given.  See xml-&gt;</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/zip-filter/src/main/clojure/clojure/contrib/zip_filter/xml.clj#L80" id="var-source">Source</a>
 </div>
 

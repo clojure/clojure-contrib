@@ -71,6 +71,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.types</span>
 <p></p>
 <h2>Overview</h2>
@@ -84,20 +103,24 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.types/defadt">defadt</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (defadt type-tag &amp; constructors)
 </pre>
   <pre id="var-docstr">Define an algebraic data type name by an exhaustive list of constructors.
 Each constructor can be a symbol (argument-free constructor) or a
 list consisting of a tag symbol followed by the argument symbols.
 The data type tag must be a keyword.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/types/src/main/clojure/clojure/contrib/types.clj#L128" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.types/deftype">deftype</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (deftype type-tag constructor-name docstring? attr-map?)
        (deftype type-tag constructor-name docstring? attr-map? constructor)
        (deftype type-tag constructor-name docstring? attr-map? constructor deconstructor)
@@ -111,25 +134,29 @@ constructor function and attaches the type tag to its result
 as metadata. The deconstructor function must return the arguments
 to be passed to the constructor in order to create an equivalent
 object. It is used for printing and matching.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/types/src/main/clojure/clojure/contrib/types.clj#L54" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.types/deftype-">deftype-</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (deftype- type-tag constructor-name &amp; optional)
 </pre>
   <pre id="var-docstr">Same as deftype but the constructor is private.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/types/src/main/clojure/clojure/contrib/types.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.types/match">match</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (match value &amp; clauses)
 </pre>
   <pre id="var-docstr">Given a value and a list of template-expr clauses, evaluate the first
@@ -148,8 +175,8 @@ Symbols will be bound to the corresponding value in the object in the
 evaluation of expr. If the same symbol occurs more than once in a,
 template the corresponding elements of the object must be equal
 for the template to match.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/a6a92b9b3d2bfd9a56e1e5e9cfba706d1aeeaae5/modules/types/src/main/clojure/clojure/contrib/types.clj#L241" id="var-source">Source</a>
 </div>
 

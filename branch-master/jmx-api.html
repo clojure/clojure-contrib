@@ -103,6 +103,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.3</span> (<span id="header-status">in development</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Halloway</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.jmx</span>
 <p></p>
 <h2>Overview</h2>
@@ -119,16 +138,16 @@ Usage
 What beans do I have?
 
   (jmx/mbean-names "*:*")
-  -&gt; #&lt;HashSet [java.lang:type=MemoryPool,name=CMS Old Gen, 
+  -&gt; #&lt;HashSet [java.lang:type=MemoryPool,name=CMS Old Gen,
                 java.lang:type=Memory, ...]
 
 What attributes does a bean have?
 
   (jmx/attribute-names "java.lang:type=Memory")
-  -&gt; (:Verbose :ObjectPendingFinalizationCount 
+  -&gt; (:Verbose :ObjectPendingFinalizationCount
       :HeapMemoryUsage :NonHeapMemoryUsage)
 
-What is the value of an attribute? 
+What is the value of an attribute?
 
   (jmx/read "java.lang:type=Memory" :ObjectPendingFinalizationCount)
   -&gt; 0
@@ -146,16 +165,16 @@ Can't I just have *all* the attributes in a Clojure map?
 Can I find and invoke an operation?
 
   (jmx/operation-names "java.lang:type=Memory")
-  -&gt; (:gc)  
+  -&gt; (:gc)
   (jmx/invoke "java.lang:type=Memory" :gc)
   -&gt; nil
 
 What about some other process? Just run *any* of the above code
 inside a with-connection:
 
-  (jmx/with-connection {:host "localhost", :port 3000} 
+  (jmx/with-connection {:host "localhost", :port 3000}
     (jmx/mbean "java.lang:type=Memory"))
-  -&gt; {:ObjectPendingFinalizationCount 0, 
+  -&gt; {:ObjectPendingFinalizationCount 0,
       :HeapMemoryUsage ... etc.}
 
 Can I serve my own beans?  Sure, just drop a Clojure ref
@@ -176,231 +195,271 @@ in the ref:
   <hr />
   <h2 id="clojure.contrib.jmx/*connection*">*connection*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The connection to be used for JMX ops. Defaults to the local process.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fe4ed311166677cd571d23774171af1d830f7fc5/modules/jmx/src/main/clojure/clojure/contrib/jmx.clj#L82" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/attribute-info">attribute-info</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (attribute-info object-name attr-name)
 </pre>
   <pre id="var-docstr">Get the MBeanAttributeInfo for an attribute.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L60" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/attribute-names">attribute-names</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (attribute-names n)
 </pre>
   <pre id="var-docstr">All attribute names available on an MBean.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fe4ed311166677cd571d23774171af1d830f7fc5/modules/jmx/src/main/clojure/clojure/contrib/jmx.clj#L100" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/build-attribute-info">build-attribute-info</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (build-attribute-info attr-name attr-value)
        (build-attribute-info name type desc readable? writable? is?)
 </pre>
   <pre id="var-docstr">Construct an MBeanAttributeInfo. Normally called with a key/value pair from a Clojure map.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/data.clj#L91" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/guess-attribute-typename">guess-attribute-typename</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (guess-attribute-typename value)
 </pre>
   <pre id="var-docstr">Guess the attribute typename for MBeanAttributeInfo based on the attribute value.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/data.clj#L85" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/jmx-url">jmx-url</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (jmx-url)
        (jmx-url overrides)
 </pre>
   <pre id="var-docstr">Build a JMX URL from options.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/data.clj#L19" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/map-&gt;attribute-infos">map-&gt;attribute-infos</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (map-&gt;attribute-infos attr-map)
 </pre>
   <pre id="var-docstr">Construct an MBeanAttributeInfo[] from a Clojure associative.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/data.clj#L100" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/maybe-atomize">maybe-atomize</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (maybe-atomize k)
 </pre>
   <pre id="var-docstr">Convert a list of length 1 into its contents, leaving other things alone.
 Used to simplify keys in the tabular data API.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/data.clj#L44" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/maybe-keywordize">maybe-keywordize</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (maybe-keywordize s)
 </pre>
   <pre id="var-docstr">Convert a string key to a keyword, leaving other types alone. Used to
 simplify keys in the tabular data API.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/data.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/mbean">mbean</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (mbean n)
 </pre>
   <pre id="var-docstr">Like clojure.core/bean, but for JMX beans. Returns a read-only map of
 a JMX bean's attributes. If an attribute it not supported, value is
 set to the exception thrown.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fe4ed311166677cd571d23774171af1d830f7fc5/modules/jmx/src/main/clojure/clojure/contrib/jmx.clj#L119" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/mbean-names">mbean-names</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (mbean-names n)
 </pre>
   <pre id="var-docstr">Finds all MBeans matching a name on the current *connection*.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fe4ed311166677cd571d23774171af1d830f7fc5/modules/jmx/src/main/clojure/clojure/contrib/jmx.clj#L95" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/op-param-types">op-param-types</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (op-param-types n op)
 </pre>
   <pre id="var-docstr">The parameter types (as class name strings) for operation op on n.
 Used for invoke.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L81" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/operation">operation</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (operation n op)
 </pre>
   <pre id="var-docstr">The MBeanOperationInfo for operation op on mbean n. Used by invoke.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L76" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/operation-names">operation-names</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (operation-names n)
 </pre>
   <pre id="var-docstr">All operation names available on an MBean.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fe4ed311166677cd571d23774171af1d830f7fc5/modules/jmx/src/main/clojure/clojure/contrib/jmx.clj#L106" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/operations">operations</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (operations n)
 </pre>
   <pre id="var-docstr">All oeprations available on an MBean.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L71" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/raw-read">raw-read</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (raw-read n attr)
 </pre>
   <pre id="var-docstr">Read an mbean property. Returns low-level Java object model for
 composites, tabulars, etc. Most callers should use read.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L33" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/read">read</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Read an mbean property.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L39" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/read-supported">read-supported</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (read-supported n attr)
 </pre>
   <pre id="var-docstr">Calls read to read an mbean property, *returning* unsupported
 operation exceptions instead of throwing them. Used to keep mbean
 from blowing up. Note: There is no good exception that aggregates
 unsupported operations, hence the overly-general catch block.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L43" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/readable?">readable?</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (readable? n attr)
 </pre>
   <pre id="var-docstr">Is attribute readable?</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L66" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.jmx/with-connection">with-connection</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-connection opts &amp; body)
 </pre>
   <pre id="var-docstr">Execute body with JMX connection specified by opts. opts can also
 include an optional :environment key which is passed as the
 environment arg to JMXConnectorFactory/connect.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/fd185b68492657dcb6b1d15ef18fc67becf8450c/modules/jmx/src/main/clojure/clojure/contrib/jmx/client.clj#L17" id="var-source">Source</a>
 </div>
 

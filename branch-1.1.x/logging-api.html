@@ -103,6 +103,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.1</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Alex Taggart, Timothy Pratley</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.logging</span>
 <p></p>
 <h2>Overview</h2>
@@ -147,239 +166,279 @@ needs to be specified to namespace the output.</pre>
   <hr />
   <h2 id="clojure.contrib.logging/*allow-direct-logging*">*allow-direct-logging*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">A boolean indicating whether direct logging (as opposed to via an agent) is
 allowed when not operating from within a transaction. Defaults to true.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L202" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/*impl-name*">*impl-name*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The name of the logging implementation used.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/*logging-agent*">*logging-agent*</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">The default agent used for performing logging durng a transaction or when
 direct logging is disabled.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L196" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/agent-write!">agent-write!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (agent-write! _ log level message throwable)
 </pre>
   <pre id="var-docstr">Writes the message immediately, and ignores the first argument. Used by the
 logging agent. End-users should never need to call this function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L208" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/debug">debug</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (debug message)
        (debug message throwable)
 </pre>
   <pre id="var-docstr">Logs a message at the debug level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L316" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/enabled?">enabled?</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (enabled? level)
        (enabled? level log-ns)
 </pre>
   <pre id="var-docstr">Returns true if the specific logging level is enabled.  Use of this function
 should only be necessary if one needs to execute alternate code paths beyond
 whether the log should be written to.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L232" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/error">error</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (error message)
        (error message throwable)
 </pre>
   <pre id="var-docstr">Logs a message at the error level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L337" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/fatal">fatal</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (fatal message)
        (fatal message throwable)
 </pre>
   <pre id="var-docstr">Logs a message at the fatal level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L344" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-enabled?">impl-enabled?</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Implementation-specific check if a particular level is enabled. End-users
 should not need to call this function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-get-log">impl-get-log</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Returns an implementation-specific log by string namespace. End-users should
 not need to call this function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/impl-write!">impl-write!</h2>
   <span id="var-type">var</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage"></pre>
   <pre id="var-docstr">Implementation-specific write of a log message. End-users should not need to
 call this function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/info">info</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (info message)
        (info message throwable)
 </pre>
   <pre id="var-docstr">Logs a message at the info level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L323" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log">log</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log level message)
        (log level message throwable)
        (log level message throwable log-ns)
 </pre>
   <pre id="var-docstr">Logs a message, either directly or via an agent. Also see the level-specific
 convenience macros.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L215" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log-capture!">log-capture!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log-capture! log-ns)
 </pre>
   <pre id="var-docstr">Captures System.out and System.err, redirecting all writes of those streams
 to :info and :error logging, respectively. The specified log-ns value will
 be used to namespace all redirected logging. NOTE: this will not redirect
 output of *out* or *err*; for that, use with-logs.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L271" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log-stream">log-stream</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log-stream level log-ns)
 </pre>
   <pre id="var-docstr">Creates a PrintStream that will output to the log. End-users should not need
 to invoke this function.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L249" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/log-uncapture!">log-uncapture!</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (log-uncapture!)
 </pre>
   <pre id="var-docstr">Restores System.out and System.err to their original values.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L287" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/spy">spy</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (spy expr)
 </pre>
-  <pre id="var-docstr">Evaluates expr and outputs the form and its result to the debug log; returns 
+  <pre id="var-docstr">Evaluates expr and outputs the form and its result to the debug log; returns
 the result of expr.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L242" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/trace">trace</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (trace message)
        (trace message throwable)
 </pre>
   <pre id="var-docstr">Logs a message at the trace level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L309" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/warn">warn</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (warn message)
        (warn message throwable)
 </pre>
   <pre id="var-docstr">Logs a message at the warn level.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L330" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/with-logs">with-logs</h2>
   <span id="var-type">macro</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (with-logs log-ns &amp; body)
 </pre>
   <pre id="var-docstr">Evaluates exprs in a context in which *out* and *err* are bound to :info and
 :error logging, respectively. The specified log-ns value will be used to
 namespace all redirected logging.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/cd69d778f5a08810d4b934dbfc08f400ed34146a/src/clojure/contrib/logging.clj#L297" id="var-source">Source</a>
 </div>
 

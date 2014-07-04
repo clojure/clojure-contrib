@@ -77,6 +77,25 @@ namespace.
   - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">stable</span>)
   </h1>
 <span id="author-line">by <span id="author-name">Stuart Sierra</span><br /></span>
+<div class="error" id="main-deprecation-block">
+    <h3>clojure-contrib is now deprecated</h3>
+    <p>
+        clojure-contrib is no longer being developed or maintained.
+    </p>
+    <p>
+        Rather than a single, monolithic, contributions library, Clojure now has
+        a set of separate libraries for each unit of functionality. The libraries
+        are in the Clojure GitHub organization at
+        <a href="https://github.com/clojure">https://github.com/clojure</a>.
+        API documentation of the libraries can be found at
+        <a href="http://clojure.github.io">http://clojure.github.io</a>.
+    </p>
+    <p>
+        If you're looking for a specific function or namespace from the old
+        clojure-contrib, see
+        <a href="http://dev.clojure.org/display/community/Where+Did+Clojure.Contrib+Go">"Where Did Clojure.Contrib Go"</a>.
+    </p>
+</div>
 <br />Full namespace name: <span id="long-name">clojure.contrib.str-utils</span>
 <p></p>
 <h2>Overview</h2>
@@ -90,29 +109,35 @@ namespace.
   <hr />
   <h2 id="clojure.contrib.str-utils/chomp">chomp</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (chomp s)
 </pre>
   <pre id="var-docstr">Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L99" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils/chop">chop</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (chop s)
 </pre>
   <pre id="var-docstr">Removes the last character of string.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L94" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils/re-gsub">re-gsub</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (re-gsub regex replacement string)
 </pre>
   <pre id="var-docstr">Replaces all instances of 'pattern' in 'string' with
@@ -121,14 +146,16 @@ string.  Note: String.trim() is similar and faster.</pre>
 If (ifn? replacment) is true, the replacement is called with the
 match.
 </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L53" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils/re-partition">re-partition</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (re-partition re string)
 </pre>
   <pre id="var-docstr">Splits the string into a lazy sequence of substrings, alternating
@@ -140,28 +167,32 @@ string matches.
 For example: (re-partition #"[a-z]+" "abc123def")
 
 Returns: ("" "abc" "123" "def")</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L31" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils/re-split">re-split</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (re-split pattern string)
        (re-split pattern string limit)
 </pre>
   <pre id="var-docstr">Splits the string on instances of 'pattern'.  Returns a sequence of
 strings.  Optional 'limit' argument is the maximum number of
 splits.  Like Perl's 'split'.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L24" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils/re-sub">re-sub</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (re-sub regex replacement string)
 </pre>
   <pre id="var-docstr">Replaces the first instance of 'pattern' in 'string' with
@@ -170,20 +201,22 @@ splits.  Like Perl's 'split'.</pre>
 If (ifn? replacement) is true, the replacement is called with
 the match.
 </pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L69" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.str-utils/str-join">str-join</h2>
   <span id="var-type">function</span><br />
+  <span class="deprecation-warning">This library, clojure-contrib, is deprecated. See <a href="#main-deprecation-block">here</a> for more information.</span><br />
+
   <pre id="var-usage">Usage: (str-join separator sequence)
 </pre>
   <pre id="var-docstr">Returns a string of all elements in 'sequence', separated by
 'separator'.  Like Perl's 'join'.</pre>
-  
-  
+
+
   <a href="https://github.com/clojure/clojure-contrib/blob/13f960559f724521070d761639310d8b1f503216/src/main/clojure/clojure/contrib/str_utils.clj#L87" id="var-source">Source</a>
 </div>
 
