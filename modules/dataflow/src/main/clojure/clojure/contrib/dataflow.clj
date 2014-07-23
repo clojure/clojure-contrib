@@ -63,7 +63,7 @@
   :name            ; Always ::validator
   :dependents      ; The names of cells on which this depends, a collection
   :fun             ; A clojure that can throw an exception
-  :display         ; The original exprssion for display
+  :display         ; The original expression for display
   :cell-type)      ; Should be ::validator-cell
 
 (derive ::validator-cell ::dependent-cell)
@@ -459,15 +459,22 @@
 ;;; Watchers
 
 (defn add-cell-watcher
-  "Adds a watcher to a cell to respond to changes of value.  The is a
+  "Adds a watcher to a cell to respond to changes of value.  fun is a
    function of 4 values: a key, the cell, its old value, its new
    value.  This is implemented using Clojure's add-watch to the
-   underlying ref, and shared its sematics"
+   underlying ref, and shares its semantics, i.e. keys must be unique
+   per cell. Keys can be used with remove-cell-watcher to remove the
+   watcher"
   [cell key fun]
   (let [val (:value cell)]
     (add-watch val key (fn [key _ old-v new-v]
                          (fun key cell old-v new-v)))))
 
+(defn remove-cell-watcher
+  "Removes a watcher (set by add-cell-watcher) from a cell"
+  [cell key]
+  (let [val (:value cell)]
+    (remove-watch val key)))
 
 (comment
 
@@ -491,7 +498,15 @@
                     (fn [key cell o n]
                       (printf "sally changed from %s to %s\n" o n)))
 
+  (add-cell-watcher (get-cell df 'mary)
+                    "mary-watcher"
+                    (fn [key cell o n]
+                      (printf "mary changed from %s to %s\n" o n)))
+  
   (update-values df {'fred 1 'mary 1})
+
+  (remove-cell-watcher (get-cell df 'mary) "mary-watcher")
+  
   (update-values df {'fred 5 'mary 1})
   (update-values df {'fred 0 'mary 0})
 
