@@ -68,6 +68,8 @@
                             (assoc! result (if keywordize? (keyword key) key)
                                     element)))))))))
 
+(def ^{:private true} json-hex-characters #{\0 \1 \2 \3 \4 \5 \6 \7 \8 \9 \a \b \c \d \e \f \A \B \C \D \E \F})
+
 (defn- read-json-hex-character [^PushbackReader stream]
   ;; Expects to be called with the head of the stream AFTER the
   ;; initial "\u".  Reads the next four characters from the stream.
@@ -78,17 +80,18 @@
     (when (some neg? digits)
       (throw (EOFException. "JSON error (end-of-file inside Unicode character escape)")))
     (let [chars (map char digits)]
-      (when-not (every? #{\0 \1 \2 \3 \4 \5 \6 \7 \8 \9 \a \b \c \d \e \f \A \B \C \D \E \F}
-                        chars)
+      (when-not (every? json-hex-characters chars)
         (throw (Exception. "JSON error (invalid hex character in Unicode character escape)")))
       (char (Integer/parseInt (apply str chars) 16)))))
+
+(def ^{:private true} json-escape-characters #{\" \\ \/})
 
 (defn- read-json-escaped-character [^PushbackReader stream]
   ;; Expects to be called with the head of the stream AFTER the
   ;; initial backslash.
   (let [c (char (.read stream))]
     (cond
-     (#{\" \\ \/} c) c
+     (json-escape-characters c) c
      (= c \b) \backspace
      (= c \f) \formfeed
      (= c \n) \newline
@@ -110,6 +113,8 @@
          :else (do (.append buffer c)
                    (recur (.read stream))))))))
 
+(def ^{:private true} json-numbers-true-false #{\- \0 \1 \2 \3 \4 \5 \6 \7 \8 \9})
+
 (defn- read-json-reader
   ([^PushbackReader stream keywordize? eof-error? eof-value]
      (loop [i (.read stream)]
@@ -124,7 +129,7 @@
           (Character/isWhitespace c) (recur (.read stream))
 
           ;; Read numbers, true, and false with Clojure reader
-          (#{\- \0 \1 \2 \3 \4 \5 \6 \7 \8 \9} c)
+          (json-numbers-true-false c)
           (do (.unread stream i)
               (read stream true nil))
 
