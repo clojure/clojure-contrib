@@ -39,6 +39,7 @@ code is doing."}
 
 (def
  ^{:doc "Current stack depth of traced function calls."}
+ ^:dynamic
  *trace-depth* 0)
 
 (defn tracer

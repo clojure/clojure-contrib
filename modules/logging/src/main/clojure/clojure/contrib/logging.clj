@@ -492,5 +492,6 @@
   to obtain an instance satisfying the Log protocol. Defaults to the value
   returned from find-factory. Can be rebound to provide alternate logging
   implementations"}
+  ^:dynamic
   *log-factory*
   (find-factory))
