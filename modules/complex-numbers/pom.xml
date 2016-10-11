@@ -8,6 +8,7 @@
     <relativePath>../parent</relativePath>
   </parent>
   <artifactId>complex-numbers</artifactId>
+  <name>${artifactId}</name>
   <dependencies>
     <dependency>
       <groupId>org.clojure.contrib</groupId>

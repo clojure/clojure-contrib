@@ -8,6 +8,7 @@
     <relativePath>../parent</relativePath>
   </parent>
   <artifactId>trace</artifactId>
+  <name>${artifactId}</name>
   <dependencies>
   </dependencies>
 </project>

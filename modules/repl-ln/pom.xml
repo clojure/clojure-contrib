@@ -8,6 +8,7 @@
     <relativePath>../parent</relativePath>
   </parent>
   <artifactId>repl-ln</artifactId>
+  <name>${artifactId}</name>
   <dependencies>
     <!-- AOT-compilation necessitates a specific Clojure dependency. -->
     <dependency>
@@ -24,15 +25,15 @@
   <build>
     <plugins>
       <plugin>
-	<groupId>com.theoryinpractise</groupId>
-	<artifactId>clojure-maven-plugin</artifactId>
-	<configuration>
-	  <temporaryOutputDirectory>false</temporaryOutputDirectory>
-	  <compileDeclaredNamespaceOnly>true</compileDeclaredNamespaceOnly>
-	  <namespaces>
-	    <namespace>clojure\.contrib\.repl-ln</namespace>
-	  </namespaces>
-	</configuration>
+        <groupId>com.theoryinpractise</groupId>
+        <artifactId>clojure-maven-plugin</artifactId>
+        <configuration>
+          <temporaryOutputDirectory>false</temporaryOutputDirectory>
+          <compileDeclaredNamespaceOnly>true</compileDeclaredNamespaceOnly>
+          <namespaces>
+            <namespace>clojure\.contrib\.repl-ln</namespace>
+          </namespaces>
+        </configuration>
       </plugin>
     </plugins>
   </build>
