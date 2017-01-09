@@ -83,6 +83,11 @@
             </artifactItem>
             <artifactItem>
               <groupId>org.clojure.contrib</groupId>
+              <artifactId>digest</artifactId>
+              <version>${project.version}</version>
+            </artifactItem>
+            <artifactItem>
+              <groupId>org.clojure.contrib</groupId>
               <artifactId>error-kit</artifactId>
               <version>${project.version}</version>
             </artifactItem>
