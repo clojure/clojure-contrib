@@ -11,12 +11,12 @@
 (in-ns 'clojure.contrib.lazy-xml)
 (import '(org.xmlpull.v1 XmlPullParser XmlPullParserFactory))
 
-(defn- attrs [xpp]
+(defn- attrs [^XmlPullParser xpp]
   (for [i (range (.getAttributeCount xpp))]
     [(keyword (.getAttributeName xpp i))
      (.getAttributeValue xpp i)]))
 
-(defn- ns-decs [xpp]
+(defn- ns-decs [^XmlPullParser xpp]
   (let [d (.getDepth xpp)]
     (for [i (range (.getNamespaceCount xpp (dec d)) (.getNamespaceCount xpp d))]
       (let [prefix (.getNamespacePrefix xpp i)]
@@ -27,7 +27,7 @@
   (into {} (concat (ns-decs xpp) (attrs xpp))))
 
 (defn- pull-step [xpp]
-  (let [step (fn [xpp]
+  (let [step (fn [^XmlPullParser xpp]
                (condp = (.next xpp)
                  XmlPullParser/START_TAG
                    (cons (struct node :start-element
@@ -46,7 +46,7 @@
                              (pull-step xpp))))))]
     (lazy-seq (step xpp))))
 
-(def ^{:private true} factory
+(def ^{:private true :tag XmlPullParserFactory} factory
   (doto (XmlPullParserFactory/newInstance)
     (.setNamespaceAware true)))
 

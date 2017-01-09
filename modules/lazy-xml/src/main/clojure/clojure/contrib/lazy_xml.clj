@@ -48,21 +48,21 @@
   ([s] (if has-pull
          (parse-seq-pull s)
          (parse-seq s startparse-sax)))
-  ([s startparse] (parse-seq s startparse Integer/MAX_VALUE))
+  ([s startparse] (parse-seq s startparse 1000))
   ([s startparse queue-size]
-   (let [s (if (instance? Reader s) (InputSource. s) s)
+   (let [s (if (instance? Reader s) (InputSource. ^Reader s) s)
          f (fn filler-func [fill]
              (startparse s (proxy [DefaultHandler] []
                (startElement [uri local-name q-name ^Attributes atts]
                  ;(prn :start-element q-name)(flush)
-                 (let [attrs (into {} (for [i (range (.getLength atts))]
+                 (let [attrs (into {} (for [^Integer i (range (.getLength atts))]
                                            [(keyword (.getQName atts i))
                                             (.getValue atts i)]))]
                    (fill (struct node :start-element (keyword q-name) attrs))))
                (endElement [uri local-name q-name]
                  ;(prn :end-element q-name)(flush)
                  (fill (struct node :end-element (keyword q-name))))
-               (characters [ch start length]
+               (characters [^chars ch ^Integer start ^Integer length]
                  ;(prn :characters)(flush)
                  (let [st (String. ch start length)]
                    (when (seq (.trim st))
@@ -89,7 +89,7 @@
       (let [sibs (siblings events)]
         ;(prn :elem elem)
         (cons
-          (struct element (:name elem) (:attrs elem) (drop-last sibs))
+          (struct element (:name elem) (:attrs elem) (remove seq? sibs))
           (lazy-seq (last sibs))))))
 
 (defn parse-trim
